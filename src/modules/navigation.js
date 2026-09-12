@@ -22,9 +22,13 @@ export function initNavigation() {
   if (toggleBtn && mobileDrawer) {
     const backdrop = document.querySelector('.mobile-nav-backdrop');
 
+    const actionBar = document.querySelector('.mobile-action-bar');
+
     const openDrawer = () => {
       mobileDrawer.classList.add('open');
       backdrop?.classList.add('open');
+      document.body.classList.add('drawer-open');
+      actionBar?.classList.add('drawer-open');
       document.body.style.overflow = 'hidden';
       toggleBtn.setAttribute('aria-expanded', 'true');
       if (window.lenis) window.lenis.stop();
@@ -33,6 +37,8 @@ export function initNavigation() {
     const closeDrawer = () => {
       mobileDrawer.classList.remove('open');
       backdrop?.classList.remove('open');
+      document.body.classList.remove('drawer-open');
+      actionBar?.classList.remove('drawer-open');
       document.body.style.overflow = '';
       toggleBtn.setAttribute('aria-expanded', 'false');
       if (window.lenis) window.lenis.start();
@@ -64,8 +70,34 @@ export function initNavigation() {
     });
 
     mobileLinks.forEach((link) => {
-      link.addEventListener('click', () => {
+      link.addEventListener('click', (e) => {
+        const targetId = link.getAttribute('href');
         closeDrawer();
+
+        if (targetId && targetId.startsWith('#') && targetId !== '#') {
+          const targetEl = document.querySelector(targetId);
+          if (targetEl) {
+            e.preventDefault();
+
+            // Update active state on nav links
+            desktopLinks.forEach((dLink) => {
+              if (dLink.getAttribute('href') === targetId) {
+                dLink.classList.add('active');
+              } else {
+                dLink.classList.remove('active');
+              }
+            });
+
+            // Allow drawer close and body unlock to apply, then smoothly scroll
+            setTimeout(() => {
+              if (window.lenis) {
+                window.lenis.scrollTo(targetEl, { offset: -80 });
+              } else {
+                targetEl.scrollIntoView({ behavior: 'smooth' });
+              }
+            }, 60);
+          }
+        }
       });
     });
 

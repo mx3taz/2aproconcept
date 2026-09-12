@@ -29,8 +29,8 @@ export function initSmoothScroll() {
 
   gsap.ticker.lagSmoothing(0);
 
-  // Bind internal anchor links to smooth scroll
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  // Bind internal anchor links to smooth scroll (exclude mobile nav links which are handled in navigation.js)
+  document.querySelectorAll('a[href^="#"]:not(.mobile-nav-link)').forEach((anchor) => {
     anchor.addEventListener('click', function (e) {
       const targetId = this.getAttribute('href');
       if (targetId === '#') return;

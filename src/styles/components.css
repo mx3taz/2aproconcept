@@ -1204,6 +1204,8 @@
 /* --------------------------------------------------------------------------
    14. RESPONSIVE BREAKPOINTS
    -------------------------------------------------------------------------- */
+
+/* --- Tablet & below (≤ 1024px) --- */
 @media (max-width: 1024px) {
   .nav-desktop {
     display: none;
@@ -1211,6 +1213,12 @@
 
   .mobile-nav-toggle {
     display: flex;
+  }
+
+  /* Hide desktop header CTA buttons — the mobile action bar handles this */
+  .header-actions .btn-phone,
+  .header-actions .btn-whatsapp {
+    display: none;
   }
 
   .contact-section-wrapper {
@@ -1238,16 +1246,51 @@
   .lightbox-media {
     max-height: 45vh;
   }
+
+  /* Gallery grid: prevent overflow on narrower viewports */
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+
+  .service-card-media {
+    height: 220px;
+  }
 }
 
+/* --- Mobile (≤ 768px) --- */
 @media (max-width: 768px) {
+  .hero-section {
+    min-height: auto;
+    padding-top: calc(var(--header-height) + 1rem);
+    padding-bottom: 3rem;
+  }
+
   .hero-stats-bar {
     grid-template-columns: 1fr;
     gap: 1.25rem;
   }
 
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-cta-group .btn {
+    text-align: center;
+    justify-content: center;
+  }
+
   .config-input-group {
     grid-template-columns: 1fr;
+  }
+
+  .config-option-cards {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+
+  .config-summary-box {
+    flex-direction: column;
+    text-align: center;
   }
 
   .process-grid {
@@ -1276,5 +1319,126 @@
   /* Add bottom padding to body so mobile bar doesn't obscure content */
   body {
     padding-bottom: 64px;
+  }
+
+  .service-card-media {
+    height: 200px;
+  }
+
+  .service-card-body {
+    padding: 1.25rem;
+  }
+
+  .lightbox-info {
+    padding: 1.5rem;
+  }
+
+  .lightbox-modal {
+    padding: 1rem;
+  }
+
+  /* Services cluster nav - scrollable with visible hints */
+  .services-cluster-nav {
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .cluster-tab-btn {
+    padding: 0.7rem 1.25rem;
+    font-size: 0.88rem;
+  }
+
+  .contact-info-panel {
+    padding: 1.5rem;
+  }
+
+  .contact-form-panel {
+    padding: 1.5rem;
+  }
+
+  .channel-value {
+    font-size: 1rem;
+  }
+
+  /* Statement section — ensure cards stack nicely */
+  .statement-card {
+    padding: 1.5rem;
+  }
+
+  .statement-quote {
+    font-size: 1.2rem;
+  }
+
+  .site-footer {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+/* --- Small phones (≤ 480px) --- */
+@media (max-width: 480px) {
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: clamp(1.75rem, 8vw, 2.5rem);
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .btn-lg {
+    padding: 0.9rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .eyebrow {
+    font-size: 0.72rem;
+    padding: 0.3rem 0.65rem;
+  }
+
+  .service-card-title {
+    font-size: 1.2rem;
+  }
+
+  .gallery-item {
+    aspect-ratio: 3 / 2;
+  }
+
+  .config-option-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mobile-action-btn {
+    font-size: 0.78rem;
+    padding: 0.65rem 0.35rem;
+  }
+
+  .lightbox-info {
+    padding: 1.25rem;
+  }
+
+  .configurator-wrapper {
+    padding: 1.25rem;
+  }
+
+  .brand-title {
+    font-size: 1.05rem;
+  }
+
+  .brand-tagline {
+    font-size: 0.6rem;
+  }
+
+  .brand-logo-img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .brand-logo-link {
+    gap: 0.5rem;
   }
 }

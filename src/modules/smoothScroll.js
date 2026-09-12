@@ -37,6 +37,13 @@ export function initSmoothScroll() {
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
         e.preventDefault();
+        document.querySelectorAll('.nav-link').forEach(link => {
+          if (link.getAttribute('href') === targetId) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
         lenis.scrollTo(targetElement, { offset: -80 });
       }
     });

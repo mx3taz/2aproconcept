@@ -92,24 +92,24 @@ export function initScrollAnimations() {
   // Material Cards in #savoir-faire (Matériaux Certifiés & Procédés Industriels)
   const materialCards = document.querySelectorAll('.materials-grid .material-card');
   if (materialCards.length > 0) {
-    ScrollTrigger.batch(materialCards, {
-      start: 'top 88%',
-      once: true,
-      onEnter: (batch) => {
-        gsap.fromTo(
-          batch,
-          { opacity: 0, y: 30 },
-          {
-            opacity: 1,
-            y: 0,
-            stagger: 0.1,
-            duration: 0.65,
-            ease: 'power2.out',
-            clearProps: 'transform,opacity'
-          }
-        );
+    gsap.fromTo(
+      materialCards,
+      { opacity: 0, y: 25 },
+      {
+        scrollTrigger: {
+          trigger: '.materials-grid',
+          start: 'top 85%',
+          toggleActions: 'play none none none',
+          once: true
+        },
+        opacity: 1,
+        y: 0,
+        stagger: 0.08,
+        duration: 0.65,
+        ease: 'power2.out',
+        clearProps: 'transform,opacity'
       }
-    });
+    );
   }
 
   // Refresh ScrollTrigger when page finishes loading all assets

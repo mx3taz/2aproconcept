@@ -59,7 +59,7 @@ export function initNavigation() {
   if (sections.length > 0) {
     const observerOptions = {
       root: null,
-      rootMargin: '-20% 0px -70% 0px',
+      rootMargin: '-10% 0px -45% 0px',
       threshold: 0
     };
 

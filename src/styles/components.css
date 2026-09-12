@@ -892,6 +892,11 @@ select.input-control option {
 /* --------------------------------------------------------------------------
    8. CRAFTSMANSHIP & MATERIALS SHOWCASE
    -------------------------------------------------------------------------- */
+.materials-grid {
+  position: relative;
+  align-items: stretch;
+}
+
 .material-card {
   background: var(--bg-card);
   border: 1px solid var(--border-card);
@@ -900,12 +905,16 @@ select.input-control option {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  transition: all var(--duration-fast) ease;
+  height: 100%;
+  box-sizing: border-box;
+  transition: border-color var(--duration-fast) ease, box-shadow var(--duration-fast) ease, transform var(--duration-fast) ease;
+  will-change: transform, opacity;
 }
 
 .material-card:hover {
   border-color: var(--brand-cyan-400);
-  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-4px);
 }
 
 .material-icon {

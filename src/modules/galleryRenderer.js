@@ -1,6 +1,7 @@
 import { projectsData } from '../data/projectsData.js';
 import { openLightbox } from './lightbox.js';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 export function initGalleryRenderer() {
   const container = document.querySelector('#gallery-grid-container');
@@ -42,6 +43,9 @@ export function initGalleryRenderer() {
         { opacity: 1, scale: 1, duration: 0.4, stagger: 0.04, ease: 'power2.out' }
       );
     }
+
+    // Refresh ScrollTrigger layout measurements
+    ScrollTrigger.refresh();
 
     // Attach click and enter key handlers to each gallery item
     container.querySelectorAll('.gallery-item').forEach(item => {

@@ -11,7 +11,7 @@ const prefersReducedMotion = () => window.matchMedia('(prefers-reduced-motion: r
  */
 export function initScrollAnimations() {
   if (prefersReducedMotion()) {
-    document.querySelectorAll('.gsap-reveal, .gsap-reveal-left, .gsap-reveal-right, .gsap-scale-in').forEach(el => {
+    document.querySelectorAll('.gsap-reveal, .gsap-reveal-left, .gsap-reveal-right, .gsap-scale-in, .material-card, .process-step-card, .section-header').forEach(el => {
       el.style.opacity = '1';
       el.style.transform = 'none';
     });
@@ -30,39 +30,92 @@ export function initScrollAnimations() {
 
   // Section Headers (static in HTML)
   gsap.utils.toArray('.section-header').forEach((header) => {
-    gsap.from(header, {
-      scrollTrigger: { trigger: header, start: 'top 85%', toggleActions: 'play none none none' },
-      opacity: 0, y: 35, duration: 0.9, ease: 'power2.out'
-    });
+    gsap.fromTo(
+      header,
+      { opacity: 0, y: 30 },
+      {
+        scrollTrigger: { trigger: header, start: 'top 88%', toggleActions: 'play none none none', once: true },
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: 'power2.out',
+        clearProps: 'transform,opacity'
+      }
+    );
   });
 
   // Static gsap-reveal elements (statement card, configurator wrapper)
   gsap.utils.toArray('.gsap-reveal').forEach((el) => {
-    // Only target elements that are NOT inside #services-grid-container or #gallery-grid-container
-    if (el.closest('#services-grid-container') || el.closest('#gallery-grid-container')) return;
-    gsap.from(el, {
-      scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none' },
-      opacity: 0, y: 40, duration: 0.85, ease: 'power2.out'
-    });
+    // Exclude dynamic containers and dedicated sections like materials-grid
+    if (
+      el.closest('#services-grid-container') ||
+      el.closest('#gallery-grid-container') ||
+      el.closest('.materials-grid') ||
+      el.closest('#savoir-faire') ||
+      el.classList.contains('material-card')
+    ) {
+      return;
+    }
+
+    gsap.fromTo(
+      el,
+      { opacity: 0, y: 35 },
+      {
+        scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none', once: true },
+        opacity: 1,
+        y: 0,
+        duration: 0.85,
+        ease: 'power2.out',
+        clearProps: 'transform,opacity'
+      }
+    );
   });
 
   // Process Cards
   const processCards = document.querySelectorAll('.process-step-card');
   if (processCards.length > 0) {
-    gsap.from(processCards, {
-      scrollTrigger: { trigger: '.process-grid', start: 'top 80%', toggleActions: 'play none none none' },
-      opacity: 0, y: 40, stagger: 0.15, duration: 0.85, ease: 'power2.out'
+    gsap.fromTo(
+      processCards,
+      { opacity: 0, y: 35 },
+      {
+        scrollTrigger: { trigger: '.process-grid', start: 'top 82%', toggleActions: 'play none none none', once: true },
+        opacity: 1,
+        y: 0,
+        stagger: 0.12,
+        duration: 0.75,
+        ease: 'power2.out',
+        clearProps: 'transform,opacity'
+      }
+    );
+  }
+
+  // Material Cards in #savoir-faire (Matériaux Certifiés & Procédés Industriels)
+  const materialCards = document.querySelectorAll('.materials-grid .material-card');
+  if (materialCards.length > 0) {
+    ScrollTrigger.batch(materialCards, {
+      start: 'top 88%',
+      once: true,
+      onEnter: (batch) => {
+        gsap.fromTo(
+          batch,
+          { opacity: 0, y: 30 },
+          {
+            opacity: 1,
+            y: 0,
+            stagger: 0.1,
+            duration: 0.65,
+            ease: 'power2.out',
+            clearProps: 'transform,opacity'
+          }
+        );
+      }
     });
   }
 
-  // Material Cards
-  const materialCards = document.querySelectorAll('.material-card:not(.statement-card .material-card)');
-  if (materialCards.length > 0) {
-    gsap.from(materialCards, {
-      scrollTrigger: { trigger: '.materials-grid', start: 'top 80%', toggleActions: 'play none none none' },
-      opacity: 0, y: 30, stagger: 0.12, duration: 0.75, ease: 'power2.out'
-    });
-  }
+  // Refresh ScrollTrigger when page finishes loading all assets
+  window.addEventListener('load', () => {
+    ScrollTrigger.refresh();
+  });
 }
 
 /**
@@ -94,18 +147,24 @@ export function refreshDynamicAnimations(containerSelector) {
   });
 
   // Staggered reveal
-  gsap.from(cards, {
-    scrollTrigger: {
-      trigger: containerSelector,
-      start: 'top 90%',
-      toggleActions: 'play none none none'
-    },
-    opacity: 0,
-    y: 35,
-    stagger: 0.08,
-    duration: 0.7,
-    ease: 'power2.out'
-  });
+  gsap.fromTo(
+    cards,
+    { opacity: 0, y: 30 },
+    {
+      scrollTrigger: {
+        trigger: containerSelector,
+        start: 'top 90%',
+        toggleActions: 'play none none none',
+        once: true
+      },
+      opacity: 1,
+      y: 0,
+      stagger: 0.08,
+      duration: 0.7,
+      ease: 'power2.out',
+      clearProps: 'transform,opacity'
+    }
+  );
 
   ScrollTrigger.refresh();
 }

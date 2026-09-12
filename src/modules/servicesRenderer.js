@@ -1,5 +1,6 @@
 import { servicesData } from '../data/servicesData.js';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 export function initServicesRenderer() {
   const container = document.querySelector('#services-grid-container');
@@ -80,6 +81,9 @@ export function initServicesRenderer() {
         { opacity: 1, y: 0, duration: 0.45, stagger: 0.06, ease: 'power2.out' }
       );
     }
+
+    // Recalculate ScrollTrigger offsets since height may have changed
+    ScrollTrigger.refresh();
   }
 
   // Initial render

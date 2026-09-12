@@ -1,0 +1,193 @@
+/* Reset & Base Foundation */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.65;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Blueprint / Subtle Architectural Grid Background */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 64px 64px;
+  pointer-events: none;
+  z-index: var(--z-negative);
+}
+
+/* Ambient Subtle Lighting Glows */
+.ambient-glow-top {
+  position: absolute;
+  top: -10vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90vw;
+  max-width: 1200px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0, 174, 239, 0.12) 0%, rgba(35, 45, 82, 0.08) 45%, transparent 70%);
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: var(--z-negative);
+}
+
+/* Selection */
+::selection {
+  background: var(--brand-cyan-500);
+  color: #0d1222;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--brand-navy-500);
+  border-radius: var(--radius-pill);
+  border: 2px solid var(--bg-primary);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-cyan-500);
+}
+
+/* Typography Defaults */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--text-white);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5.5vw, 4.75rem);
+  font-weight: 800;
+  line-height: 1.08;
+}
+
+h2 {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+p.lead {
+  font-size: clamp(1.15rem, 1.4vw, 1.35rem);
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--duration-fast) ease;
+}
+
+img, video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  user-select: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Technical Data Tags & Eyebrows */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--brand-cyan-400);
+  margin-bottom: 0.85rem;
+  padding: 0.35rem 0.85rem;
+  background: rgba(0, 174, 239, 0.08);
+  border: 1px solid rgba(0, 174, 239, 0.22);
+  border-radius: var(--radius-pill);
+}
+
+.eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--brand-cyan-400);
+  box-shadow: 0 0 10px var(--brand-cyan-400);
+}
+
+/* Accessibility Focus */
+:focus-visible {
+  outline: 2px solid var(--brand-cyan-400);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

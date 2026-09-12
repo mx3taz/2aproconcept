@@ -49,5 +49,6 @@ export function initSmoothScroll() {
     });
   });
 
+  window.lenis = lenis;
   return lenis;
 }

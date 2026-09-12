@@ -137,8 +137,11 @@
       </div>
     </header>
 
+    <!-- Mobile Backdrop -->
+    <div class="mobile-nav-backdrop" aria-hidden="true"></div>
+
     <!-- Mobile Navigation Drawer -->
-    <div class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Menu Mobile">
+    <div class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Menu Mobile" data-lenis-prevent>
       <a href="#accueil" class="mobile-nav-link">Accueil</a>
       <a href="#solutions" class="mobile-nav-link">Nos Solutions Sur Mesure</a>
       <a href="#realisations" class="mobile-nav-link">Réalisations Réelles</a>
@@ -146,7 +149,7 @@
       <a href="#savoir-faire" class="mobile-nav-link">Matériaux & Qualité</a>
       <a href="#contact" class="mobile-nav-link">Nous Contacter</a>
 
-      <div style="margin-top: auto; display: flex; flex-direction: column; gap: 0.85rem;">
+      <div class="mobile-drawer-footer">
         <a href="tel:+21698804061" class="btn btn-primary" style="width: 100%;">
           📞 Appeler : 98 804 061
         </a>

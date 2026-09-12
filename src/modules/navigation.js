@@ -20,6 +20,24 @@ export function initNavigation() {
 
   // Mobile Drawer Toggle
   if (toggleBtn && mobileDrawer) {
+    const backdrop = document.querySelector('.mobile-nav-backdrop');
+
+    const openDrawer = () => {
+      mobileDrawer.classList.add('open');
+      backdrop?.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      toggleBtn.setAttribute('aria-expanded', 'true');
+      if (window.lenis) window.lenis.stop();
+    };
+
+    const closeDrawer = () => {
+      mobileDrawer.classList.remove('open');
+      backdrop?.classList.remove('open');
+      document.body.style.overflow = '';
+      toggleBtn.setAttribute('aria-expanded', 'false');
+      if (window.lenis) window.lenis.start();
+    };
+
     toggleBtn.addEventListener('click', () => {
       const isOpen = mobileDrawer.classList.contains('open');
       if (isOpen) {
@@ -29,17 +47,21 @@ export function initNavigation() {
       }
     });
 
-    const openDrawer = () => {
-      mobileDrawer.classList.add('open');
-      document.body.style.overflow = 'hidden';
-      toggleBtn.setAttribute('aria-expanded', 'true');
-    };
+    if (backdrop) {
+      backdrop.addEventListener('click', closeDrawer);
+    }
 
-    const closeDrawer = () => {
-      mobileDrawer.classList.remove('open');
-      document.body.style.overflow = '';
-      toggleBtn.setAttribute('aria-expanded', 'false');
-    };
+    // Close when clicking outside drawer
+    document.addEventListener('click', (e) => {
+      if (
+        mobileDrawer.classList.contains('open') &&
+        !mobileDrawer.contains(e.target) &&
+        !toggleBtn.contains(e.target) &&
+        (!backdrop || e.target !== backdrop)
+      ) {
+        closeDrawer();
+      }
+    });
 
     mobileLinks.forEach((link) => {
       link.addEventListener('click', () => {

@@ -1,4 +1,4 @@
-export function initNavigation() {
+function initNavigation() {
   const header = document.querySelector('.site-header');
   const toggleBtn = document.querySelector('.mobile-nav-toggle');
   const mobileDrawer = document.querySelector('.mobile-nav-drawer');
@@ -22,15 +22,14 @@ export function initNavigation() {
   if (toggleBtn && mobileDrawer) {
     const backdrop = document.querySelector('.mobile-nav-backdrop');
 
-    const actionBar = document.querySelector('.mobile-action-bar');
 
     const openDrawer = () => {
       mobileDrawer.classList.add('open');
       backdrop?.classList.add('open');
       document.body.classList.add('drawer-open');
-      actionBar?.classList.add('drawer-open');
       document.body.style.overflow = 'hidden';
       toggleBtn.setAttribute('aria-expanded', 'true');
+      toggleBtn.classList.add('open');
       if (window.lenis) window.lenis.stop();
     };
 
@@ -38,9 +37,9 @@ export function initNavigation() {
       mobileDrawer.classList.remove('open');
       backdrop?.classList.remove('open');
       document.body.classList.remove('drawer-open');
-      actionBar?.classList.remove('drawer-open');
       document.body.style.overflow = '';
       toggleBtn.setAttribute('aria-expanded', 'false');
+      toggleBtn.classList.remove('open');
       if (window.lenis) window.lenis.start();
     };
 
@@ -51,6 +50,15 @@ export function initNavigation() {
       } else {
         openDrawer();
       }
+    });
+
+    const drawerCloseBtns = mobileDrawer.querySelectorAll('.mobile-drawer-close-btn, [data-drawer-close]');
+    drawerCloseBtns.forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        closeDrawer();
+      });
     });
 
     if (backdrop) {
@@ -107,10 +115,36 @@ export function initNavigation() {
         closeDrawer();
       }
     });
+
+    // Auto-close on resize to desktop breakpoint
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 1024 && mobileDrawer.classList.contains('open')) {
+        closeDrawer();
+      }
+    }, { passive: true });
   }
 
-  // Active Link Observer
-  if (sections.length > 0) {
+  // Set active link based on current page
+  const pathname = window.location.pathname.toLowerCase();
+  const isSolutions = pathname.includes('solutions');
+  const isRealisations = pathname.includes('realisations');
+  const isHome = !isSolutions && !isRealisations;
+
+  desktopLinks.forEach((link) => {
+    const href = (link.getAttribute('href') || '').toLowerCase();
+    if (isSolutions && href.includes('solutions')) {
+      link.classList.add('active');
+    } else if (isRealisations && href.includes('realisations')) {
+      link.classList.add('active');
+    } else if (isHome && (href === '/' || href === '/index.html' || href === '#accueil' || href === 'index.html')) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+
+  // Active Link Observer on Home page
+  if (isHome && sections.length > 0) {
     const observerOptions = {
       root: null,
       rootMargin: '-10% 0px -45% 0px',
@@ -122,9 +156,10 @@ export function initNavigation() {
         if (entry.isIntersecting) {
           const id = entry.target.getAttribute('id');
           desktopLinks.forEach((link) => {
-            if (link.getAttribute('href') === `#${id}`) {
+            const href = link.getAttribute('href');
+            if (href === `#${id}`) {
               link.classList.add('active');
-            } else {
+            } else if (href.startsWith('#')) {
               link.classList.remove('active');
             }
           });

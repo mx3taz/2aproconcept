@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="UTF-8" />
@@ -35,13 +35,30 @@
     <meta name="ICBM" content="36.9389, 10.1983" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="/logo/logo.jpg" />
-    <link rel="apple-touch-icon" href="/logo/logo.jpg" />
+    <link rel="icon" type="image/jpeg" href="./public/logo/logo.jpg" />
+    <link rel="apple-touch-icon" href="./public/logo/logo.jpg" />
 
     <!-- Google Fonts Preconnect & Stylesheets -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Master Stylesheet (Render-Blocking to Prevent FOUC) -->
+        <link rel="stylesheet" href="./src/styles/tokens.css" />
+    <link rel="stylesheet" href="./src/styles/base.css" />
+    <link rel="stylesheet" href="./src/styles/layout.css" />
+    <link rel="stylesheet" href="./src/styles/components.css" />
+    <link rel="stylesheet" href="./src/styles/animations.css" />
+    <link rel="stylesheet" href="./src/styles/loader.css" />
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <!-- Critical Anti-FOUC Styles -->
+    <style>
+      html, body {
+        background-color: #070911 !important;
+        color: #f8fafc;
+      }
+    </style>
 
     <!-- Structured Data (JSON-LD) for Local Business -->
     <script type="application/ld+json">
@@ -91,6 +108,25 @@
     </script>
   </head>
   <body>
+    <!-- Premium Architectural Page Loader -->
+    <div id="page-loader" class="page-loader" aria-hidden="true">
+      <div class="loader-content">
+        <div class="loader-logo-ring">
+          <div class="loader-ring-pulse"></div>
+          <div class="loader-ring-outer"></div>
+          <img src="./public/logo/logo.jpg" alt="2A PRO CONCEPT" class="loader-logo-img" />
+        </div>
+        <div class="loader-brand-text">
+          <div class="loader-title">2A PRO <span class="highlight-cyan">CONCEPT</span></div>
+          <div class="loader-subtitle">Métal &amp; Aluminium Sur Mesure</div>
+        </div>
+        <div class="loader-progress-track">
+          <div class="loader-progress-bar"></div>
+        </div>
+        <div class="loader-status" id="loader-status-text">Chargement de l'accueil...</div>
+      </div>
+    </div>
+
     <!-- Ambient Lighting Glow Background -->
     <div class="ambient-glow-top" aria-hidden="true"></div>
 
@@ -98,7 +134,7 @@
     <header class="site-header" role="banner">
       <div class="container-wide header-inner">
         <a href="#accueil" class="brand-logo-link" aria-label="2A PRO CONCEPT - Retour à l'accueil">
-          <img src="/logo/logo.jpg" alt="Logo 2A PRO CONCEPT" class="brand-logo-img" width="44" height="44" />
+          <img src="./public/logo/logo.jpg" alt="Logo 2A PRO CONCEPT" class="brand-logo-img" width="44" height="44" />
           <div class="brand-logo-text">
             <span class="brand-title">2A PRO <span>CONCEPT</span></span>
             <span class="brand-tagline">Métal & Aluminium</span>
@@ -106,18 +142,16 @@
         </a>
 
         <nav class="nav-desktop" role="navigation" aria-label="Navigation principale">
-          <a href="#accueil" class="nav-link active">Accueil</a>
-          <a href="#solutions" class="nav-link">Nos Solutions</a>
-          <a href="#realisations" class="nav-link">Réalisations</a>
+          <a href="./index.html" class="nav-link active">Accueil</a>
+          <a href="./solutions.html" class="nav-link">Nos Solutions</a>
+          <a href="./realisations.html" class="nav-link">Réalisations</a>
           <a href="#configurateur" class="nav-link">Devis en Ligne</a>
-          <a href="#savoir-faire" class="nav-link">Matériaux & Savoir-Faire</a>
+          <a href="#savoir-faire" class="nav-link">Matériaux</a>
           <a href="#contact" class="nav-link">Contact</a>
         </nav>
 
         <div class="header-actions">
-          <a href="tel:+21698804061" class="btn btn-phone" aria-label="Appeler directement le 98 804 061">
-            <span>📞 98 804 061</span>
-          </a>
+        
           <a 
             href="https://wa.me/21698804061?text=Bonjour%202A%20PRO%20CONCEPT%2C%20je%20souhaite%20un%20devis%20pour%20mon%20projet" 
             target="_blank" 
@@ -142,9 +176,22 @@
 
     <!-- Mobile Navigation Drawer -->
     <div class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Menu Mobile" data-lenis-prevent>
-      <a href="#accueil" class="mobile-nav-link">Accueil</a>
-      <a href="#solutions" class="mobile-nav-link">Nos Solutions Sur Mesure</a>
-      <a href="#realisations" class="mobile-nav-link">Réalisations Réelles</a>
+      <div class="mobile-drawer-header">
+        <div class="mobile-drawer-brand">
+          <img src="./public/logo/logo.jpg" alt="Logo 2A PRO CONCEPT" class="mobile-drawer-logo" width="36" height="36" />
+          <div class="mobile-drawer-title">2A PRO <span>CONCEPT</span></div>
+        </div>
+        <button class="mobile-drawer-close-btn" aria-label="Fermer le menu de navigation" type="button">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <a href="./index.html" class="mobile-nav-link active">Accueil</a>
+      <a href="./solutions.html" class="mobile-nav-link">Nos Solutions Sur Mesure</a>
+      <a href="./realisations.html" class="mobile-nav-link">Galerie Réalisations (27 projets)</a>
       <a href="#configurateur" class="mobile-nav-link">Calculateur de Devis</a>
       <a href="#savoir-faire" class="mobile-nav-link">Matériaux & Qualité</a>
       <a href="#contact" class="mobile-nav-link">Nous Contacter</a>
@@ -170,7 +217,7 @@
       <section class="hero-section" id="accueil">
         <div class="hero-background-wrapper" aria-hidden="true">
           <img 
-            src="/images/p07_08_menuiserie_8.jpg" 
+            src="./public/images/p07_08_menuiserie_8.jpg" 
             alt="Véranda et extension aluminium de nuit réalisée par 2A PRO CONCEPT" 
             class="hero-bg-image"
           />
@@ -195,16 +242,14 @@
           </p>
 
           <div class="hero-cta-group">
-            <a href="#configurateur" class="btn btn-primary btn-lg">
-              Estimer mon Devis Gratuit
+            <a href="./solutions.html" class="btn btn-primary btn-lg">
+              Découvrir Nos Solutions
             </a>
-            <a 
-              href="https://wa.me/21698804061?text=Bonjour%202A%20PRO%20CONCEPT%2C%20je%20souhaite%20des%20renseignements%20sur%20vos%20structures" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              class="btn btn-secondary btn-lg"
-            >
-              Échanger avec un Spécialiste
+            <a href="./realisations.html" class="btn btn-secondary btn-lg">
+              Voir Nos Réalisations (27 Chantiers)
+            </a>
+            <a href="#configurateur" class="btn btn-secondary btn-lg" style="border-style: dashed;">
+              Devis Gratuit
             </a>
           </div>
 
@@ -238,6 +283,18 @@
                 <p>
                   Chez <strong>2A PRO CONCEPT</strong>, basée à Raoued (Ariana), nous maîtrisons l'intégralité de la chaîne de valeur : du relevé millimétrique sur site à l'usinage en atelier, jusqu'à la pose finale par nos équipes qualifiées. Pas de compromis sur les épaisseurs de profilés, pas d'assemblages approximatifs : une rigueur industrielle au service de votre confort.
                 </p>
+                <div class="statement-team-preview">
+                  <img 
+                    src="./public/images/p07_10_menuiserie_equipe_piscine.jpg" 
+                    alt="Équipe 2A PRO CONCEPT inspectant une fermeture de piscine en verre sur site client" 
+                    class="statement-team-img" 
+                    loading="lazy" 
+                  />
+                  <div class="statement-team-caption">
+                    <span class="team-badge">👷 Équipe 2A PRO CONCEPT</span>
+                    <span>Expertise terrain & intervention directe sur vos chantiers</span>
+                  </div>
+                </div>
               </div>
               <div style="display: flex; flex-direction: column; gap: 1.25rem;">
                 <div class="material-card" style="background: rgba(10, 13, 22, 0.6);">
@@ -273,66 +330,110 @@
         </div>
       </section>
 
-      <!-- 4. SERVICES & SOLUTIONS SECTION -->
+      <!-- 4. EXECUTIVE SOLUTIONS OVERVIEW -->
       <section class="section" id="solutions">
         <div class="container">
           <div class="section-header text-center">
-            <span class="eyebrow">Domaines d'Intervention</span>
-            <h2 class="section-title">Nos Solutions Métalliques & Aluminium</h2>
+            <span class="eyebrow">Nos 3 Domaines d'Ingénierie</span>
+            <h2 class="section-title">Ce Que Nous Concevons & Fabriquons</h2>
             <p class="section-subtitle">
-              Toutes nos réalisations sont conçues, fabriquées et posées sur mesure selon les normes techniques les plus strictes.
+              De l'abri de villa à la toiture coulissante motorisée, découvrez nos 7 gammes sur mesure réparties en 3 pôles d'expertise.
             </p>
           </div>
 
-          <!-- Cluster Filter Navigation -->
-          <div class="services-cluster-nav" role="tablist" aria-label="Filtrer les solutions par catégorie">
-            <button class="cluster-tab-btn active" data-cluster="all" role="tab" aria-selected="true">
-              Toutes les Solutions
-            </button>
-            <button class="cluster-tab-btn" data-cluster="structures-exterieures" role="tab" aria-selected="false">
-              Protection Extérieure & Abris
-            </button>
-            <button class="cluster-tab-btn" data-cluster="espaces-vitres" role="tab" aria-selected="false">
-              Espaces Vitrés & Menuiserie
-            </button>
-            <button class="cluster-tab-btn" data-cluster="finitions-metalliques" role="tab" aria-selected="false">
-              Inox, Garde-Corps & Façades
-            </button>
+          <div class="overview-clusters-grid">
+            <div class="overview-cluster-card gsap-reveal">
+              <div>
+                <div class="cluster-icon">🚗</div>
+                <h3 class="overview-cluster-title">Pôle A : Protection Extérieure</h3>
+                <p class="overview-cluster-desc">
+                  Structures d'ombrage et toitures étanches haute résistance pour abriter véhicules, patios et terrasses du soleil et des intempéries.
+                </p>
+                <ul class="overview-cluster-list">
+                  <li>Abris de Voitures (Standard & Suspendus)</li>
+                  <li>Abris Ouvrants & Toitures Rétractables</li>
+                  <li>Abris de Terrasses & Pergolas Fixes</li>
+                </ul>
+              </div>
+              <a href="./solutions.html?cluster=structures-exterieures" class="btn btn-secondary" style="width: 100%; justify-content: center;">
+                Consulter les 3 solutions ↗
+              </a>
+            </div>
+
+            <div class="overview-cluster-card gsap-reveal">
+              <div>
+                <div class="cluster-icon">🪟</div>
+                <h3 class="overview-cluster-title">Pôle B : Espaces Vitrés & Fermetures</h3>
+                <p class="overview-cluster-desc">
+                  Création d'espaces de vie lumineux et fermetures panoramiques avec isolation et vitrages de sécurité.
+                </p>
+                <ul class="overview-cluster-list">
+                  <li>Extensions de Terrasses & Vérandas</li>
+                  <li>Menuiserie Aluminium Haute Précision</li>
+                  <li>Dômes & Verrières de Piscines</li>
+                </ul>
+              </div>
+              <a href="./solutions.html?cluster=espaces-vitres" class="btn btn-secondary" style="width: 100%; justify-content: center;">
+                Consulter les 2 solutions ↗
+              </a>
+            </div>
+
+            <div class="overview-cluster-card gsap-reveal">
+              <div>
+                <div class="cluster-icon">🛡️</div>
+                <h3 class="overview-cluster-title">Pôle C : Finitions Métalliques d'Art</h3>
+                <p class="overview-cluster-desc">
+                  Rampes nobles en inox marin inaltérable et habillages de façades commerciales modernes avec découpe laser 3D.
+                </p>
+                <ul class="overview-cluster-list">
+                  <li>Garde-Corps Inox à Tubes & Verre</li>
+                  <li>Habillage de Façades Alucobond</li>
+                  <li>Enseignes & Parements Découpés Laser</li>
+                </ul>
+              </div>
+              <a href="./solutions.html?cluster=finitions-metalliques" class="btn btn-secondary" style="width: 100%; justify-content: center;">
+                Consulter les 2 solutions ↗
+              </a>
+            </div>
           </div>
 
-          <!-- Dynamic Grid Container -->
-          <div class="grid-3" id="services-grid-container">
-            <!-- Populated dynamically by servicesRenderer.js -->
+          <!-- Cross-page link banner to full solutions page -->
+          <div class="cross-page-banner gsap-reveal">
+            <div class="cross-page-content">
+              <span class="eyebrow" style="margin-bottom: 0.5rem; display: inline-block;">Catalogue Technique Dédié</span>
+              <h3>Consultez les spécifications techniques de chaque solution</h3>
+              <p>
+                Découvrez les types de profilés, options de motorisation, finitions thermolaquées et fiches techniques détaillées de nos 7 gammes.
+              </p>
+            </div>
+            <a href="./solutions.html" class="btn btn-primary" style="white-space: nowrap; padding: 0.9rem 1.75rem;">
+              Ouvrir le Catalogue   ↗
+            </a>
           </div>
         </div>
       </section>
 
-      <!-- 5. REALISATIONS & PROJECT GALLERY -->
+      <!-- 5. REALISATIONS PHARES & SHOWCASE -->
       <section class="section" id="realisations" style="background: var(--bg-secondary);">
         <div class="container">
           <div class="section-header text-center">
-            <span class="eyebrow">Galerie de Réalisations</span>
-            <h2 class="section-title">Nos Chantiers Récents en Tunisie</h2>
+            <span class="eyebrow">Réalisations Phares</span>
+            <h2 class="section-title">Aperçu de Nos Chantiers Récents en Tunisie</h2>
             <p class="section-subtitle">
-              Explorez nos installations réelles. Cliquez sur n'importe quel projet pour inspecter les détails techniques, matériaux utilisés et options de configuration.
+              Une sélection de nos réalisations emblématiques livrées chez nos clients. Pour voir l'ensemble de nos 27 chantiers classés par catégorie, explorez la galerie dédiée.
             </p>
           </div>
 
-          <!-- Gallery Filter Buttons -->
-          <div class="gallery-filter-bar" role="tablist" aria-label="Filtrer les projets">
-            <button class="gallery-filter-btn active" data-category="all">Tous les Projets</button>
-            <button class="gallery-filter-btn" data-category="abris-voitures">Abris Voitures</button>
-            <button class="gallery-filter-btn" data-category="abris-ouvrants">Abris Ouvrants</button>
-            <button class="gallery-filter-btn" data-category="pergolas">Pergolas & Terrasses</button>
-            <button class="gallery-filter-btn" data-category="extensions">Extensions</button>
-            <button class="gallery-filter-btn" data-category="menuiserie">Menuiserie Alu</button>
-            <button class="gallery-filter-btn" data-category="garde-corps">Garde-Corps Inox</button>
-            <button class="gallery-filter-btn" data-category="facades">Façades Alucobond</button>
+          <!-- Featured Gallery Grid Container -->
+          <div class="gallery-grid" id="featured-gallery-container">
+            <!-- Populated dynamically by galleryRenderer.js with top highlights -->
           </div>
 
-          <!-- Gallery Grid Container -->
-          <div class="gallery-grid" id="gallery-grid-container">
-            <!-- Populated dynamically by galleryRenderer.js -->
+          <div class="text-center" style="margin-top: 3rem; margin-inline: auto;">
+            <a href="./realisations.html" class="btn btn-primary btn-lg" style="display: inline-flex; align-items: center; gap: 0.75rem;">
+              <span>Explorer Toutes Nos Réalisations </span>
+              <span>↗</span>
+            </a>
           </div>
         </div>
       </section>
@@ -743,7 +844,7 @@
       <div class="container footer-top">
         <div>
           <a href="#accueil" class="brand-logo-link" style="margin-bottom: 1.25rem;">
-            <img src="/logo/logo.jpg" alt="Logo 2A PRO CONCEPT" class="brand-logo-img" width="40" height="40" />
+            <img src="./public/logo/logo.jpg" alt="Logo 2A PRO CONCEPT" class="brand-logo-img" width="40" height="40" />
             <span class="brand-title">2A PRO <span>CONCEPT</span></span>
           </a>
           <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem; color: var(--text-secondary);">
@@ -757,22 +858,22 @@
         <div>
           <h4 class="footer-col-title">Nos Solutions</h4>
           <div class="footer-links">
-            <a href="#solutions" class="footer-link">Abris de Voitures (Standard & Suspendus)</a>
-            <a href="#solutions" class="footer-link">Abris Ouvrants & Toits Coulissants</a>
-            <a href="#solutions" class="footer-link">Abris de Terrasses & Pergolas</a>
-            <a href="#solutions" class="footer-link">Extensions de Terrasses & Vérandas</a>
-            <a href="#solutions" class="footer-link">Menuiserie Aluminium Haute Précision</a>
-            <a href="#solutions" class="footer-link">Garde-Corps & Rampes Inox</a>
-            <a href="#solutions" class="footer-link">Enseignes & Façades Alucobond</a>
+            <a href="./solutions.html#abris-voitures" class="footer-link">Abris de Voitures (Standard & Suspendus)</a>
+            <a href="./solutions.html#abris-ouvrants" class="footer-link">Abris Ouvrants & Toits Coulissants</a>
+            <a href="./solutions.html#abris-terrasses-pergolas" class="footer-link">Abris de Terrasses & Pergolas</a>
+            <a href="./solutions.html#extensions-terrasses" class="footer-link">Extensions de Terrasses & Vérandas</a>
+            <a href="./solutions.html#menuiserie-aluminium" class="footer-link">Menuiserie Aluminium Haute Précision</a>
+            <a href="./solutions.html#garde-corps-inox" class="footer-link">Garde-Corps & Rampes Inox</a>
+            <a href="./solutions.html#enseignes-facades" class="footer-link">Enseignes & Façades Alucobond</a>
           </div>
         </div>
 
         <div>
           <h4 class="footer-col-title">Navigation</h4>
           <div class="footer-links">
-            <a href="#accueil" class="footer-link">Accueil</a>
-            <a href="#manifeste" class="footer-link">Notre Philosophie</a>
-            <a href="#realisations" class="footer-link">Galerie de Réalisations</a>
+            <a href="./index.html" class="footer-link">Accueil</a>
+            <a href="./solutions.html" class="footer-link">Nos Solutions (Catalogue)</a>
+            <a href="./realisations.html" class="footer-link">Galerie de Réalisations (27 projets)</a>
             <a href="#configurateur" class="footer-link">Calculateur de Devis</a>
             <a href="#savoir-faire" class="footer-link">Matériaux & Qualité</a>
             <a href="#processus" class="footer-link">Méthodologie en 4 Étapes</a>
@@ -809,64 +910,60 @@
       </div>
     </footer>
 
-    <!-- 11. MOBILE FLOATING ACTION BAR (CONVERSION BOOSTER) -->
-    <div class="mobile-action-bar" role="navigation" aria-label="Actions rapides mobiles">
-      <div class="mobile-action-grid">
-        <a href="tel:+21698804061" class="mobile-action-btn" style="background: rgba(0, 174, 239, 0.15); color: var(--brand-cyan-300); border: 1px solid rgba(0, 174, 239, 0.3);">
-          <span>📞 Appeler</span>
-        </a>
-        <a 
-          href="https://wa.me/21698804061?text=Bonjour%202A%20PRO%20CONCEPT%2C%20je%20souhaite%20un%20devis" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          class="mobile-action-btn btn-whatsapp"
-        >
-          <span>WhatsApp</span>
-        </a>
-        <a href="#configurateur" class="mobile-action-btn btn-primary">
-          <span>Devis Rapide</span>
-        </a>
-      </div>
-    </div>
+ 
 
     <!-- 12. FULL-SCREEN LIGHTBOX MODAL -->
     <div id="project-lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Agrandissement de la réalisation">
+      <button class="lightbox-nav-btn lightbox-prev-btn" aria-label="Projet précédent" title="Projet précédent (Flèche Gauche)">‹</button>
+      <button class="lightbox-nav-btn lightbox-next-btn" aria-label="Projet suivant" title="Projet suivant (Flèche Droite)">›</button>
+      
       <div class="lightbox-content-card">
-        <button class="lightbox-close-btn" aria-label="Fermer la vue agrandie">✕</button>
+        <div class="lightbox-header-bar">
+          <span class="lightbox-counter" id="lightbox-counter">1 / 6</span>
+          <button class="lightbox-close-btn" aria-label="Fermer la vue agrandie">&times;</button>
+        </div>
+        
         <div class="lightbox-media">
           <img src="" alt="" class="lightbox-img" />
         </div>
-        <div class="lightbox-info">
-          <div>
-            <span class="eyebrow lightbox-category">Catégorie</span>
-            <h3 class="lightbox-title" style="margin-top: 0.5rem; margin-bottom: 0.5rem; font-size: 1.5rem;">Titre</h3>
-            <div class="lightbox-location" style="margin-bottom: 1.25rem;">📍 Localisation</div>
-            <p class="lightbox-desc" style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">Description</p>
-            
-            <div style="margin-bottom: 1.5rem;">
-              <span style="font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); display: block; margin-bottom: 0.5rem;">
-                Matériaux & Éléments Techniques :
-              </span>
-              <div class="lightbox-materials-list" style="display: flex; flex-wrap: wrap; gap: 0.4rem;"></div>
-            </div>
-          </div>
 
-          <div style="padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
-            <a 
-              href="#" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              class="btn btn-whatsapp lightbox-cta-btn" 
-              style="width: 100%;"
-            >
-              Demander une Réalisation Similaire sur WhatsApp
-            </a>
-          </div>
+        <div class="lightbox-footer">
+          <a 
+            href="#" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="btn btn-whatsapp lightbox-cta-btn"
+            aria-label="Demander un Devis pour ce Projet sur WhatsApp"
+          >
+            <svg class="cta-icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.301-.15-1.78-.879-2.056-.98-.276-.1-.476-.15-.676.15-.2.301-.776.98-.952 1.18-.175.201-.351.226-.651.076-.301-.15-1.27-.468-2.42-1.493-.894-.798-1.498-1.783-1.674-2.084-.175-.301-.019-.464.132-.614.135-.135.301-.351.451-.527.151-.175.201-.3.301-.501.101-.201.05-.376-.025-.526-.075-.15-.676-1.63-.927-2.233-.244-.588-.493-.508-.676-.517-.175-.01-.376-.01-.577-.01-.201 0-.527.075-.802.376s-1.053 1.028-1.053 2.508 1.078 2.908 1.229 3.109c.15.201 2.122 3.24 5.14 4.543.718.31 1.279.495 1.716.634.721.23 1.378.197 1.897.12.578-.087 1.78-.727 2.03-1.43.251-.703.251-1.304.176-1.43-.075-.126-.276-.201-.577-.351z"/>
+              <path d="M12 2C6.477 2 2 6.477 2 12c0 1.821.487 3.53 1.338 5.006L2 22l5.132-1.307A9.957 9.957 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.2c-1.628 0-3.14-.498-4.407-1.353l-.316-.214-3.044.776.812-2.952-.224-.332A8.163 8.163 0 0 1 3.8 12c0-4.522 3.678-8.2 8.2-8.2s8.2 3.678 8.2 8.2-3.678 8.2-8.2 8.2z"/>
+            </svg>
+            <span>Demander un Devis </span>
+          </a>
         </div>
       </div>
     </div>
 
-    <!-- App Module Entrypoint -->
-    <script type="module" src="/src/main.js"></script>
+    <!-- CDN: GSAP & ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <!-- CDN: Lenis Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+    <!-- Data files -->
+    <script src="./src/data/projectsData.js"></script>
+    <script src="./src/data/servicesData.js"></script>
+    <!-- App Modules -->
+    <script src="./src/modules/pageLoader.js"></script>
+    <script src="./src/modules/navigation.js"></script>
+    <script src="./src/modules/smoothScroll.js"></script>
+    <script src="./src/modules/lightbox.js"></script>
+    <script src="./src/modules/configurator.js"></script>
+    <script src="./src/modules/servicesRenderer.js"></script>
+    <script src="./src/modules/galleryRenderer.js"></script>
+    <script src="./src/modules/scrollAnimations.js"></script>
+    <!-- App Entrypoint -->
+    <script src="./src/main.js"></script>
   </body>
 </html>
+

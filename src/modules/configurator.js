@@ -1,4 +1,4 @@
-export function initConfigurator() {
+function initConfigurator() {
   const form = document.querySelector('#project-config-form');
   if (!form) return;
 

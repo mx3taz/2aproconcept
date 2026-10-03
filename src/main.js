@@ -1,11 +1,14 @@
-import './style.css';
-import { initSmoothScroll } from './modules/smoothScroll.js';
-import { initNavigation } from './modules/navigation.js';
-import { initServicesRenderer } from './modules/servicesRenderer.js';
-import { initGalleryRenderer } from './modules/galleryRenderer.js';
-import { initLightbox } from './modules/lightbox.js';
-import { initConfigurator } from './modules/configurator.js';
-import { initScrollAnimations } from './modules/scrollAnimations.js';
+// 2A PRO CONCEPT — Main Entrypoint (Classic Script, no ES module imports)
+// All dependencies (lenis, gsap) loaded via CDN <script> tags in HTML
+// All modules loaded via individual <script> tags before this file
+
+// Register GSAP plugins once globally
+if (window.gsap && window.ScrollTrigger) {
+  window.gsap.registerPlugin(window.ScrollTrigger);
+}
+
+// Initialize Page Loader immediately to guard against FOUC
+initPageLoader();
 
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize Smooth Scrolling with Lenis

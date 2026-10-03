@@ -1,8 +1,28 @@
-import { servicesData } from '../data/servicesData.js';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-export function initServicesRenderer() {
+function handleServiceImgError(img) {
+  if (img.dataset.hasRetried) return;
+  img.dataset.hasRetried = 'true';
+  const src = img.getAttribute('src') || '';
+  if (src.startsWith('./public/')) {
+    img.src = src.replace('./public/', 'public/');
+  } else if (src.startsWith('public/')) {
+    img.src = './' + src;
+  }
+}
+
+// gsap & ScrollTrigger loaded globally via CDN <script> tags in HTML
+
+const serviceToGalleryCategory = {
+  'abris-voitures': 'abris-voitures',
+  'abris-ouvrants': 'abris-ouvrants',
+  'abris-terrasses-pergolas': 'pergolas',
+  'extensions-terrasses': 'extensions',
+  'menuiserie-aluminium': 'menuiserie',
+  'garde-corps-inox': 'garde-corps',
+  'enseignes-facades': 'facades'
+};
+
+function initServicesRenderer() {
   const container = document.querySelector('#services-grid-container');
   const filterButtons = document.querySelectorAll('.cluster-tab-btn');
 
@@ -10,47 +30,24 @@ export function initServicesRenderer() {
 
   function renderServices(selectedCluster = 'all') {
     const filtered = selectedCluster === 'all' 
-      ? servicesData 
-      : servicesData.filter(s => s.cluster === selectedCluster);
+      ? window.servicesData 
+      : window.servicesData.filter(s => s.cluster === selectedCluster);
 
-    container.innerHTML = filtered.map(service => `
-      <article class="service-card gsap-reveal" data-cluster="${service.cluster}">
+    container.innerHTML = filtered.map(service => {
+      const galleryCategory = serviceToGalleryCategory[service.id] || 'all';
+      return `
+      <article class="service-card gsap-reveal" data-cluster="${service.cluster}" id="${service.id}">
         <div class="service-card-media">
           <img 
             src="${service.heroImage}" 
-            alt="${service.title} - 2A Pro Concept" 
-            class="service-card-img" 
-            loading="lazy"
+            alt="${service.title} - Solution 2A Pro Concept" 
+            class="service-card-img" loading="lazy" onerror="handleServiceImgError(this)"
           />
           <span class="service-category-tag">${service.clusterTitle}</span>
         </div>
         <div class="service-card-body">
-          <h3 class="service-card-title">${service.title}</h3>
-          <p class="service-card-subtitle">${service.shortSubtitle}</p>
-          <p class="service-card-desc">${service.description}</p>
-          
-          ${service.types.length > 0 ? `
-            <div class="service-types-list">
-              ${service.types.map(t => `
-                <div class="service-type-item">
-                  <span class="service-type-bullet">▪</span>
-                  <div>
-                    <strong>${t.name} :</strong> ${t.description}
-                  </div>
-                </div>
-              `).join('')}
-            </div>
-          ` : ''}
-
-          ${service.coverings.length > 0 ? `
-            <div class="service-coverings-pills">
-              ${service.coverings.map(c => `
-                <span class="covering-pill" title="${c.detail}">
-                  ${c.name}
-                </span>
-              `).join('')}
-            </div>
-          ` : ''}
+      
+   
 
           <div class="service-card-footer">
             <a 
@@ -63,19 +60,21 @@ export function initServicesRenderer() {
               Devis pour ce projet
             </a>
             <a 
-              href="#realisations" 
+              href="./realisations.html?category=${galleryCategory}" 
               class="btn btn-secondary"
               style="padding: 0.65rem 1rem; font-size: 0.88rem;"
+              title="Voir les chantiers réels de cette gamme"
             >
-              Voir réalisations
+              Voir réalisations    ↗
             </a>
           </div>
         </div>
       </article>
-    `).join('');
+    `;
+    }).join('');
 
     if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches && container.children.length > 0) {
-      gsap.fromTo(
+      window.gsap.fromTo(
         container.children,
         { opacity: 0, y: 25 },
         { opacity: 1, y: 0, duration: 0.45, stagger: 0.06, ease: 'power2.out' }
@@ -83,11 +82,26 @@ export function initServicesRenderer() {
     }
 
     // Recalculate ScrollTrigger offsets since height may have changed
-    ScrollTrigger.refresh();
+    window.ScrollTrigger.refresh();
   }
 
-  // Initial render
-  renderServices('all');
+  // Check URL query parameters for initial cluster
+  const urlParams = new URLSearchParams(window.location.search);
+  const initialCluster = urlParams.get('cluster') || 'all';
+
+  if (initialCluster !== 'all') {
+    filterButtons.forEach(b => {
+      if (b.getAttribute('data-cluster') === initialCluster) {
+        b.classList.add('active');
+      } else {
+        b.classList.remove('active');
+      }
+    });
+    renderServices(initialCluster);
+  } else {
+    // Initial render
+    renderServices('all');
+  }
 
   // Filter button click handlers
   filterButtons.forEach(btn => {

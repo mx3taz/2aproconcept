@@ -1,7 +1,5 @@
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
+// gsap & ScrollTrigger loaded globally via CDN <script> tags in HTML
+// window.gsap.registerPlugin(window.ScrollTrigger) called once in main.js
 
 const prefersReducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -9,8 +7,8 @@ const prefersReducedMotion = () => window.matchMedia('(prefers-reduced-motion: r
  * Called once on page load for static elements (hero, section headers,
  * process cards, material cards, configurator wrapper, statement card).
  */
-export function initScrollAnimations() {
-  if (prefersReducedMotion()) {
+function initScrollAnimations() {
+  if (!window.gsap || !window.ScrollTrigger || prefersReducedMotion()) {
     document.querySelectorAll('.gsap-reveal, .gsap-reveal-left, .gsap-reveal-right, .gsap-scale-in, .material-card, .process-step-card, .section-header').forEach(el => {
       el.style.opacity = '1';
       el.style.transform = 'none';
@@ -18,15 +16,20 @@ export function initScrollAnimations() {
     return;
   }
 
-  // Hero Section Entrance
-  const heroTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+  const gsap = window.gsap;
+  const ScrollTrigger = window.ScrollTrigger;
 
-  heroTl
-    .from('.hero-badge-container', { opacity: 0, y: 20, duration: 0.8, delay: 0.2 })
-    .from('.hero-title', { opacity: 0, y: 30, duration: 1 }, '-=0.5')
-    .from('.hero-description', { opacity: 0, y: 20, duration: 0.8 }, '-=0.6')
-    .from('.hero-cta-group', { opacity: 0, y: 20, duration: 0.8 }, '-=0.6')
-    .from('.hero-stats-bar', { opacity: 0, y: 20, duration: 0.8 }, '-=0.5');
+  // Hero Section Entrance (only on pages with the main hero)
+  if (document.querySelector('.hero-badge-container')) {
+    const heroTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+
+    heroTl
+      .from('.hero-badge-container', { opacity: 0, y: 20, duration: 0.8, delay: 0.2 })
+      .from('.hero-title', { opacity: 0, y: 30, duration: 1 }, '-=0.5')
+      .from('.hero-description', { opacity: 0, y: 20, duration: 0.8 }, '-=0.6')
+      .from('.hero-cta-group', { opacity: 0, y: 20, duration: 0.8 }, '-=0.6')
+      .from('.hero-stats-bar', { opacity: 0, y: 20, duration: 0.8 }, '-=0.5');
+  }
 
   // Section Headers (static in HTML)
   gsap.utils.toArray('.section-header').forEach((header) => {
@@ -122,7 +125,7 @@ export function initScrollAnimations() {
  * Called after dynamic content is injected into a container (services, gallery).
  * Immediately shows cards and applies staggered reveal if user hasn't scrolled past.
  */
-export function refreshDynamicAnimations(containerSelector) {
+function refreshDynamicAnimations(containerSelector) {
   if (prefersReducedMotion()) {
     document.querySelectorAll(`${containerSelector} .gsap-reveal`).forEach(el => {
       el.style.opacity = '1';
@@ -130,6 +133,9 @@ export function refreshDynamicAnimations(containerSelector) {
     });
     return;
   }
+
+  const gsap = window.gsap;
+  const ScrollTrigger = window.ScrollTrigger;
 
   // Kill old ScrollTriggers in this container to prevent accumulation
   ScrollTrigger.getAll().forEach(st => {

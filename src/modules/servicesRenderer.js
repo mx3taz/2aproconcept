@@ -1,5 +1,5 @@
 
-export function handleServiceImgError(img) {
+function handleServiceImgError(img) {
   if (img.dataset.hasRetried) return;
   img.dataset.hasRetried = 'true';
   const src = img.getAttribute('src') || '';
@@ -22,7 +22,7 @@ const serviceToGalleryCategory = {
   'enseignes-facades': 'facades'
 };
 
-export function initServicesRenderer() {
+function initServicesRenderer() {
   const container = document.querySelector('#services-grid-container');
   const filterButtons = document.querySelectorAll('.cluster-tab-btn');
 
@@ -113,6 +113,3 @@ export function initServicesRenderer() {
     });
   });
 }
-
-window.handleServiceImgError = handleServiceImgError;
-window.initServicesRenderer = initServicesRenderer;

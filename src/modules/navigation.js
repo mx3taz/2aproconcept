@@ -1,4 +1,4 @@
-export function initNavigation() {
+function initNavigation() {
   const header = document.querySelector('.site-header');
   const toggleBtn = document.querySelector('.mobile-nav-toggle');
   const mobileDrawer = document.querySelector('.mobile-nav-drawer');
@@ -170,5 +170,3 @@ export function initNavigation() {
     sections.forEach((sec) => observer.observe(sec));
   }
 }
-
-window.initNavigation = initNavigation;

@@ -2,7 +2,7 @@ let currentLightboxElement = null;
 let currentProjectList = [];
 let currentProjectIndex = -1;
 
-export function initLightbox() {
+function initLightbox() {
   const modal = document.querySelector('#project-lightbox-modal');
   if (!modal) return;
 
@@ -135,7 +135,7 @@ function displayProject(project) {
   }
 }
 
-export function openLightbox(project, projectList = []) {
+function openLightbox(project, projectList = []) {
   const modal = currentLightboxElement || document.querySelector('#project-lightbox-modal');
   if (!modal || !project) return;
 
@@ -151,7 +151,4 @@ export function openLightbox(project, projectList = []) {
   modal.classList.add('active');
   document.body.style.overflow = 'hidden';
 }
-
-window.initLightbox = initLightbox;
-window.openLightbox = openLightbox;
 

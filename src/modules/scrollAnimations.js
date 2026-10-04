@@ -7,7 +7,7 @@ const prefersReducedMotion = () => window.matchMedia('(prefers-reduced-motion: r
  * Called once on page load for static elements (hero, section headers,
  * process cards, material cards, configurator wrapper, statement card).
  */
-export function initScrollAnimations() {
+function initScrollAnimations() {
   if (!window.gsap || !window.ScrollTrigger || prefersReducedMotion()) {
     document.querySelectorAll('.gsap-reveal, .gsap-reveal-left, .gsap-reveal-right, .gsap-scale-in, .material-card, .process-step-card, .section-header').forEach(el => {
       el.style.opacity = '1';
@@ -125,7 +125,7 @@ export function initScrollAnimations() {
  * Called after dynamic content is injected into a container (services, gallery).
  * Immediately shows cards and applies staggered reveal if user hasn't scrolled past.
  */
-export function refreshDynamicAnimations(containerSelector) {
+function refreshDynamicAnimations(containerSelector) {
   if (prefersReducedMotion()) {
     document.querySelectorAll(`${containerSelector} .gsap-reveal`).forEach(el => {
       el.style.opacity = '1';
@@ -174,6 +174,3 @@ export function refreshDynamicAnimations(containerSelector) {
 
   ScrollTrigger.refresh();
 }
-
-window.initScrollAnimations = initScrollAnimations;
-window.refreshDynamicAnimations = refreshDynamicAnimations;

@@ -1,8 +1,6 @@
 
-import { openLightbox } from './lightbox.js';
-
 // Image loading resilience helper for file:// and server environments
-export function handleGalleryImgError(img) {
+function handleGalleryImgError(img) {
   if (img.dataset.hasRetried) return;
   img.dataset.hasRetried = 'true';
   const currentSrc = img.getAttribute('src') || '';
@@ -39,7 +37,7 @@ const categoryLabels = {
   'facades': 'pour Façades Alucobond'
 };
 
-export function initGalleryRenderer() {
+function initGalleryRenderer() {
   const container = document.querySelector('#gallery-grid-container');
   const featuredContainer = document.querySelector('#featured-gallery-container');
   const filterBtns = document.querySelectorAll('.gallery-filter-btn');
@@ -248,6 +246,3 @@ export function initGalleryRenderer() {
     });
   });
 }
-
-window.handleGalleryImgError = handleGalleryImgError;
-window.initGalleryRenderer = initGalleryRenderer;

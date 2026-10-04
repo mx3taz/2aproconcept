@@ -5,12 +5,12 @@ function handleServiceImgError(img) {
   if (retryCount >= 2) return;
   img.dataset.retryCount = (retryCount + 1).toString();
 
-  if (currentSrc.includes('public/images/')) {
-    // If /public/images/ failed on server, try /images/
-    img.src = currentSrc.replace(/(\.\/)?public\/images\//, './images/');
-  } else if (currentSrc.includes('images/')) {
-    // If /images/ failed on file://, try ./public/images/
-    img.src = currentSrc.replace(/(\.\/)?images\//, './public/images/');
+  if (currentSrc.includes('./images/')) {
+    // If ./images/ failed on local file://, try ./public/images/
+    img.src = currentSrc.replace('./images/', './public/images/');
+  } else if (currentSrc.includes('./public/images/')) {
+    // If ./public/images/ failed on Vercel, try ./images/
+    img.src = currentSrc.replace('./public/images/', './images/');
   }
 }
 

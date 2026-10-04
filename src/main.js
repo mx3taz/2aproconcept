@@ -1,6 +1,4 @@
-// 2A PRO CONCEPT — Main Entrypoint (Classic Script, no ES module imports)
-// All dependencies (lenis, gsap) loaded via CDN <script> tags in HTML
-// All modules loaded via individual <script> tags before this file
+// 2A PRO CONCEPT — Main Entrypoint (Classic Vanilla JS)
 
 // Register GSAP plugins once globally
 if (window.gsap && window.ScrollTrigger) {
@@ -8,29 +6,31 @@ if (window.gsap && window.ScrollTrigger) {
 }
 
 // Initialize Page Loader immediately to guard against FOUC
-initPageLoader();
+if (typeof initPageLoader === 'function') {
+  initPageLoader();
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize Smooth Scrolling with Lenis
-  initSmoothScroll();
+  if (typeof initSmoothScroll === 'function') initSmoothScroll();
 
   // Initialize Navigation & Mobile Drawer
-  initNavigation();
+  if (typeof initNavigation === 'function') initNavigation();
 
   // Render Services by Cluster
-  initServicesRenderer();
+  if (typeof initServicesRenderer === 'function') initServicesRenderer();
 
   // Render Project Gallery
-  initGalleryRenderer();
+  if (typeof initGalleryRenderer === 'function') initGalleryRenderer();
 
   // Initialize Lightbox Modal
-  initLightbox();
+  if (typeof initLightbox === 'function') initLightbox();
 
   // Initialize Project Configurator / Devis Estimator
-  initConfigurator();
+  if (typeof initConfigurator === 'function') initConfigurator();
 
   // Initialize GSAP ScrollTrigger Animations
-  initScrollAnimations();
+  if (typeof initScrollAnimations === 'function') initScrollAnimations();
 
   // Contact Form Submission Feedback
   const contactForm = document.querySelector('#contact-direct-form');

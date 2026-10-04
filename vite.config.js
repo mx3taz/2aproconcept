@@ -1,15 +1,11 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
-import { readFileSync, writeFileSync } from 'fs';
+import { readFileSync, writeFileSync, cpSync, existsSync } from 'fs';
 import { glob } from 'fs/promises';
 
 /**
- * Vite plugin: after the build is written to disk, patches every HTML file
- * in dist/ to strip `crossorigin` and `type="module"` so the output works
- * when opened directly via file:// (no local server needed).
- *
- * Chrome blocks both crossorigin attributes and ES-module scripts on file://.
- * The bundled JS is already a self-contained chunk, so `defer` is enough.
+ * Vite plugin: ensures both local file:// and deployed Vercel environments
+ * work without 404 or CORS issues.
  */
 function fileProtocolCompatPlugin() {
   return {
@@ -19,7 +15,15 @@ function fileProtocolCompatPlugin() {
       return patchHtml(html);
     },
     async closeBundle() {
-      // Also patch the files already written to disk (safety net)
+      // 1. Copy src/ and reference/ into dist/ so classic scripts, styles, and assets resolve on Vercel
+      if (existsSync('src')) {
+        cpSync('src', 'dist/src', { recursive: true });
+      }
+      if (existsSync('reference')) {
+        cpSync('reference', 'dist/reference', { recursive: true });
+      }
+
+      // 2. Also patch the files already written to disk (safety net)
       const files = [];
       for await (const f of glob('dist/**/*.html')) {
         files.push(f);

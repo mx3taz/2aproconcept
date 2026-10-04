@@ -152,3 +152,6 @@ function openLightbox(project, projectList = []) {
   document.body.style.overflow = 'hidden';
 }
 
+window.initLightbox = initLightbox;
+window.openLightbox = openLightbox;
+

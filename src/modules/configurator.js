@@ -61,3 +61,5 @@ Merci de me recontacter pour me conseiller sur la faisabilité et le coût.`;
     });
   }
 }
+
+window.initConfigurator = initConfigurator;

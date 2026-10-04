@@ -94,3 +94,6 @@ function initPageLoader() {
     }
   });
 }
+
+window.initPageLoader = initPageLoader;
+initPageLoader();

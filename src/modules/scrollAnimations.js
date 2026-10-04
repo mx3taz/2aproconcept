@@ -174,3 +174,6 @@ function refreshDynamicAnimations(containerSelector) {
 
   ScrollTrigger.refresh();
 }
+
+window.initScrollAnimations = initScrollAnimations;
+window.refreshDynamicAnimations = refreshDynamicAnimations;

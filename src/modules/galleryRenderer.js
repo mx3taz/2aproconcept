@@ -246,3 +246,6 @@ function initGalleryRenderer() {
     });
   });
 }
+
+window.handleGalleryImgError = handleGalleryImgError;
+window.initGalleryRenderer = initGalleryRenderer;

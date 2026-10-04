@@ -170,3 +170,5 @@ function initNavigation() {
     sections.forEach((sec) => observer.observe(sec));
   }
 }
+
+window.initNavigation = initNavigation;

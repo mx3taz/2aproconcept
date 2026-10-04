@@ -113,3 +113,6 @@ function initServicesRenderer() {
     });
   });
 }
+
+window.handleServiceImgError = handleServiceImgError;
+window.initServicesRenderer = initServicesRenderer;

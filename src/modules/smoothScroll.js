@@ -51,3 +51,5 @@ function initSmoothScroll() {
   window.lenis = lenis;
   return lenis;
 }
+
+window.initSmoothScroll = initSmoothScroll;

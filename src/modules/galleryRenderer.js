@@ -1,13 +1,16 @@
 
-// Image loading resilience helper for file:// and server environments
 function handleGalleryImgError(img) {
-  if (img.dataset.hasRetried) return;
-  img.dataset.hasRetried = 'true';
   const currentSrc = img.getAttribute('src') || '';
+  const retryCount = parseInt(img.dataset.retryCount || '0', 10);
+  if (retryCount >= 3) return;
+  img.dataset.retryCount = (retryCount + 1).toString();
+
   if (currentSrc.includes('%20')) {
     img.src = decodeURI(currentSrc);
   } else if (currentSrc.includes('./reference/')) {
     img.src = currentSrc.replace('./reference/', './public/reference/');
+  } else if (currentSrc.includes('./public/reference/')) {
+    img.src = currentSrc.replace('./public/reference/', './reference/');
   }
 }
 

@@ -1,12 +1,16 @@
 
 function handleServiceImgError(img) {
-  if (img.dataset.hasRetried) return;
-  img.dataset.hasRetried = 'true';
-  const src = img.getAttribute('src') || '';
-  if (src.startsWith('./public/')) {
-    img.src = src.replace('./public/', 'public/');
-  } else if (src.startsWith('public/')) {
-    img.src = './' + src;
+  const currentSrc = img.getAttribute('src') || '';
+  const retryCount = parseInt(img.dataset.retryCount || '0', 10);
+  if (retryCount >= 2) return;
+  img.dataset.retryCount = (retryCount + 1).toString();
+
+  if (currentSrc.includes('public/images/')) {
+    // If /public/images/ failed on server, try /images/
+    img.src = currentSrc.replace(/(\.\/)?public\/images\//, './images/');
+  } else if (currentSrc.includes('images/')) {
+    // If /images/ failed on file://, try ./public/images/
+    img.src = currentSrc.replace(/(\.\/)?images\//, './public/images/');
   }
 }
 

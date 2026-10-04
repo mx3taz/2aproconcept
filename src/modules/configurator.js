@@ -1,4 +1,4 @@
-function initConfigurator() {
+export function initConfigurator() {
   const form = document.querySelector('#project-config-form');
   if (!form) return;
 
@@ -61,3 +61,5 @@ Merci de me recontacter pour me conseiller sur la faisabilité et le coût.`;
     });
   }
 }
+
+window.initConfigurator = initConfigurator;

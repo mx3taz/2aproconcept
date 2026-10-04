@@ -1,6 +1,14 @@
-// 2A PRO CONCEPT — Main Entrypoint (Classic Script, no ES module imports)
-// All dependencies (lenis, gsap) loaded via CDN <script> tags in HTML
-// All modules loaded via individual <script> tags before this file
+// 2A PRO CONCEPT — Main Entrypoint
+import './data/projectsData.js';
+import './data/servicesData.js';
+import { initPageLoader } from './modules/pageLoader.js';
+import { initSmoothScroll } from './modules/smoothScroll.js';
+import { initNavigation } from './modules/navigation.js';
+import { initServicesRenderer } from './modules/servicesRenderer.js';
+import { initGalleryRenderer } from './modules/galleryRenderer.js';
+import { initLightbox } from './modules/lightbox.js';
+import { initConfigurator } from './modules/configurator.js';
+import { initScrollAnimations } from './modules/scrollAnimations.js';
 
 // Register GSAP plugins once globally
 if (window.gsap && window.ScrollTrigger) {
@@ -58,13 +66,3 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-import './data/projectsData.js';
-import './data/servicesData.js';
-import './modules/pageLoader.js';
-import './modules/navigation.js';
-import './modules/smoothScroll.js';
-import './modules/lightbox.js';
-import './modules/configurator.js';
-import './modules/servicesRenderer.js';
-import './modules/galleryRenderer.js';
-import './modules/scrollAnimations.js';

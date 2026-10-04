@@ -1,6 +1,6 @@
 // lenis & gsap loaded globally via CDN <script> tags in HTML
 
-function initSmoothScroll() {
+export function initSmoothScroll() {
   if (typeof window.Lenis === 'undefined' || typeof window.gsap === 'undefined' || typeof window.ScrollTrigger === 'undefined') {
     return null;
   }
@@ -51,3 +51,5 @@ function initSmoothScroll() {
   window.lenis = lenis;
   return lenis;
 }
+
+window.initSmoothScroll = initSmoothScroll;

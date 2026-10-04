@@ -3,7 +3,7 @@
  * Prevents FOUC (Flash of Unstyled Content) and provides high-end visual continuity
  */
 
-function initPageLoader() {
+export function initPageLoader() {
   const loader = document.querySelector('#page-loader');
   if (!loader) return;
 
@@ -94,3 +94,5 @@ function initPageLoader() {
     }
   });
 }
+
+window.initPageLoader = initPageLoader;

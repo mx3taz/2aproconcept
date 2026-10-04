@@ -57,3 +57,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+import './data/projectsData.js';
+import './data/servicesData.js';
+import './modules/pageLoader.js';
+import './modules/navigation.js';
+import './modules/smoothScroll.js';
+import './modules/lightbox.js';
+import './modules/configurator.js';
+import './modules/servicesRenderer.js';
+import './modules/galleryRenderer.js';
+import './modules/scrollAnimations.js';

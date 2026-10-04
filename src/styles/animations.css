@@ -1,0 +1,81 @@
+/* Animation & Motion System */
+
+/* Subtle Glow Pulse */
+@keyframes cyanPulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(0, 174, 239, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(0, 174, 239, 0.55);
+  }
+}
+
+.pulse-glow {
+  animation: cyanPulse 3s infinite ease-in-out;
+}
+
+/* Subtle Shimmer Sheen */
+@keyframes metallicSheen {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.metallic-sheen {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.08) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: metallicSheen 6s infinite;
+}
+
+/* Status Indicator Dot */
+@keyframes statusDotPulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.85);
+  }
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--accent-whatsapp);
+  display: inline-block;
+  box-shadow: 0 0 10px var(--accent-whatsapp);
+  animation: statusDotPulse 2s infinite ease-in-out;
+}
+
+/* Reveal Helpers for GSAP - Default to visible so content is always resilient */
+.gsap-reveal,
+.gsap-reveal-left,
+.gsap-reveal-right,
+.gsap-scale-in {
+  will-change: opacity, transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse-glow,
+  .metallic-sheen,
+  .status-dot {
+    animation: none !important;
+  }
+  .gsap-reveal,
+  .gsap-reveal-left,
+  .gsap-reveal-right,
+  .gsap-scale-in {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

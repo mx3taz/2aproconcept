@@ -1,1593 +1,1514 @@
-// Données complètes des réalisations réelles issues de 'reference/2A Pro'
-// Contient l'intégralité des 91 photos réparties dans les catégories correspondantes
-window.projectsData = [
-  {
-    "id": "proj-av-01",
-    "title": "Abri de Voiture Suspendu Cantilever Moderne",
-    "category": "abris-voitures",
-    "subCategory": "abri-voiture",
-    "categoryLabel": "Abri de Voiture",
-    "folder": "Abri de Voiture",
-    "image": "./reference/2A Pro/Abri%20de%20Voiture/481214085_2056259624787945_5931627659265138693_n.jpg",
-    "highlight": true,
-    "location": "La Marsa",
-    "materials": [
-      "Acier Galvanisé à Chaud",
-      "Polycarbonate Traité Anti-UV",
-      "Finition Thermolaquée"
-    ],
-    "description": "Installation d'un abri de voiture suspendu en porte-à-faux pour villa de standing. Dégagement total de l'espace au sol sans aucun poteau frontal pour faciliter les manÅ“uvres de stationnement."
-  },
-  {
-    "id": "proj-av-02",
-    "title": "Carport Double Acier Galvanisé & Polycarbonate",
-    "category": "abris-voitures",
-    "subCategory": "abri-voiture",
-    "categoryLabel": "Abri de Voiture",
-    "folder": "Abri de Voiture",
-    "image": "./reference/2A Pro/Abri%20de%20Voiture/481357876_2055776221502952_1734853677963639452_n.jpg",
-    "highlight": false,
-    "location": "Gammarth",
-    "materials": [
-      "Profilés Tubulaires Renforcés",
-      "Polycarbonate Alvéolaire 16mm",
-      "Platines d'Ancrage 15mm"
-    ],
-    "description": "Conception et pose sur site d'un carport robuste protégeant efficacement la carrosserie des rayons UV caniculaires et des intempéries côtières."
-  },
-  {
-    "id": "proj-av-03",
-    "title": "Abri de Voiture Design pour Villa Contemporaine",
-    "category": "abris-voitures",
-    "subCategory": "abri-voiture",
-    "categoryLabel": "Abri de Voiture",
-    "folder": "Abri de Voiture",
-    "image": "./reference/2A Pro/Abri%20de%20Voiture/486571051_1102214558588606_7529130122582308766_n.jpg",
-    "highlight": false,
-    "location": "Les Berges du Lac 2",
-    "materials": [
-      "Structure Cantilever",
-      "Couverture Polycarbonate Compact",
-      "Scellement Chimique"
-    ],
-    "description": "Structure en acier galvanisé avec chéneau d'évacuation des eaux pluviales intégré et couverture traitée anti-jaunissement."
-  },
-  {
-    "id": "proj-av-04",
-    "title": "Structure d'Ombrage Haute Résistance au Vent",
-    "category": "abris-voitures",
-    "subCategory": "abri-voiture",
-    "categoryLabel": "Abri de Voiture",
-    "folder": "Abri de Voiture",
-    "image": "./reference/2A Pro/Abri%20de%20Voiture/486609508_1104869474989781_7853553401640261091_n.jpg",
-    "highlight": false,
-    "location": "Carthage",
-    "materials": [
-      "Acier Haute Résistance",
-      "Peinture Ã‰poxy Cuite au Four",
-      "Visserie Inox A4"
-    ],
-    "description": "Abri de stationnement profilé galbé avec scellements chimiques conformes aux règles de prise au vent en zone côtière."
-  },
-  {
-    "id": "proj-av-05",
-    "title": "Carport Port-à-Faux Libérant l'Espace au Sol",
-    "category": "abris-voitures",
-    "subCategory": "abri-voiture",
-    "categoryLabel": "Abri de Voiture",
-    "folder": "Abri de Voiture",
-    "image": "./reference/2A Pro/Abri%20de%20Voiture/486623442_1102214645255264_4180409176717677177_n.jpg",
-    "highlight": false,
-    "location": "Ennasr 2",
-    "materials": [
-      "Acier Galvanisé à Chaud",
-      "Polycarbonate Traité Anti-UV",
-      "Finition Thermolaquée"
-    ],
-    "description": "Installation d'un abri de voiture suspendu en porte-à-faux pour villa de standing. Dégagement total de l'espace au sol sans aucun poteau frontal pour faciliter les manÅ“uvres de stationnement."
-  },
-  {
-    "id": "proj-av-06",
-    "title": "Abri de Stationnement Double Rampe Laqué Blanc",
-    "category": "abris-voitures",
-    "subCategory": "abri-voiture",
-    "categoryLabel": "Abri de Voiture",
-    "folder": "Abri de Voiture",
-    "image": "./reference/2A Pro/Abri%20de%20Voiture/486636410_1102214528588609_7828873732134051104_n.jpg",
-    "highlight": false,
-    "location": "Hammamet Nord",
-    "materials": [
-      "Profilés Tubulaires Renforcés",
-      "Polycarbonate Alvéolaire 16mm",
-      "Platines d'Ancrage 15mm"
-    ],
-    "description": "Conception et pose sur site d'un carport robuste protégeant efficacement la carrosserie des rayons UV caniculaires et des intempéries côtières."
-  },
-  {
-    "id": "proj-av-07",
-    "title": "Structure Métallique Renforcée pour Deux Véhicules",
-    "category": "abris-voitures",
-    "subCategory": "abri-voiture",
-    "categoryLabel": "Abri de Voiture",
-    "folder": "Abri de Voiture",
-    "image": "./reference/2A Pro/Abri%20de%20Voiture/486646059_1102214575255271_1656882900375638823_n.jpg",
-    "highlight": false,
-    "location": "Soukra",
-    "materials": [
-      "Structure Cantilever",
-      "Couverture Polycarbonate Compact",
-      "Scellement Chimique"
-    ],
-    "description": "Structure en acier galvanisé avec chéneau d'évacuation des eaux pluviales intégré et couverture traitée anti-jaunissement."
-  },
-  {
-    "id": "proj-av-08",
-    "title": "Carport Contemporain avec Ã‰vacuation d'Eau Pluviale",
-    "category": "abris-voitures",
-    "subCategory": "abri-voiture",
-    "categoryLabel": "Abri de Voiture",
-    "folder": "Abri de Voiture",
-    "image": "./reference/2A Pro/Abri%20de%20Voiture/486690591_1102214758588586_4848070393711607166_n.jpg",
-    "highlight": false,
-    "location": "Ariana Ville",
-    "materials": [
-      "Acier Haute Résistance",
-      "Peinture Ã‰poxy Cuite au Four",
-      "Visserie Inox A4"
-    ],
-    "description": "Abri de stationnement profilé galbé avec scellements chimiques conformes aux règles de prise au vent en zone côtière."
-  },
-  {
-    "id": "proj-av-09",
-    "title": "Abri Voiture Autoportant Profilés Tubulaires",
-    "category": "abris-voitures",
-    "subCategory": "abri-voiture",
-    "categoryLabel": "Abri de Voiture",
-    "folder": "Abri de Voiture",
-    "image": "./reference/2A Pro/Abri%20de%20Voiture/486752055_1104869514989777_7957997997466196163_n.jpg",
-    "highlight": false,
-    "location": "Menzah 9",
-    "materials": [
-      "Acier Galvanisé à Chaud",
-      "Polycarbonate Traité Anti-UV",
-      "Finition Thermolaquée"
-    ],
-    "description": "Installation d'un abri de voiture suspendu en porte-à-faux pour villa de standing. Dégagement total de l'espace au sol sans aucun poteau frontal pour faciliter les manÅ“uvres de stationnement."
-  },
-  {
-    "id": "proj-av-10",
-    "title": "Abri Suspendu Sans Poteaux Frontaux Gênants",
-    "category": "abris-voitures",
-    "subCategory": "abri-voiture",
-    "categoryLabel": "Abri de Voiture",
-    "folder": "Abri de Voiture",
-    "image": "./reference/2A Pro/Abri%20de%20Voiture/487064544_1102214341921961_8128844226823920004_n.jpg",
-    "highlight": false,
-    "location": "Raoued Plage",
-    "materials": [
-      "Profilés Tubulaires Renforcés",
-      "Polycarbonate Alvéolaire 16mm",
-      "Platines d'Ancrage 15mm"
-    ],
-    "description": "Conception et pose sur site d'un carport robuste protégeant efficacement la carrosserie des rayons UV caniculaires et des intempéries côtières."
-  },
-  {
-    "id": "proj-av-11",
-    "title": "Carport Prestige pour Propriété Privée",
-    "category": "abris-voitures",
-    "subCategory": "abri-voiture",
-    "categoryLabel": "Abri de Voiture",
-    "folder": "Abri de Voiture",
-    "image": "./reference/2A Pro/Abri%20de%20Voiture/487170605_1102214521921943_3054249060556621721_n.jpg",
-    "highlight": false,
-    "location": "Sousse Kantaoui",
-    "materials": [
-      "Structure Cantilever",
-      "Couverture Polycarbonate Compact",
-      "Scellement Chimique"
-    ],
-    "description": "Structure en acier galvanisé avec chéneau d'évacuation des eaux pluviales intégré et couverture traitée anti-jaunissement."
-  },
-  {
-    "id": "proj-av-12",
-    "title": "Abri Voiture avec Toiture Polycarbonate Traitée Anti-UV",
-    "category": "abris-voitures",
-    "subCategory": "abri-voiture",
-    "categoryLabel": "Abri de Voiture",
-    "folder": "Abri de Voiture",
-    "image": "./reference/2A Pro/Abri%20de%20Voiture/487213065_1102214785255250_5789015137917302437_n.jpg",
-    "highlight": false,
-    "location": "La Marsa",
-    "materials": [
-      "Acier Haute Résistance",
-      "Peinture Ã‰poxy Cuite au Four",
-      "Visserie Inox A4"
-    ],
-    "description": "Abri de stationnement profilé galbé avec scellements chimiques conformes aux règles de prise au vent en zone côtière."
-  },
-  {
-    "id": "proj-av-13",
-    "title": "Structure d'Ombrage Ã‰purée Ancrée sur Longrine",
-    "category": "abris-voitures",
-    "subCategory": "abri-voiture",
-    "categoryLabel": "Abri de Voiture",
-    "folder": "Abri de Voiture",
-    "image": "./reference/2A Pro/Abri%20de%20Voiture/487216498_1102214561921939_8450178010688768196_n.jpg",
-    "highlight": false,
-    "location": "Gammarth",
-    "materials": [
-      "Acier Galvanisé à Chaud",
-      "Polycarbonate Traité Anti-UV",
-      "Finition Thermolaquée"
-    ],
-    "description": "Installation d'un abri de voiture suspendu en porte-à-faux pour villa de standing. Dégagement total de l'espace au sol sans aucun poteau frontal pour faciliter les manÅ“uvres de stationnement."
-  },
-  {
-    "id": "proj-av-14",
-    "title": "Carport Grande Envergure Protection Grêle & Soleil",
-    "category": "abris-voitures",
-    "subCategory": "abri-voiture",
-    "categoryLabel": "Abri de Voiture",
-    "folder": "Abri de Voiture",
-    "image": "./reference/2A Pro/Abri%20de%20Voiture/487239479_1104869408323121_6737905618411671002_n.jpg",
-    "highlight": false,
-    "location": "Les Berges du Lac",
-    "materials": [
-      "Profilés Tubulaires Renforcés",
-      "Polycarbonate Alvéolaire 16mm",
-      "Platines d'Ancrage 15mm"
-    ],
-    "description": "Conception et pose sur site d'un carport robuste protégeant efficacement la carrosserie des rayons UV caniculaires et des intempéries côtières."
-  },
-  {
-    "id": "proj-av-15",
-    "title": "Abri de Stationnement Profil Galbé Aérodynamique",
-    "category": "abris-voitures",
-    "subCategory": "abri-voiture",
-    "categoryLabel": "Abri de Voiture",
-    "folder": "Abri de Voiture",
-    "image": "./reference/2A Pro/Abri%20de%20Voiture/565113708_1271709154972478_1518780455799865494_n.jpg",
-    "highlight": false,
-    "location": "Borj Cédria",
-    "materials": [
-      "Structure Cantilever",
-      "Couverture Polycarbonate Compact",
-      "Scellement Chimique"
-    ],
-    "description": "Structure en acier galvanisé avec chéneau d'évacuation des eaux pluviales intégré et couverture traitée anti-jaunissement."
-  },
-  {
-    "id": "proj-av-16",
-    "title": "Carport Double Finition Thermolaquée Haute Durabilité",
-    "category": "abris-voitures",
-    "subCategory": "abri-voiture",
-    "categoryLabel": "Abri de Voiture",
-    "folder": "Abri de Voiture",
-    "image": "./reference/2A Pro/Abri%20de%20Voiture/663308317_1413036774173048_4461254645869225202_n.jpg",
-    "highlight": false,
-    "location": "Hammamet",
-    "materials": [
-      "Acier Haute Résistance",
-      "Peinture Ã‰poxy Cuite au Four",
-      "Visserie Inox A4"
-    ],
-    "description": "Abri de stationnement profilé galbé avec scellements chimiques conformes aux règles de prise au vent en zone côtière."
-  },
-  {
-    "id": "proj-ao-auto-01",
-    "title": "Toiture Rétractable Motorisée sur Patio Traditionnel",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/487240208_1104872338322828_2499514709198258396_n.jpg",
-    "highlight": true,
-    "location": "Médina de Tunis",
-    "materials": [
-      "Motorisation Ã‰tanche IP65",
-      "Châssis Galvanisé Thermo-laqué",
-      "Polycarbonate Traité Anti-UV",
-      "Rails Inox 316"
-    ],
-    "description": "Conception et installation d'un toit rétractable automatique sur mesure au-dessus d'un patio traditionnel. Permet de ventiler en été et d'isoler parfaitement contre la pluie et la poussière en hiver grâce à une motorisation étanche avec télécommande radio."
-  },
-  {
-    "id": "proj-ao-auto-02",
-    "title": "Abri Coulissant Automatique pour Cour Intérieure Dar Arbi",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/487240804_1104872414989487_8239392128533675065_n.jpg",
-    "highlight": false,
-    "location": "La Marsa",
-    "materials": [
-      "Moteur Tubulaire Télécommandé",
-      "Profilés Aluminium Extrudé",
-      "Joints EPDM Haute Ã‰tanchéité",
-      "Galets Téflon"
-    ],
-    "description": "Système coulissant automatique motorisé permettant d'ouvrir ou fermer le patio central. Ã‰tanchéité totale à l'eau de pluie et canalisation soignée tout en préservant le cachet architectural du bâtiment."
-  },
-  {
-    "id": "proj-ao-auto-03",
-    "title": "Verrière Rétractable Télécommandée avec Guidage Silencieux",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/488048979_1111397797670282_4626728863526283650_n.jpg",
-    "highlight": false,
-    "location": "Sidi Bou Saïd",
-    "materials": [
-      "Système Coulissant Ã‰lectrique",
-      "Polycarbonate Alvéolaire Isolant",
-      "Chéneaux d'Ã‰vacuation Intégrés",
-      "Télécommande Radio"
-    ],
-    "description": "Toiture escamotable électrique avec guidage haute précision sur roulements inox. Déplacement fluide, silencieux et sécurisé par capteurs de fin de course."
-  },
-  {
-    "id": "proj-ao-auto-04",
-    "title": "Système Coulissant Motorisé Multi-Vantaux sur Patio",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/488574324_1111397751003620_6045450807408044465_n.jpg",
-    "highlight": false,
-    "location": "Carthage",
-    "materials": [
-      "Automatisation Somfy",
-      "Acier Galvanisé Cuve",
-      "Verre Sécurit Feuilleté",
-      "Rails de Guidage Usinés"
-    ],
-    "description": "Véranda et couverture rétractable à ouverture rapide. Gain thermique en mi-saison et protection intégrale des espaces de vie intérieurs."
-  },
-  {
-    "id": "proj-ao-auto-05",
-    "title": "Couverture Escamotable Automatique Ã‰tanche aux Pluies",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/488575766_1111397974336931_6098727858035476463_n.jpg",
-    "highlight": false,
-    "location": "Hammamet",
-    "materials": [
-      "Motorisation Ã‰tanche IP65",
-      "Châssis Galvanisé Thermo-laqué",
-      "Polycarbonate Traité Anti-UV",
-      "Rails Inox 316"
-    ],
-    "description": "Conception et installation d'un toit rétractable automatique sur mesure au-dessus d'un patio traditionnel. Permet de ventiler en été et d'isoler parfaitement contre la pluie et la poussière en hiver grâce à une motorisation étanche avec télécommande radio."
-  },
-  {
-    "id": "proj-ao-auto-06",
-    "title": "Toiture Coulissante Automatique Panneaux Haute Clarté",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/488614111_1111397964336932_4836987538006546479_n.jpg",
-    "highlight": false,
-    "location": "Nabeul",
-    "materials": [
-      "Moteur Tubulaire Télécommandé",
-      "Profilés Aluminium Extrudé",
-      "Joints EPDM Haute Ã‰tanchéité",
-      "Galets Téflon"
-    ],
-    "description": "Système coulissant automatique motorisé permettant d'ouvrir ou fermer le patio central. Ã‰tanchéité totale à l'eau de pluie et canalisation soignée tout en préservant le cachet architectural du bâtiment."
-  },
-  {
-    "id": "proj-ao-auto-07",
-    "title": "Abri Ouvrant Ã‰lectrique avec Capteur de Pluie & Vent",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/488617355_1111397761003619_5296283162699877066_n.jpg",
-    "highlight": false,
-    "location": "Sousse",
-    "materials": [
-      "Système Coulissant Ã‰lectrique",
-      "Polycarbonate Alvéolaire Isolant",
-      "Chéneaux d'Ã‰vacuation Intégrés",
-      "Télécommande Radio"
-    ],
-    "description": "Toiture escamotable électrique avec guidage haute précision sur roulements inox. Déplacement fluide, silencieux et sécurisé par capteurs de fin de course."
-  },
-  {
-    "id": "proj-ao-auto-08",
-    "title": "Véranda Coulissante Motorisée Grande Portée",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/488619094_1111397754336953_3519829841949419831_n.jpg",
-    "highlight": false,
-    "location": "Monastir",
-    "materials": [
-      "Automatisation Somfy",
-      "Acier Galvanisé Cuve",
-      "Verre Sécurit Feuilleté",
-      "Rails de Guidage Usinés"
-    ],
-    "description": "Véranda et couverture rétractable à ouverture rapide. Gain thermique en mi-saison et protection intégrale des espaces de vie intérieurs."
-  },
-  {
-    "id": "proj-ao-auto-09",
-    "title": "Toit Rétractable sur Rails Inox & Galets Ã‰tanches",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/488621307_1111397747670287_6676469470038521030_n.jpg",
-    "highlight": false,
-    "location": "Kairouan",
-    "materials": [
-      "Motorisation Ã‰tanche IP65",
-      "Châssis Galvanisé Thermo-laqué",
-      "Polycarbonate Traité Anti-UV",
-      "Rails Inox 316"
-    ],
-    "description": "Conception et installation d'un toit rétractable automatique sur mesure au-dessus d'un patio traditionnel. Permet de ventiler en été et d'isoler parfaitement contre la pluie et la poussière en hiver grâce à une motorisation étanche avec télécommande radio."
-  },
-  {
-    "id": "proj-ao-auto-10",
-    "title": "Abri Ouvrant Automatique Haute Transparence",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/488621778_1111397741003621_189766955069577611_n.jpg",
-    "highlight": false,
-    "location": "Bizerte",
-    "materials": [
-      "Moteur Tubulaire Télécommandé",
-      "Profilés Aluminium Extrudé",
-      "Joints EPDM Haute Ã‰tanchéité",
-      "Galets Téflon"
-    ],
-    "description": "Système coulissant automatique motorisé permettant d'ouvrir ou fermer le patio central. Ã‰tanchéité totale à l'eau de pluie et canalisation soignée tout en préservant le cachet architectural du bâtiment."
-  },
-  {
-    "id": "proj-ao-auto-11",
-    "title": "Fermeture Motorisée Coulissante avec Chéneau d'Ã‰vacuation",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/489000134_1111397781003617_5314556702200844018_n.jpg",
-    "highlight": false,
-    "location": "Les Berges du Lac",
-    "materials": [
-      "Système Coulissant Ã‰lectrique",
-      "Polycarbonate Alvéolaire Isolant",
-      "Chéneaux d'Ã‰vacuation Intégrés",
-      "Télécommande Radio"
-    ],
-    "description": "Toiture escamotable électrique avec guidage haute précision sur roulements inox. Déplacement fluide, silencieux et sécurisé par capteurs de fin de course."
-  },
-  {
-    "id": "proj-ao-auto-12",
-    "title": "Toiture Rétractable Automatique Modernisant une Maison Arabe",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/489029981_1111397951003600_811512856611988718_n.jpg",
-    "highlight": false,
-    "location": "Ariana",
-    "materials": [
-      "Automatisation Somfy",
-      "Acier Galvanisé Cuve",
-      "Verre Sécurit Feuilleté",
-      "Rails de Guidage Usinés"
-    ],
-    "description": "Véranda et couverture rétractable à ouverture rapide. Gain thermique en mi-saison et protection intégrale des espaces de vie intérieurs."
-  },
-  {
-    "id": "proj-ao-auto-13",
-    "title": "Abri Ouvrant Motorisé Châssis Acier Galvanisé Thermolaqué",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/489210074_1114243677385694_2726949976006561874_n.jpg",
-    "highlight": false,
-    "location": "Ennasr",
-    "materials": [
-      "Motorisation Ã‰tanche IP65",
-      "Châssis Galvanisé Thermo-laqué",
-      "Polycarbonate Traité Anti-UV",
-      "Rails Inox 316"
-    ],
-    "description": "Conception et installation d'un toit rétractable automatique sur mesure au-dessus d'un patio traditionnel. Permet de ventiler en été et d'isoler parfaitement contre la pluie et la poussière en hiver grâce à une motorisation étanche avec télécommande radio."
-  },
-  {
-    "id": "proj-ao-auto-14",
-    "title": "Verrière Rétractable Ã‰lectrique pour Patio Central",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/489295032_1111397787670283_3356738992232019330_n.jpg",
-    "highlight": false,
-    "location": "Menzah",
-    "materials": [
-      "Moteur Tubulaire Télécommandé",
-      "Profilés Aluminium Extrudé",
-      "Joints EPDM Haute Ã‰tanchéité",
-      "Galets Téflon"
-    ],
-    "description": "Système coulissant automatique motorisé permettant d'ouvrir ou fermer le patio central. Ã‰tanchéité totale à l'eau de pluie et canalisation soignée tout en préservant le cachet architectural du bâtiment."
-  },
-  {
-    "id": "proj-ao-auto-15",
-    "title": "Couverture Coulissante Automatique Silencieuse à Pignon",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/489336249_1114244060718989_533175152199267979_n.jpg",
-    "highlight": false,
-    "location": "La Soukra",
-    "materials": [
-      "Système Coulissant Ã‰lectrique",
-      "Polycarbonate Alvéolaire Isolant",
-      "Chéneaux d'Ã‰vacuation Intégrés",
-      "Télécommande Radio"
-    ],
-    "description": "Toiture escamotable électrique avec guidage haute précision sur roulements inox. Déplacement fluide, silencieux et sécurisé par capteurs de fin de course."
-  },
-  {
-    "id": "proj-ao-auto-16",
-    "title": "Toit Ouvrant Motorisé sur Mesure pour Villa Résidentielle",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/489376219_1111397941003601_9056444786513601119_n.jpg",
-    "highlight": false,
-    "location": "Gammarth",
-    "materials": [
-      "Automatisation Somfy",
-      "Acier Galvanisé Cuve",
-      "Verre Sécurit Feuilleté",
-      "Rails de Guidage Usinés"
-    ],
-    "description": "Véranda et couverture rétractable à ouverture rapide. Gain thermique en mi-saison et protection intégrale des espaces de vie intérieurs."
-  },
-  {
-    "id": "proj-ao-auto-17",
-    "title": "Toiture Escamotable Automatique sur Espace de Vie Baigné de Lumière",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/489399663_1114243627385699_3458187731870105564_n.jpg",
-    "highlight": false,
-    "location": "Dar Chaâbane",
-    "materials": [
-      "Motorisation Ã‰tanche IP65",
-      "Châssis Galvanisé Thermo-laqué",
-      "Polycarbonate Traité Anti-UV",
-      "Rails Inox 316"
-    ],
-    "description": "Conception et installation d'un toit rétractable automatique sur mesure au-dessus d'un patio traditionnel. Permet de ventiler en été et d'isoler parfaitement contre la pluie et la poussière en hiver grâce à une motorisation étanche avec télécommande radio."
-  },
-  {
-    "id": "proj-ao-auto-18",
-    "title": "Abri Coulissant Motorisé Profilés Aluminium Haute Rigidité",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/489435927_1114243217385740_3740792033930272792_n.jpg",
-    "highlight": false,
-    "location": "Mahdia",
-    "materials": [
-      "Moteur Tubulaire Télécommandé",
-      "Profilés Aluminium Extrudé",
-      "Joints EPDM Haute Ã‰tanchéité",
-      "Galets Téflon"
-    ],
-    "description": "Système coulissant automatique motorisé permettant d'ouvrir ou fermer le patio central. Ã‰tanchéité totale à l'eau de pluie et canalisation soignée tout en préservant le cachet architectural du bâtiment."
-  },
-  {
-    "id": "proj-ao-auto-19",
-    "title": "Verrière Télescopique Motorisée pour Maison Traditionnelle",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/489449924_1114243197385742_6667223130563133460_n.jpg",
-    "highlight": false,
-    "location": "Djerba",
-    "materials": [
-      "Système Coulissant Ã‰lectrique",
-      "Polycarbonate Alvéolaire Isolant",
-      "Chéneaux d'Ã‰vacuation Intégrés",
-      "Télécommande Radio"
-    ],
-    "description": "Toiture escamotable électrique avec guidage haute précision sur roulements inox. Déplacement fluide, silencieux et sécurisé par capteurs de fin de course."
-  },
-  {
-    "id": "proj-ao-auto-20",
-    "title": "Toiture Coulissante Télécommandée Sans Entretien",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/489451148_1114243987385663_1110638106378815398_n.jpg",
-    "highlight": false,
-    "location": "La Goulette",
-    "materials": [
-      "Automatisation Somfy",
-      "Acier Galvanisé Cuve",
-      "Verre Sécurit Feuilleté",
-      "Rails de Guidage Usinés"
-    ],
-    "description": "Véranda et couverture rétractable à ouverture rapide. Gain thermique en mi-saison et protection intégrale des espaces de vie intérieurs."
-  },
-  {
-    "id": "proj-ao-auto-21",
-    "title": "Abri Ouvrant Automatique Ã‰tanchéité Totale sous Pression",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/489518050_1114243424052386_656195091598428267_n.jpg",
-    "highlight": false,
-    "location": "El Menzah 1",
-    "materials": [
-      "Motorisation Ã‰tanche IP65",
-      "Châssis Galvanisé Thermo-laqué",
-      "Polycarbonate Traité Anti-UV",
-      "Rails Inox 316"
-    ],
-    "description": "Conception et installation d'un toit rétractable automatique sur mesure au-dessus d'un patio traditionnel. Permet de ventiler en été et d'isoler parfaitement contre la pluie et la poussière en hiver grâce à une motorisation étanche avec télécommande radio."
-  },
-  {
-    "id": "proj-ao-auto-22",
-    "title": "Toit Rétractable Motorisé Finition Blanc Ã‰poxy au Four",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/489599686_1114243500719045_1485125477993442880_n.jpg",
-    "highlight": false,
-    "location": "Manouba",
-    "materials": [
-      "Moteur Tubulaire Télécommandé",
-      "Profilés Aluminium Extrudé",
-      "Joints EPDM Haute Ã‰tanchéité",
-      "Galets Téflon"
-    ],
-    "description": "Système coulissant automatique motorisé permettant d'ouvrir ou fermer le patio central. Ã‰tanchéité totale à l'eau de pluie et canalisation soignée tout en préservant le cachet architectural du bâtiment."
-  },
-  {
-    "id": "proj-ao-auto-23",
-    "title": "Système Coulissant Automatique sur Charpente Métallique Précise",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/489641169_1114243297385732_9097875921440672365_n.jpg",
-    "highlight": false,
-    "location": "Ben Arous",
-    "materials": [
-      "Système Coulissant Ã‰lectrique",
-      "Polycarbonate Alvéolaire Isolant",
-      "Chéneaux d'Ã‰vacuation Intégrés",
-      "Télécommande Radio"
-    ],
-    "description": "Toiture escamotable électrique avec guidage haute précision sur roulements inox. Déplacement fluide, silencieux et sécurisé par capteurs de fin de course."
-  },
-  {
-    "id": "proj-ao-auto-24",
-    "title": "Abri Ouvrant Ã‰lectrique Guidage Haute Précision sur Roulements",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/489743774_1114243464052382_7468880851668363651_n.jpg",
-    "highlight": false,
-    "location": "Ezzahra",
-    "materials": [
-      "Automatisation Somfy",
-      "Acier Galvanisé Cuve",
-      "Verre Sécurit Feuilleté",
-      "Rails de Guidage Usinés"
-    ],
-    "description": "Véranda et couverture rétractable à ouverture rapide. Gain thermique en mi-saison et protection intégrale des espaces de vie intérieurs."
-  },
-  {
-    "id": "proj-ao-auto-25",
-    "title": "Toiture Rétractable Automatisée Cour Pavée Traditionnelle",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/489743783_1114243790719016_6458059541073229768_n.jpg",
-    "highlight": false,
-    "location": "Hammam Lif",
-    "materials": [
-      "Motorisation Ã‰tanche IP65",
-      "Châssis Galvanisé Thermo-laqué",
-      "Polycarbonate Traité Anti-UV",
-      "Rails Inox 316"
-    ],
-    "description": "Conception et installation d'un toit rétractable automatique sur mesure au-dessus d'un patio traditionnel. Permet de ventiler en été et d'isoler parfaitement contre la pluie et la poussière en hiver grâce à une motorisation étanche avec télécommande radio."
-  },
-  {
-    "id": "proj-ao-auto-26",
-    "title": "Verrière Coulissante Motorisée Isolation Thermique & Pluie",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/489761928_1114243740719021_5020914833214028037_n.jpg",
-    "highlight": false,
-    "location": "Radès",
-    "materials": [
-      "Moteur Tubulaire Télécommandé",
-      "Profilés Aluminium Extrudé",
-      "Joints EPDM Haute Ã‰tanchéité",
-      "Galets Téflon"
-    ],
-    "description": "Système coulissant automatique motorisé permettant d'ouvrir ou fermer le patio central. Ã‰tanchéité totale à l'eau de pluie et canalisation soignée tout en préservant le cachet architectural du bâtiment."
-  },
-  {
-    "id": "proj-ao-auto-27",
-    "title": "Toit Ouvrant Motorisé Multi-Modules Télescopique",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/489841000_1114243877385674_5465031487858538569_n.jpg",
-    "highlight": false,
-    "location": "Hergla",
-    "materials": [
-      "Système Coulissant Ã‰lectrique",
-      "Polycarbonate Alvéolaire Isolant",
-      "Chéneaux d'Ã‰vacuation Intégrés",
-      "Télécommande Radio"
-    ],
-    "description": "Toiture escamotable électrique avec guidage haute précision sur roulements inox. Déplacement fluide, silencieux et sécurisé par capteurs de fin de course."
-  },
-  {
-    "id": "proj-ao-auto-28",
-    "title": "Abri Rétractable Ã‰lectrique Aménagement de Patio Lumineux",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/489843183_1114243244052404_2116556103569394616_n.jpg",
-    "highlight": false,
-    "location": "Kelibia",
-    "materials": [
-      "Automatisation Somfy",
-      "Acier Galvanisé Cuve",
-      "Verre Sécurit Feuilleté",
-      "Rails de Guidage Usinés"
-    ],
-    "description": "Véranda et couverture rétractable à ouverture rapide. Gain thermique en mi-saison et protection intégrale des espaces de vie intérieurs."
-  },
-  {
-    "id": "proj-ao-auto-29",
-    "title": "Toiture Ouvrante Motorisée Préservant le Cachet Architectural",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/489869312_1114244014052327_2940689933083034443_n.jpg",
-    "highlight": false,
-    "location": "Zarzis",
-    "materials": [
-      "Motorisation Ã‰tanche IP65",
-      "Châssis Galvanisé Thermo-laqué",
-      "Polycarbonate Traité Anti-UV",
-      "Rails Inox 316"
-    ],
-    "description": "Conception et installation d'un toit rétractable automatique sur mesure au-dessus d'un patio traditionnel. Permet de ventiler en été et d'isoler parfaitement contre la pluie et la poussière en hiver grâce à une motorisation étanche avec télécommande radio."
-  },
-  {
-    "id": "proj-ao-auto-30",
-    "title": "Verrière Mobile Motorisée avec Télécommande Radio Sécurisée",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/490177564_1114243567385705_2351798275631861965_n.jpg",
-    "highlight": false,
-    "location": "Tozeur",
-    "materials": [
-      "Moteur Tubulaire Télécommandé",
-      "Profilés Aluminium Extrudé",
-      "Joints EPDM Haute Ã‰tanchéité",
-      "Galets Téflon"
-    ],
-    "description": "Système coulissant automatique motorisé permettant d'ouvrir ou fermer le patio central. Ã‰tanchéité totale à l'eau de pluie et canalisation soignée tout en préservant le cachet architectural du bâtiment."
-  },
-  {
-    "id": "proj-ao-auto-31",
-    "title": "Toit Rétractable Automatique Double Pente Ã‰vacuation Rapide",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/490184132_1114243290719066_1621107580937284081_n.jpg",
-    "highlight": false,
-    "location": "La Marsa Plage",
-    "materials": [
-      "Système Coulissant Ã‰lectrique",
-      "Polycarbonate Alvéolaire Isolant",
-      "Chéneaux d'Ã‰vacuation Intégrés",
-      "Télécommande Radio"
-    ],
-    "description": "Toiture escamotable électrique avec guidage haute précision sur roulements inox. Déplacement fluide, silencieux et sécurisé par capteurs de fin de course."
-  },
-  {
-    "id": "proj-ao-auto-32",
-    "title": "Couverture Coulissante Ã‰lectrique sur Terrasse d'Ã‰tage",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/490347427_1114243834052345_608851654910274139_n.jpg",
-    "highlight": false,
-    "location": "Carthage Byrsa",
-    "materials": [
-      "Automatisation Somfy",
-      "Acier Galvanisé Cuve",
-      "Verre Sécurit Feuilleté",
-      "Rails de Guidage Usinés"
-    ],
-    "description": "Véranda et couverture rétractable à ouverture rapide. Gain thermique en mi-saison et protection intégrale des espaces de vie intérieurs."
-  },
-  {
-    "id": "proj-ao-auto-33",
-    "title": "Abri Ouvrant Automatique Polycarbonate Compact Antichoc",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/688732814_1438572448286147_889560353063644710_n.jpg",
-    "highlight": false,
-    "location": "Mutuelleville",
-    "materials": [
-      "Motorisation Ã‰tanche IP65",
-      "Châssis Galvanisé Thermo-laqué",
-      "Polycarbonate Traité Anti-UV",
-      "Rails Inox 316"
-    ],
-    "description": "Conception et installation d'un toit rétractable automatique sur mesure au-dessus d'un patio traditionnel. Permet de ventiler en été et d'isoler parfaitement contre la pluie et la poussière en hiver grâce à une motorisation étanche avec télécommande radio."
-  },
-  {
-    "id": "proj-ao-auto-34",
-    "title": "Toiture Rétractable Grande Envergure Motorisation Somfy",
-    "category": "abris-ouvrants",
-    "subCategory": "auto",
-    "categoryLabel": "Abri Ouvrant Automatique",
-    "folder": "Abri Ouvrant Automatique",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Automatique/691527568_1438571824952876_3457758117842715150_n.jpg",
-    "highlight": false,
-    "location": "Gammarth Supérieur",
-    "materials": [
-      "Moteur Tubulaire Télécommandé",
-      "Profilés Aluminium Extrudé",
-      "Joints EPDM Haute Ã‰tanchéité",
-      "Galets Téflon"
-    ],
-    "description": "Système coulissant automatique motorisé permettant d'ouvrir ou fermer le patio central. Ã‰tanchéité totale à l'eau de pluie et canalisation soignée tout en préservant le cachet architectural du bâtiment."
-  },
-  {
-    "id": "proj-ao-man-01",
-    "title": "Abri Ouvrant Manuel à Poussée Fluide sur Rails Inox",
-    "category": "abris-ouvrants",
-    "subCategory": "manuel",
-    "categoryLabel": "Abri Ouvrant Manuel",
-    "folder": "Abri Ouvrant Manuel",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Manuel/475133257_632691732786391_9174106371853990195_n.jpg",
-    "highlight": false,
-    "location": "La Marsa",
-    "materials": [
-      "Guidage sur Rails Inox",
-      "Galets à Roulements Ã‰tanches",
-      "Polycarbonate Compact",
-      "Peinture Ã‰poxy Cuite"
-    ],
-    "description": "Système coulissant manuel monté sur galets inox à roulements étanches. Une simple poussée sans effort permet d'ouvrir ou fermer la toiture selon la météo."
-  },
-  {
-    "id": "proj-ao-man-02",
-    "title": "Toiture Coulissante Manuelle pour Patio & Cour Intérieure",
-    "category": "abris-ouvrants",
-    "subCategory": "manuel",
-    "categoryLabel": "Abri Ouvrant Manuel",
-    "folder": "Abri Ouvrant Manuel",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Manuel/475273808_632691729453058_1203911125006579581_n.jpg",
-    "highlight": false,
-    "location": "Sidi Bou Saïd",
-    "materials": [
-      "Châssis Acier Galvanisé",
-      "Polycarbonate Alvéolaire 16mm",
-      "Poignée de ManÅ“uvre Ergonomique",
-      "Brosses d'Ã‰tanchéité"
-    ],
-    "description": "Abri ouvrant manuel sur rails profilés inox avec gouttières d'évacuation périphérique et joints brosses étanches."
-  },
-  {
-    "id": "proj-ao-man-03",
-    "title": "Abri Ouvrant Manuel Châssis Métallique Laqué Noir",
-    "category": "abris-ouvrants",
-    "subCategory": "manuel",
-    "categoryLabel": "Abri Ouvrant Manuel",
-    "folder": "Abri Ouvrant Manuel",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Manuel/475315051_632691739453057_6760794497378818236_n.jpg",
-    "highlight": false,
-    "location": "Hammamet",
-    "materials": [
-      "Structure Métallique Légère",
-      "Verrouillage Intérieur Anti-Effraction",
-      "Chéneau Périphérique",
-      "Finition Noir Mat"
-    ],
-    "description": "Solution de fermeture manuelle économique et durable pour patio, offrant une aération naturelle instantanée et zéro consommation électrique."
-  },
-  {
-    "id": "proj-ao-man-04",
-    "title": "Verrière Coulissante Manuelle à Galets Inox & Roulements",
-    "category": "abris-ouvrants",
-    "subCategory": "manuel",
-    "categoryLabel": "Abri Ouvrant Manuel",
-    "folder": "Abri Ouvrant Manuel",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Manuel/475579720_632691699453061_5487842151749937137_n.jpg",
-    "highlight": false,
-    "location": "Carthage",
-    "materials": [
-      "Guidage sur Rails Inox",
-      "Galets à Roulements Ã‰tanches",
-      "Polycarbonate Compact",
-      "Peinture Ã‰poxy Cuite"
-    ],
-    "description": "Système coulissant manuel monté sur galets inox à roulements étanches. Une simple poussée sans effort permet d'ouvrir ou fermer la toiture selon la météo."
-  },
-  {
-    "id": "proj-ao-man-05",
-    "title": "Toiture Coulissante Manuelle avec Verrouillage de Sécurité",
-    "category": "abris-ouvrants",
-    "subCategory": "manuel",
-    "categoryLabel": "Abri Ouvrant Manuel",
-    "folder": "Abri Ouvrant Manuel",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Manuel/480516186_624476003658007_2741849751443257445_n.jpg",
-    "highlight": false,
-    "location": "Bizerte",
-    "materials": [
-      "Châssis Acier Galvanisé",
-      "Polycarbonate Alvéolaire 16mm",
-      "Poignée de ManÅ“uvre Ergonomique",
-      "Brosses d'Ã‰tanchéité"
-    ],
-    "description": "Abri ouvrant manuel sur rails profilés inox avec gouttières d'évacuation périphérique et joints brosses étanches."
-  },
-  {
-    "id": "proj-ao-man-06",
-    "title": "Abri Ouvrant Manuel avec Ã‰vacuation d'Eau Pluviale Intégrée",
-    "category": "abris-ouvrants",
-    "subCategory": "manuel",
-    "categoryLabel": "Abri Ouvrant Manuel",
-    "folder": "Abri Ouvrant Manuel",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Manuel/480748275_624475810324693_5130324898412857084_n.jpg",
-    "highlight": false,
-    "location": "Nabeul",
-    "materials": [
-      "Structure Métallique Légère",
-      "Verrouillage Intérieur Anti-Effraction",
-      "Chéneau Périphérique",
-      "Finition Noir Mat"
-    ],
-    "description": "Solution de fermeture manuelle économique et durable pour patio, offrant une aération naturelle instantanée et zéro consommation électrique."
-  },
-  {
-    "id": "proj-ao-man-07",
-    "title": "Couverture Rétractable Manuelle pour Terrasse Haute",
-    "category": "abris-ouvrants",
-    "subCategory": "manuel",
-    "categoryLabel": "Abri Ouvrant Manuel",
-    "folder": "Abri Ouvrant Manuel",
-    "image": "./reference/2A Pro/Abri%20Ouvrant%20Manuel/480938941_624475846991356_8462306116136572819_n.jpg",
-    "highlight": false,
-    "location": "Ariana",
-    "materials": [
-      "Guidage sur Rails Inox",
-      "Galets à Roulements Ã‰tanches",
-      "Polycarbonate Compact",
-      "Peinture Ã‰poxy Cuite"
-    ],
-    "description": "Système coulissant manuel monté sur galets inox à roulements étanches. Une simple poussée sans effort permet d'ouvrir ou fermer la toiture selon la météo."
-  },
-  {
-    "id": "proj-pt-01",
-    "title": "Pergola Métallique Contemporaine Grande Portée",
-    "category": "pergolas",
-    "subCategory": "pergola",
-    "categoryLabel": "Pergola & Terrasse",
-    "folder": "Pergola & Terrasse",
-    "image": "./reference/2A Pro/Pergola%20&%20Terrasse/480943011_2055311361549438_1568132379765720548_n.jpg",
-    "highlight": true,
-    "location": "Gammarth",
-    "materials": [
-      "Acier Galvanisé à Chaud",
-      "Peinture Ã‰poxy Blanche Cuite au Four",
-      "Poteaux Porteurs Renforcés"
-    ],
-    "description": "Conception et fabrication sur mesure d'une pergola métallique contemporaine à grande portée. Offre un ombrage optimal et valorise l'espace extérieur de la villa."
-  },
-  {
-    "id": "proj-pt-02",
-    "title": "Pergola Autoportante Thermo-Laquée Espace Piscine",
-    "category": "pergolas",
-    "subCategory": "pergola",
-    "categoryLabel": "Pergola & Terrasse",
-    "folder": "Pergola & Terrasse",
-    "image": "./reference/2A Pro/Pergola%20&%20Terrasse/481157953_2055311598216081_8898074822313814141_n.jpg",
-    "highlight": false,
-    "location": "La Marsa",
-    "materials": [
-      "Ossature Tubulaire Acier",
-      "Lames Brise-Soleil Thermolaquées",
-      "Platines Ancrage Invisible"
-    ],
-    "description": "Structure autoportante en acier galvanisé traité contre la corrosion saline, idéale pour abriter les abords d'une piscine ou une terrasse ouverte."
-  },
-  {
-    "id": "proj-pt-03",
-    "title": "Structure d'Ombrage pour Terrasse et Jardin de Villa",
-    "category": "pergolas",
-    "subCategory": "pergola",
-    "categoryLabel": "Pergola & Terrasse",
-    "folder": "Pergola & Terrasse",
-    "image": "./reference/2A Pro/Pergola%20&%20Terrasse/481165207_2055311568216084_2254767218826873348_n.jpg",
-    "highlight": false,
-    "location": "Hammamet Sud",
-    "materials": [
-      "Charpente Métallique Design",
-      "Finition Anthracite Texturé RAL 7016",
-      "Assemblages Soudés Meulés"
-    ],
-    "description": "Pergola moderne combinant robustesse structurelle et lignes architecturales épurées, conçue pour résister aux vents violents."
-  },
-  {
-    "id": "proj-pt-04",
-    "title": "Pergola Design Acier avec Lames Brise-Soleil",
-    "category": "pergolas",
-    "subCategory": "pergola",
-    "categoryLabel": "Pergola & Terrasse",
-    "folder": "Pergola & Terrasse",
-    "image": "./reference/2A Pro/Pergola%20&%20Terrasse/481219950_2055311551549419_8070414836873015081_n.jpg",
-    "highlight": false,
-    "location": "Les Berges du Lac 2",
-    "materials": [
-      "Acier Galvanisé à Chaud",
-      "Peinture Ã‰poxy Blanche Cuite au Four",
-      "Poteaux Porteurs Renforcés"
-    ],
-    "description": "Conception et fabrication sur mesure d'une pergola métallique contemporaine à grande portée. Offre un ombrage optimal et valorise l'espace extérieur de la villa."
-  },
-  {
-    "id": "proj-pt-05",
-    "title": "Pergola Extérieure Renforcée Espace Détente & Salon d'Ã‰té",
-    "category": "pergolas",
-    "subCategory": "pergola",
-    "categoryLabel": "Pergola & Terrasse",
-    "folder": "Pergola & Terrasse",
-    "image": "./reference/2A Pro/Pergola%20&%20Terrasse/481996481_2055311621549412_54936722243508867_n.jpg",
-    "highlight": false,
-    "location": "Sousse Kantaoui",
-    "materials": [
-      "Ossature Tubulaire Acier",
-      "Lames Brise-Soleil Thermolaquées",
-      "Platines Ancrage Invisible"
-    ],
-    "description": "Structure autoportante en acier galvanisé traité contre la corrosion saline, idéale pour abriter les abords d'une piscine ou une terrasse ouverte."
-  },
-  {
-    "id": "proj-ext-bv-01",
-    "title": "Extension Métallique & Panneaux Brise-Vue Découpés Laser",
-    "category": "extensions",
-    "subCategory": "brise-vue",
-    "categoryLabel": "Extension & Brise-Vue",
-    "folder": "Extension & Brise-Vue",
-    "image": "./reference/2A Pro/Extension%20&%20Brise-Vue/471987924_617305737658324_3189488017839922844_n.jpg",
-    "highlight": true,
-    "location": "Ennasr 2",
-    "materials": [
-      "Tôle Galvanisée Découpe Laser",
-      "Thermolaquage Haute Résistance",
-      "Poteaux Raidisseurs Profilés"
-    ],
-    "description": "Fabrication de panneaux brise-vue décoratifs découpés au laser avec motifs orientaux revisités. Protège l'intimité des regards extérieurs tout en laissant circuler la brise."
-  },
-  {
-    "id": "proj-ext-bv-02",
-    "title": "Claustra Brise-Vue Ajouré Motif Moucharabieh Moderne",
-    "category": "extensions",
-    "subCategory": "brise-vue",
-    "categoryLabel": "Extension & Brise-Vue",
-    "folder": "Extension & Brise-Vue",
-    "image": "./reference/2A Pro/Extension%20&%20Brise-Vue/472334283_617305810991650_6911749872894961721_n.jpg",
-    "highlight": false,
-    "location": "La Marsa",
-    "materials": [
-      "Acier Traité Anti-Corrosion",
-      "Peinture Poudrée Cuite au Four",
-      "Fixations Façade Scellement"
-    ],
-    "description": "Extension et habillage métallique contemporain pour délimiter les espaces extérieurs et terrasses avec une esthétique architecturale haut de gamme."
-  },
-  {
-    "id": "proj-ext-bv-03",
-    "title": "Extension de Façade avec Brise-Soleil Métallique Laqué",
-    "category": "extensions",
-    "subCategory": "brise-vue",
-    "categoryLabel": "Extension & Brise-Vue",
-    "folder": "Extension & Brise-Vue",
-    "image": "./reference/2A Pro/Extension%20&%20Brise-Vue/472375712_617305480991683_2060371507074112852_n.jpg",
-    "highlight": false,
-    "location": "Les Berges du Lac",
-    "materials": [
-      "Panneaux Ajourés Découpés Numérique",
-      "Aluminium / Acier Laqué",
-      "Cadres Tubulaires Rigides"
-    ],
-    "description": "Fermeture ajourée sur mesure combinant brise-soleil et sécurité périmétrique pour villa et terrasses résidentielles."
-  },
-  {
-    "id": "proj-ext-bv-04",
-    "title": "Panneaux Brise-Vue Décoratifs pour Clôture de Villa",
-    "category": "extensions",
-    "subCategory": "brise-vue",
-    "categoryLabel": "Extension & Brise-Vue",
-    "folder": "Extension & Brise-Vue",
-    "image": "./reference/2A Pro/Extension%20&%20Brise-Vue/472391271_617305597658338_8443790696806434333_n.jpg",
-    "highlight": false,
-    "location": "Carthage",
-    "materials": [
-      "Tôle Galvanisée Découpe Laser",
-      "Thermolaquage Haute Résistance",
-      "Poteaux Raidisseurs Profilés"
-    ],
-    "description": "Fabrication de panneaux brise-vue décoratifs découpés au laser avec motifs orientaux revisités. Protège l'intimité des regards extérieurs tout en laissant circuler la brise."
-  },
-  {
-    "id": "proj-ext-bv-05",
-    "title": "Extension et Séparation de Propriété en Métal Laqué Noir",
-    "category": "extensions",
-    "subCategory": "brise-vue",
-    "categoryLabel": "Extension & Brise-Vue",
-    "folder": "Extension & Brise-Vue",
-    "image": "./reference/2A Pro/Extension%20&%20Brise-Vue/472558202_617305600991671_3321105236770430689_n.jpg",
-    "highlight": false,
-    "location": "Gammarth",
-    "materials": [
-      "Acier Traité Anti-Corrosion",
-      "Peinture Poudrée Cuite au Four",
-      "Fixations Façade Scellement"
-    ],
-    "description": "Extension et habillage métallique contemporain pour délimiter les espaces extérieurs et terrasses avec une esthétique architecturale haut de gamme."
-  },
-  {
-    "id": "proj-ext-bv-06",
-    "title": "Brise-Vue Contemporain aux Motifs Géométriques Personnalisés",
-    "category": "extensions",
-    "subCategory": "brise-vue",
-    "categoryLabel": "Extension & Brise-Vue",
-    "folder": "Extension & Brise-Vue",
-    "image": "./reference/2A Pro/Extension%20&%20Brise-Vue/472558902_617305740991657_7994843744512822768_n.jpg",
-    "highlight": false,
-    "location": "Ariana",
-    "materials": [
-      "Panneaux Ajourés Découpés Numérique",
-      "Aluminium / Acier Laqué",
-      "Cadres Tubulaires Rigides"
-    ],
-    "description": "Fermeture ajourée sur mesure combinant brise-soleil et sécurité périmétrique pour villa et terrasses résidentielles."
-  },
-  {
-    "id": "proj-ext-bv-07",
-    "title": "Fermeture Latérale de Terrasse avec Lames Brise-Vent",
-    "category": "extensions",
-    "subCategory": "brise-vue",
-    "categoryLabel": "Extension & Brise-Vue",
-    "folder": "Extension & Brise-Vue",
-    "image": "./reference/2A Pro/Extension%20&%20Brise-Vue/472560095_617305477658350_97934783089118661_n.jpg",
-    "highlight": false,
-    "location": "Menzah 9",
-    "materials": [
-      "Tôle Galvanisée Découpe Laser",
-      "Thermolaquage Haute Résistance",
-      "Poteaux Raidisseurs Profilés"
-    ],
-    "description": "Fabrication de panneaux brise-vue décoratifs découpés au laser avec motifs orientaux revisités. Protège l'intimité des regards extérieurs tout en laissant circuler la brise."
-  },
-  {
-    "id": "proj-ext-bv-08",
-    "title": "Extension & Habillage Métallique sur Mesure pour Terrasse",
-    "category": "extensions",
-    "subCategory": "brise-vue",
-    "categoryLabel": "Extension & Brise-Vue",
-    "folder": "Extension & Brise-Vue",
-    "image": "./reference/2A Pro/Extension%20&%20Brise-Vue/473187678_620287497360148_6926985100236041093_n.jpg",
-    "highlight": false,
-    "location": "Hammamet",
-    "materials": [
-      "Acier Traité Anti-Corrosion",
-      "Peinture Poudrée Cuite au Four",
-      "Fixations Façade Scellement"
-    ],
-    "description": "Extension et habillage métallique contemporain pour délimiter les espaces extérieurs et terrasses avec une esthétique architecturale haut de gamme."
-  },
-  {
-    "id": "proj-ext-ter-01",
-    "title": "Extension de Terrasse Couverte Charpente Métallique",
-    "category": "extensions",
-    "subCategory": "terrasse",
-    "categoryLabel": "Extension de Terrasse",
-    "folder": "Extension de Terrasse",
-    "image": "./reference/2A Pro/Extension%20de%20Terrasse/472570552_617810084274556_6875776154806226774_n.jpg",
-    "highlight": false,
-    "location": "La Marsa",
-    "materials": [
-      "Poutres IPN / IPE Acier Galvanisé",
-      "Couverture Polycarbonate Compact",
-      "Chéneaux d'Ã‰vacuation Zéro Fuite"
-    ],
-    "description": "Extension de terrasse créant un véritable salon extérieur abrité utilisable tout au long de l'année. Charpente métallique solide ancrée avec précision."
-  },
-  {
-    "id": "proj-ext-ter-02",
-    "title": "Avancée de Terrasse Métallique avec Toiture Isolée",
-    "category": "extensions",
-    "subCategory": "terrasse",
-    "categoryLabel": "Extension de Terrasse",
-    "folder": "Extension de Terrasse",
-    "image": "./reference/2A Pro/Extension%20de%20Terrasse/473058319_620287230693508_4675937849599958610_n.jpg",
-    "highlight": false,
-    "location": "Carthage",
-    "materials": [
-      "Structure Métallique Adossée",
-      "Finition Thermolaquage Gris Anthracite",
-      "Poteaux Tubulaires Ã‰pais"
-    ],
-    "description": "Agrandissement couvert pour terrasse de villa avec chéneau d'évacuation canalisé et couverture étanche aux fortes pluies."
-  },
-  {
-    "id": "proj-ext-ter-03",
-    "title": "Extension de Vie Extérieure Structure Acier Laqué",
-    "category": "extensions",
-    "subCategory": "terrasse",
-    "categoryLabel": "Extension de Terrasse",
-    "folder": "Extension de Terrasse",
-    "image": "./reference/2A Pro/Extension%20de%20Terrasse/473105635_620287504026814_3006092566098516809_n.jpg",
-    "highlight": false,
-    "location": "Gammarth",
-    "materials": [
-      "Ossature Acier Haute Portée",
-      "Toiture Isolante",
-      "Ancrage Mural Chimique Certifié"
-    ],
-    "description": "Ouvrage d'extension sur mesure associant robustesse de l'acier et transparence pour préserver la clarté intérieure."
-  },
-  {
-    "id": "proj-ext-ter-04",
-    "title": "Couverture Métallique Adossée pour Terrasse de Villa",
-    "category": "extensions",
-    "subCategory": "terrasse",
-    "categoryLabel": "Extension de Terrasse",
-    "folder": "Extension de Terrasse",
-    "image": "./reference/2A Pro/Extension%20de%20Terrasse/473187678_620287497360148_6926985100236041093_n.jpg",
-    "highlight": false,
-    "location": "Soukra",
-    "materials": [
-      "Poutres IPN / IPE Acier Galvanisé",
-      "Couverture Polycarbonate Compact",
-      "Chéneaux d'Ã‰vacuation Zéro Fuite"
-    ],
-    "description": "Extension de terrasse créant un véritable salon extérieur abrité utilisable tout au long de l'année. Charpente métallique solide ancrée avec précision."
-  },
-  {
-    "id": "proj-ext-ter-05",
-    "title": "Extension Terrasse Panoramique avec Chéneaux Intégrés",
-    "category": "extensions",
-    "subCategory": "terrasse",
-    "categoryLabel": "Extension de Terrasse",
-    "folder": "Extension de Terrasse",
-    "image": "./reference/2A Pro/Extension%20de%20Terrasse/473266817_620287494026815_1548028710098018876_n.jpg",
-    "highlight": false,
-    "location": "Hammamet Nord",
-    "materials": [
-      "Structure Métallique Adossée",
-      "Finition Thermolaquage Gris Anthracite",
-      "Poteaux Tubulaires Ã‰pais"
-    ],
-    "description": "Agrandissement couvert pour terrasse de villa avec chéneau d'évacuation canalisé et couverture étanche aux fortes pluies."
-  },
-  {
-    "id": "proj-alu-01",
-    "title": "Baies Vitrées Coulissantes & Châssis Aluminium Laqué",
-    "category": "menuiserie",
-    "subCategory": "menuiserie",
-    "categoryLabel": "Menuiserie Aluminium",
-    "folder": "Menuiserie Aluminium",
-    "image": "./reference/2A Pro/Menuiserie%20Aluminium/472409765_616318294423735_4011928754758557392_n.jpg",
-    "highlight": false,
-    "location": "Les Berges du Lac 2",
-    "materials": [
-      "Profilés Aluminium à Rupture de Pont Thermique",
-      "Double Vitrage Feuilleté 44.2",
-      "Quincaillerie Haute Sécurité"
-    ],
-    "description": "Conception et pose de grandes baies coulissantes et fermetures en aluminium thermolaqué. Confort thermique optimal et vue dégagée."
-  },
-  {
-    "id": "proj-alu-02",
-    "title": "Fermeture Vitrée Panoramique & Menuiserie Aluminium",
-    "category": "menuiserie",
-    "subCategory": "menuiserie",
-    "categoryLabel": "Menuiserie Aluminium",
-    "folder": "Menuiserie Aluminium",
-    "image": "./reference/2A Pro/Menuiserie%20Aluminium/472446466_616317824423782_7901002188769201385_n.jpg",
-    "highlight": false,
-    "location": "La Marsa",
-    "materials": [
-      "Aluminium Thermolaqué Qualimarine",
-      "Vitrage de Sécurité Sécurit",
-      "Joints d'Ã‰tanchéité Acoustique"
-    ],
-    "description": "Menuiserie aluminium haut de gamme conçue sur mesure pour résister à l'air salin côtier avec double vitrage isolant."
-  },
-  {
-    "id": "proj-alu-03",
-    "title": "Ensemble Menuiserie Aluminium Double Vitrage Haute Isolation",
-    "category": "menuiserie",
-    "subCategory": "menuiserie",
-    "categoryLabel": "Menuiserie Aluminium",
-    "folder": "Menuiserie Aluminium",
-    "image": "./reference/2A Pro/Menuiserie%20Aluminium/472698694_616318227757075_8030990743403509889_n.jpg",
-    "highlight": false,
-    "location": "Gammarth",
-    "materials": [
-      "Profilés Slim Ã‰purés",
-      "Verre Haute Transparence",
-      "Coulissants Silencieux Inox"
-    ],
-    "description": "Châssis et vitrages panoramiques apportant une luminosité exceptionnelle et une sécurité renforcée aux espaces de vie."
-  },
-  {
-    "id": "proj-gc-01",
-    "title": "Garde-Corps Inox Brossé Architectural d'Escalier",
-    "category": "garde-corps",
-    "subCategory": "garde-corps",
-    "categoryLabel": "Garde-Corps Inox & Verre",
-    "folder": "Garde-Corps Inox & Verre",
-    "image": "./reference/2A Pro/Garde-Corps%20Inox%20&%20Verre/474918079_631700719552159_8580503821384146621_n.jpg",
-    "highlight": true,
-    "location": "Gammarth",
-    "materials": [
-      "Inox 316 Qualité Marine Poli Brossé",
-      "Verre Feuilleté Trempé 88.2",
-      "Pinces & Platines Inox Massif"
-    ],
-    "description": "Fabrication artisanale et pose d'un garde-corps en acier inoxydable 316 qualité marine. Résistance absolue aux embruns côtiers et sécurité certifiée."
-  },
-  {
-    "id": "proj-gc-02",
-    "title": "Garde-Corps Inox & Panneaux de Verre Feuilleté Sécurit",
-    "category": "garde-corps",
-    "subCategory": "garde-corps",
-    "categoryLabel": "Garde-Corps Inox & Verre",
-    "folder": "Garde-Corps Inox & Verre",
-    "image": "./reference/2A Pro/Garde-Corps%20Inox%20&%20Verre/474994411_631700856218812_2911807213977144831_n.jpg",
-    "highlight": false,
-    "location": "La Marsa",
-    "materials": [
-      "Tubes Inox Calibrés",
-      "Main Courante Ergonomique",
-      "Fixation à l'Anglaise Renforcée"
-    ],
-    "description": "Garde-corps contemporain associant montants inox épurés et panneaux de verre feuilleté pour une transparence totale sans obstruer la vue panoramique."
-  },
-  {
-    "id": "proj-gc-03",
-    "title": "Rambarde Inox Maritime Résistante aux Embruns Salins",
-    "category": "garde-corps",
-    "subCategory": "garde-corps",
-    "categoryLabel": "Garde-Corps Inox & Verre",
-    "folder": "Garde-Corps Inox & Verre",
-    "image": "./reference/2A Pro/Garde-Corps%20Inox%20&%20Verre/475020005_631701022885462_3117699055939648561_n.jpg",
-    "highlight": false,
-    "location": "Les Berges du Lac",
-    "materials": [
-      "Inox Satiné Zéro Corrosion",
-      "Verre Sécurit Transparent",
-      "Boulonnerie Inox A4"
-    ],
-    "description": "Rampes et balustrades d'escalier intérieures et extérieures garantissant rigidité mécanique, design intemporel et aucun entretien."
-  },
-  {
-    "id": "proj-gc-04",
-    "title": "Garde-Corps Balcon Moderne Profilé Inox & Verre",
-    "category": "garde-corps",
-    "subCategory": "garde-corps",
-    "categoryLabel": "Garde-Corps Inox & Verre",
-    "folder": "Garde-Corps Inox & Verre",
-    "image": "./reference/2A Pro/Garde-Corps%20Inox%20&%20Verre/475287143_631700726218825_8439286405344623905_n.jpg",
-    "highlight": false,
-    "location": "Carthage",
-    "materials": [
-      "Inox 316 Qualité Marine Poli Brossé",
-      "Verre Feuilleté Trempé 88.2",
-      "Pinces & Platines Inox Massif"
-    ],
-    "description": "Fabrication artisanale et pose d'un garde-corps en acier inoxydable 316 qualité marine. Résistance absolue aux embruns côtiers et sécurité certifiée."
-  },
-  {
-    "id": "proj-gc-05",
-    "title": "Rampes d'Escalier Inox Satiné Finition Soignée",
-    "category": "garde-corps",
-    "subCategory": "garde-corps",
-    "categoryLabel": "Garde-Corps Inox & Verre",
-    "folder": "Garde-Corps Inox & Verre",
-    "image": "./reference/2A Pro/Garde-Corps%20Inox%20&%20Verre/480751608_628119466626994_464736299663008719_n.jpg",
-    "highlight": false,
-    "location": "Hammamet",
-    "materials": [
-      "Tubes Inox Calibrés",
-      "Main Courante Ergonomique",
-      "Fixation à l'Anglaise Renforcée"
-    ],
-    "description": "Garde-corps contemporain associant montants inox épurés et panneaux de verre feuilleté pour une transparence totale sans obstruer la vue panoramique."
-  },
-  {
-    "id": "proj-gc-06",
-    "title": "Garde-Corps Rooftop Panoramique Tout Inox",
-    "category": "garde-corps",
-    "subCategory": "garde-corps",
-    "categoryLabel": "Garde-Corps Inox & Verre",
-    "folder": "Garde-Corps Inox & Verre",
-    "image": "./reference/2A Pro/Garde-Corps%20Inox%20&%20Verre/481051881_628119553293652_4255786399743516442_n.jpg",
-    "highlight": false,
-    "location": "Sousse",
-    "materials": [
-      "Inox Satiné Zéro Corrosion",
-      "Verre Sécurit Transparent",
-      "Boulonnerie Inox A4"
-    ],
-    "description": "Rampes et balustrades d'escalier intérieures et extérieures garantissant rigidité mécanique, design intemporel et aucun entretien."
-  },
-  {
-    "id": "proj-gc-07",
-    "title": "Balustrade Inox & Verre Sécurit pour Mezzanine Intérieure",
-    "category": "garde-corps",
-    "subCategory": "garde-corps",
-    "categoryLabel": "Garde-Corps Inox & Verre",
-    "folder": "Garde-Corps Inox & Verre",
-    "image": "./reference/2A Pro/Garde-Corps%20Inox%20&%20Verre/481160616_628119489960325_8376525825946157310_n.jpg",
-    "highlight": false,
-    "location": "Raoued Plage",
-    "materials": [
-      "Inox 316 Qualité Marine Poli Brossé",
-      "Verre Feuilleté Trempé 88.2",
-      "Pinces & Platines Inox Massif"
-    ],
-    "description": "Fabrication artisanale et pose d'un garde-corps en acier inoxydable 316 qualité marine. Résistance absolue aux embruns côtiers et sécurité certifiée."
-  },
-  {
-    "id": "proj-gc-08",
-    "title": "Garde-Corps Inox avec Lisses Horizontales de Sécurité",
-    "category": "garde-corps",
-    "subCategory": "garde-corps",
-    "categoryLabel": "Garde-Corps Inox & Verre",
-    "folder": "Garde-Corps Inox & Verre",
-    "image": "./reference/2A Pro/Garde-Corps%20Inox%20&%20Verre/481177699_628119646626976_5742101463709588913_n.jpg",
-    "highlight": false,
-    "location": "Menzah 9",
-    "materials": [
-      "Tubes Inox Calibrés",
-      "Main Courante Ergonomique",
-      "Fixation à l'Anglaise Renforcée"
-    ],
-    "description": "Garde-corps contemporain associant montants inox épurés et panneaux de verre feuilleté pour une transparence totale sans obstruer la vue panoramique."
-  },
-  {
-    "id": "proj-gc-09",
-    "title": "Main Courante & Garde-Corps Inox Haute Finition Soudé Meulé",
-    "category": "garde-corps",
-    "subCategory": "garde-corps",
-    "categoryLabel": "Garde-Corps Inox & Verre",
-    "folder": "Garde-Corps Inox & Verre",
-    "image": "./reference/2A Pro/Garde-Corps%20Inox%20&%20Verre/481217769_628119469960327_8471671428095495596_n.jpg",
-    "highlight": false,
-    "location": "Ariana",
-    "materials": [
-      "Inox Satiné Zéro Corrosion",
-      "Verre Sécurit Transparent",
-      "Boulonnerie Inox A4"
-    ],
-    "description": "Rampes et balustrades d'escalier intérieures et extérieures garantissant rigidité mécanique, design intemporel et aucun entretien."
-  },
-  {
-    "id": "proj-fac-01",
-    "title": "Habillage de Façade Commerciale en Panneaux Alucobond",
-    "category": "facades",
-    "subCategory": "facade",
-    "categoryLabel": "Enseigne & Façade Alucobond",
-    "folder": "Enseigne & Façade Alucobond",
-    "image": "./reference/2A Pro/Enseigne%20&%20Fa%C3%A7ade%20Alucobond/472558160_617810054274559_4764483677031823042_n.jpg",
-    "highlight": true,
-    "location": "Charguia 2, Tunis",
-    "materials": [
-      "Panneaux Aluminium Composite Alucobond 4mm",
-      "Sous-Structure Acier Galvanisé",
-      "Découpe Numérique Laser CNC"
-    ],
-    "description": "Habillage intégral de façade commerciale et administrative en cassettes aluminium composite Alucobond. Modernité architecturale et résistance durable aux intempéries."
-  },
-  {
-    "id": "proj-fac-02",
-    "title": "Enseigne Lumineuse & Découpe Laser sur Panneaux Composites",
-    "category": "facades",
-    "subCategory": "facade",
-    "categoryLabel": "Enseigne & Façade Alucobond",
-    "folder": "Enseigne & Façade Alucobond",
-    "image": "./reference/2A Pro/Enseigne%20&%20Fa%C3%A7ade%20Alucobond/472967233_617809747607923_259777915371634855_n.jpg",
-    "highlight": false,
-    "location": "Les Berges du Lac",
-    "materials": [
-      "Cassettes Alucobond Résistantes aux UV",
-      "Ã‰clairage LED Intégré",
-      "Fixations Invisibles"
-    ],
-    "description": "Enseigne de prestige et habillage de devanture avec découpe numérique de précision et rétro-éclairage soigné."
-  },
-  {
-    "id": "proj-fac-03",
-    "title": "Façade Contemporaine Alucobond pour Siège d'Entreprise",
-    "category": "facades",
-    "subCategory": "facade",
-    "categoryLabel": "Enseigne & Façade Alucobond",
-    "folder": "Enseigne & Façade Alucobond",
-    "image": "./reference/2A Pro/Enseigne%20&%20Fa%C3%A7ade%20Alucobond/473008435_617809744274590_6711174634671395437_n.jpg",
-    "highlight": false,
-    "location": "Avenue Habib Bourguiba, Tunis",
-    "materials": [
-      "Composite Aluminium Haute Rigidité",
-      "Finition Métallisée Brossée",
-      "Joints Creux Calibrés"
-    ],
-    "description": "Rénovation et valorisation de façade d'immeuble professionnel avec panneaux composites lisses assurant une excellente isolation et un entretien quasi nul."
-  },
-  {
-    "id": "proj-fac-04",
-    "title": "Habillage Architectural Extérieur Panneaux Alucobond Haute Durabilité",
-    "category": "facades",
-    "subCategory": "facade",
-    "categoryLabel": "Enseigne & Façade Alucobond",
-    "folder": "Enseigne & Façade Alucobond",
-    "image": "./reference/2A Pro/Enseigne%20&%20Fa%C3%A7ade%20Alucobond/473062954_617809654274599_1854087381084369805_n.jpg",
-    "highlight": false,
-    "location": "Ariana Centre",
-    "materials": [
-      "Panneaux Aluminium Composite Alucobond 4mm",
-      "Sous-Structure Acier Galvanisé",
-      "Découpe Numérique Laser CNC"
-    ],
-    "description": "Habillage intégral de façade commerciale et administrative en cassettes aluminium composite Alucobond. Modernité architecturale et résistance durable aux intempéries."
+// ============================================================================
+// projectsData.js — AUTHORITATIVE CATEGORY & PROJECT DATA
+// Source: "Structure 2A PRO CONCEPT" directory + "2a pro concept Informations.txt"
+// Generated from the complete folder hierarchy and media inventory.
+// ============================================================================
+
+// ---------------------------------------------------------------------------
+// CATEGORY HIERARCHY (mirrors the authoritative folder structure exactly)
+// ---------------------------------------------------------------------------
+window.categoryHierarchy = [
+  {
+    id: "abri-de-terrace",
+    name: "Abri de terrace",
+    displayName: "Abris de Terrasses",
+    order: 1,
+    description: "Conception fabrication et pose d'abris de terrasse sur mesure, adaptés aux dimensions et aux besoins du client (étanchéité complète, structure galvanisé/alu, peinture epoxy au four/au pistolet, forme plat/arrondi, couverture au choix).",
+    subcategories: [],
+    thumbnail: "./Structure 2A PRO CONCEPT/Abri de terrace/Abri_de_terrace (1).jpg"
+  },
+  {
+    id: "abri-de-voiture",
+    name: "Abri de voiture",
+    displayName: "Abris de Voitures",
+    order: 2,
+    description: "Conception fabrication et pose d'abris de voitures sur mesure, adaptés aux dimensions et aux besoins du client (structure galvanisé/alu, peinture epoxy au four/au pistolet, forme plat/arrondi).",
+    subcategories: [
+      {
+        id: "abri-standard",
+        name: "Abri standard",
+        displayName: "Abri Standard",
+        description: "Abris avec une structure en poteaux et traverse. Couvertures disponibles : Polycarbonate, PVC, Toile PVC, Panneaux Sandwich.",
+        order: 1
+      },
+      {
+        id: "abri-suspendu",
+        name: "Abri suspendu",
+        displayName: "Abri Suspendu",
+        description: "Abris avec une structure permettant de réduire ou supprimer les poteaux frontaux. Couvertures disponibles : Polycarbonate, PVC, Toile PVC, Panneaux Sandwich.",
+        order: 2
+      }
+    ],
+    thumbnail: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (1).jpg"
+  },
+  {
+    id: "abri-ouvrant",
+    name: "Abri ouvrant",
+    displayName: "Abris Ouvrants",
+    order: 3,
+    description: "Conception, fabrication et pose d'abris ouvrants de maison arabe, terrasse, sur mesure, adaptés aux dimensions et aux besoins du client (étanchéité complète, ouverture sur une seule partie/ouverture sur plusieurs modules, structure galvanisé/alu, peinture epoxy au four/au pistolet, couverture au choix).",
+    subcategories: [
+      {
+        id: "abri-ouvrant-automatique",
+        name: "Abri ouvrant automatique",
+        displayName: "Abri Ouvrant Automatique",
+        description: "Système coulissant à ouverture automatique (motorisé). Système de commande pour l'ouverture motorisée.",
+        order: 1
+      },
+      {
+        id: "abri-ouvrant-manuelle",
+        name: "Abri ouvrant manuelle",
+        displayName: "Abri Ouvrant Manuel",
+        description: "Système coulissant à ouverture manuelle par poussée.",
+        order: 2
+      }
+    ],
+    thumbnail: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (1).jpg"
+  },
+  {
+    id: "enceigne-set-habillage-de-facades",
+    name: "Enceigne set habillage de façades",
+    displayName: "Enseigne & Habillage de Façades",
+    order: 4,
+    description: "Conception et réalisation d'enseignes, habillages et décorations de façades en panneaux aluminium composite (Alucobond), avec découpe laser de motifs et logos sur mesure.",
+    subcategories: [],
+    thumbnail: "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enseigne_rts_school (1).jpg"
+  },
+  {
+    id: "extension",
+    name: "Extension",
+    displayName: "Extensions",
+    order: 5,
+    description: "Conception fabrication et pose d'extension de terrasse maison, terrasse café, séparation. Remplissage en tout types de verres, panneaux sandwich, pvc.",
+    subcategories: [
+      {
+        id: "en-aluminium",
+        name: "En aluminium",
+        displayName: "En Aluminium",
+        description: "Structure en aluminium (fixe, ouvrant, coulissant). Remplissage au choix.",
+        order: 1
+      },
+      {
+        id: "en-tole",
+        name: "En tôle",
+        displayName: "En Tôle",
+        description: "Extension en tôle galvanisée. Dimension au besoin du client. Découpe laser motifs selon le choix.",
+        order: 2
+      },
+      {
+        id: "en-acier",
+        name: "En acier",
+        displayName: "En Acier",
+        description: "Structure en acier galvanisée. Peinture au choix. Remplissage au choix.",
+        order: 3
+      },
+      {
+        id: "extension-brise-vue",
+        name: "Extension & Brise-Vue",
+        displayName: "Extension & Brise-Vue",
+        description: "Panneaux brise-vue décoratifs et extensions de séparation.",
+        order: 4
+      }
+    ],
+    thumbnail: "./Structure 2A PRO CONCEPT/Extension/En aluminium/Extension_en_aluminium (1).jpg"
+  },
+  {
+    id: "garde-corps-rampes-inox",
+    name: "GARDE-CORPS & RAMPES EN INOX",
+    displayName: "Garde-Corps & Rampes en Inox",
+    order: 6,
+    description: "Conception et fabrication de garde-corps en acier inoxydable pour escaliers, balcons, terrasses.",
+    subcategories: [
+      {
+        id: "garde-corps-tubes-inox",
+        name: "Garde-corps à tubes inox",
+        displayName: "Garde-corps à Tubes Inox",
+        description: "Montants verticaux, lisses horizontales, main courante en inox.",
+        order: 1
+      },
+      {
+        id: "garde-corps-verre",
+        name: "Garde-corps avec remplissage en verre",
+        displayName: "Garde-corps avec Remplissage en Verre",
+        description: "Structure inox, poteaux inox, main courante inox, verre de sécurité, fixations adaptées.",
+        order: 2
+      }
+    ],
+    thumbnail: "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (1).jpg"
+  },
+  {
+    id: "menuiserie-aluminium",
+    name: "Menuiserie aluminium",
+    displayName: "Menuiserie Aluminium",
+    order: 7,
+    description: "Fabrication et installation de menuiseries aluminium sur mesure : fenêtre, porte, porte fenêtre, moustiquaire, volet roulant. (Fixe, coulissant, à la française et battantes), remplissage au besoin du client.",
+    subcategories: [],
+    thumbnail: "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_1.jpg"
+  },
+  {
+    id: "pergola",
+    name: "Pergola",
+    displayName: "Pergola",
+    order: 8,
+    description: "Conception fabrication et pose de pergola en acier galvanisée ou en aluminium couverture au choix.",
+    subcategories: [],
+    thumbnail: "./Structure 2A PRO CONCEPT/Pergola/Pergola_1.jpg"
   }
 ];
 
+// ---------------------------------------------------------------------------
+// COMPLETE PROJECTS DATA — Every image from the authoritative directory
+// Base path: ./Structure 2A PRO CONCEPT/
+// ---------------------------------------------------------------------------
+window.projectsData = [
+
+  // =========================================================================
+  // 1. ABRI DE TERRACE (2 images)
+  // =========================================================================
+  {
+    id: "terrace-01",
+    title: "Abri de Terrasse Sur Mesure",
+    category: "abri-de-terrace",
+    subCategory: null,
+    categoryLabel: "Abri de Terrasse",
+    image: "./Structure 2A PRO CONCEPT/Abri de terrace/Abri_de_terrace (1).jpg",
+    highlight: true,
+    description: "Abri de terrasse sur mesure avec étanchéité complète, structure galvanisé/alu et peinture epoxy."
+  },
+  {
+    id: "terrace-02",
+    title: "Abri de Terrasse Contemporain",
+    category: "abri-de-terrace",
+    subCategory: null,
+    categoryLabel: "Abri de Terrasse",
+    image: "./Structure 2A PRO CONCEPT/Abri de terrace/Abri_de_terrace (2).jpg",
+    highlight: false,
+    description: "Couverture de terrasse robuste avec finition soignée et forme adaptée aux besoins du client."
+  },
+
+  // =========================================================================
+  // 2. ABRI DE VOITURE — Main category images (16 images)
+  // =========================================================================
+  {
+    id: "voiture-01",
+    title: "Abri de Voiture Sur Mesure",
+    category: "abri-de-voiture",
+    subCategory: null,
+    categoryLabel: "Abri de Voiture",
+    image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (1).jpg",
+    highlight: true,
+    description: "Abri de voiture conçu et fabriqué sur mesure, adapté aux dimensions et aux besoins du client."
+  },
+  {
+    id: "voiture-02",
+    title: "Abri de Voiture Structure Métallique",
+    category: "abri-de-voiture",
+    subCategory: null,
+    categoryLabel: "Abri de Voiture",
+    image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (2).jpg",
+    highlight: false,
+    description: "Protection véhicule avec structure en acier galvanisé et finition thermolaquée."
+  },
+  {
+    id: "voiture-03",
+    title: "Abri Voiture Robuste",
+    category: "abri-de-voiture",
+    subCategory: null,
+    categoryLabel: "Abri de Voiture",
+    image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (3).jpg",
+    highlight: false,
+    description: "Structure d'abri de voiture haute résistance avec couverture au choix du client."
+  },
+  {
+    id: "voiture-04",
+    title: "Carport Design Pour Villa",
+    category: "abri-de-voiture",
+    subCategory: null,
+    categoryLabel: "Abri de Voiture",
+    image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (4).jpg",
+    highlight: false,
+    description: "Abri de voiture intégré à l'architecture de la villa avec peinture epoxy au four."
+  },
+  {
+    id: "voiture-05",
+    title: "Abri de Voiture Protection Intempéries",
+    category: "abri-de-voiture",
+    subCategory: null,
+    categoryLabel: "Abri de Voiture",
+    image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (5).jpg",
+    highlight: false,
+    description: "Protection complète contre le soleil et les intempéries avec structure galvanisée."
+  },
+  {
+    id: "voiture-06",
+    title: "Abri Voiture Double",
+    category: "abri-de-voiture",
+    subCategory: null,
+    categoryLabel: "Abri de Voiture",
+    image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (6).jpg",
+    highlight: false,
+    description: "Carport double pour protection de deux véhicules avec structure renforcée."
+  },
+  {
+    id: "voiture-07",
+    title: "Abri Voiture Profil Galbé",
+    category: "abri-de-voiture",
+    subCategory: null,
+    categoryLabel: "Abri de Voiture",
+    image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (7).jpg",
+    highlight: false,
+    description: "Structure avec profil arrondi et finition esthétique soignée."
+  },
+  {
+    id: "voiture-08",
+    title: "Abri de Voiture Compact",
+    category: "abri-de-voiture",
+    subCategory: null,
+    categoryLabel: "Abri de Voiture",
+    image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (8).jpg",
+    highlight: false,
+    description: "Abri de voiture compact adapté aux espaces restreints."
+  },
+  {
+    id: "voiture-09",
+    title: "Carport Laqué Haute Durabilité",
+    category: "abri-de-voiture",
+    subCategory: null,
+    categoryLabel: "Abri de Voiture",
+    image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (9).jpg",
+    highlight: false,
+    description: "Abri de voiture avec finition thermolaquée haute durabilité et résistance aux UV."
+  },
+  {
+    id: "voiture-10",
+    title: "Abri Voiture Grande Envergure",
+    category: "abri-de-voiture",
+    subCategory: null,
+    categoryLabel: "Abri de Voiture",
+    image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (10).jpg",
+    highlight: false,
+    description: "Structure grande portée pour protection de véhicules volumineux."
+  },
+  {
+    id: "voiture-11",
+    title: "Abri de Voiture Contemporain",
+    category: "abri-de-voiture",
+    subCategory: null,
+    categoryLabel: "Abri de Voiture",
+    image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (11).jpg",
+    highlight: false,
+    description: "Design contemporain avec structure en acier et couverture polycarbonate."
+  },
+  {
+    id: "voiture-12",
+    title: "Abri Voiture Résidentiel",
+    category: "abri-de-voiture",
+    subCategory: null,
+    categoryLabel: "Abri de Voiture",
+    image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (12).jpg",
+    highlight: false,
+    description: "Installation résidentielle avec ancrage renforcé et finition épurée."
+  },
+  {
+    id: "voiture-13",
+    title: "Carport Multiplace Renforcé",
+    category: "abri-de-voiture",
+    subCategory: null,
+    categoryLabel: "Abri de Voiture",
+    image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (13).jpg",
+    highlight: false,
+    description: "Structure renforcée pour abriter plusieurs véhicules simultanément."
+  },
+  {
+    id: "voiture-14",
+    title: "Abri de Voiture Profilés Tubulaires",
+    category: "abri-de-voiture",
+    subCategory: null,
+    categoryLabel: "Abri de Voiture",
+    image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (14).jpg",
+    highlight: false,
+    description: "Construction en profilés tubulaires acier galvanisé avec peinture epoxy."
+  },
+  {
+    id: "voiture-15",
+    title: "Abri Voiture Anti-UV",
+    category: "abri-de-voiture",
+    subCategory: null,
+    categoryLabel: "Abri de Voiture",
+    image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (15).jpg",
+    highlight: false,
+    description: "Protection anti-UV et anti-intempéries avec couverture haute performance."
+  },
+  {
+    id: "voiture-16",
+    title: "Carport Finition Premium",
+    category: "abri-de-voiture",
+    subCategory: null,
+    categoryLabel: "Abri de Voiture",
+    image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (16).jpg",
+    highlight: false,
+    description: "Abri de voiture finition premium avec peinture epoxy cuite au four."
+  },
+
+  // --- Abri de Voiture > Abri Standard (4 images) ---
+  {
+    id: "voiture-std-poly",
+    title: "Abri Standard — Couverture Polycarbonate",
+    category: "abri-de-voiture",
+    subCategory: "abri-standard",
+    categoryLabel: "Abri Standard",
+    image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri standard/Abri_standard_COUVERTURE_polycarbonate.jpg",
+    highlight: false,
+    description: "Abri standard avec structure en poteaux et traverse, couverture en polycarbonate résistant aux chocs et anti-UV."
+  },
+  {
+    id: "voiture-std-pvc",
+    title: "Abri Standard — Couverture PVC",
+    category: "abri-de-voiture",
+    subCategory: "abri-standard",
+    categoryLabel: "Abri Standard",
+    image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri standard/Abri_standard_COUVERTURE_pvc.jpg",
+    highlight: false,
+    description: "Abri standard avec couverture en PVC rigide, opacité protectrice et durabilité sans entretien."
+  },
+  {
+    id: "voiture-std-toile",
+    title: "Abri Standard — Couverture Toile PVC",
+    category: "abri-de-voiture",
+    subCategory: "abri-standard",
+    categoryLabel: "Abri Standard",
+    image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri standard/Abri_standard_COUVERTURE_toile_pvc.jpg",
+    highlight: false,
+    description: "Abri standard avec couverture en toile PVC tendue, esthétique moderne et résistance mécanique renforcée."
+  },
+  {
+    id: "voiture-std-sandwich",
+    title: "Abri Standard — Couverture Panneaux Sandwich",
+    category: "abri-de-voiture",
+    subCategory: "abri-standard",
+    categoryLabel: "Abri Standard",
+    image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri standard/Abri_standard_COUVERTURE_panneaux_sandwich.jpg",
+    highlight: false,
+    description: "Abri standard avec couverture en panneaux sandwich pour isolation thermique maximale."
+  },
+
+  // --- Abri de Voiture > Abri Suspendu (4 images) ---
+  {
+    id: "voiture-susp-poly",
+    title: "Abri Suspendu — Polycarbonate",
+    category: "abri-de-voiture",
+    subCategory: "abri-suspendu",
+    categoryLabel: "Abri Suspendu",
+    image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri suspendu/Abri_suspendu_polycarbonate.jpg",
+    highlight: false,
+    description: "Abri suspendu sans poteaux frontaux avec couverture polycarbonate. Structure permettant de réduire ou supprimer les poteaux frontaux."
+  },
+  {
+    id: "voiture-susp-pvc",
+    title: "Abri Suspendu — PVC",
+    category: "abri-de-voiture",
+    subCategory: "abri-suspendu",
+    categoryLabel: "Abri Suspendu",
+    image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri suspendu/Abri_suspendu_pvc.jpg",
+    highlight: false,
+    description: "Abri suspendu avec couverture PVC rigide et dégagement total de l'espace au sol."
+  },
+  {
+    id: "voiture-susp-toile",
+    title: "Abri Suspendu — Toile PVC",
+    category: "abri-de-voiture",
+    subCategory: "abri-suspendu",
+    categoryLabel: "Abri Suspendu",
+    image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri suspendu/Abri_suspendu_toile_pvc.jpg",
+    highlight: false,
+    description: "Abri suspendu avec toile PVC tendue, style moderne et résistance mécanique."
+  },
+  {
+    id: "voiture-susp-sandwich",
+    title: "Abri Suspendu — Panneaux Sandwich",
+    category: "abri-de-voiture",
+    subCategory: "abri-suspendu",
+    categoryLabel: "Abri Suspendu",
+    image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri suspendu/Abri_suspendu_panneaux_sandwich.jpg",
+    highlight: false,
+    description: "Abri suspendu avec panneaux sandwich isolants et suppression des poteaux frontaux."
+  },
+
+  // =========================================================================
+  // 3. ABRI OUVRANT > Automatique (34 images)
+  // =========================================================================
+  {
+    id: "ouvrant-auto-01",
+    title: "Abri Ouvrant Automatique",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (1).jpg",
+    highlight: true,
+    description: "Système coulissant à ouverture automatique motorisé pour patio et terrasse."
+  },
+  {
+    id: "ouvrant-auto-02",
+    title: "Toiture Rétractable Motorisée",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (2).jpg",
+    highlight: false,
+    description: "Toiture rétractable automatique avec système de commande motorisé."
+  },
+  {
+    id: "ouvrant-auto-03",
+    title: "Abri Coulissant Automatique",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (3).jpg",
+    highlight: false,
+    description: "Système coulissant motorisé avec télécommande sans fil."
+  },
+  {
+    id: "ouvrant-auto-04",
+    title: "Verrière Rétractable Électrique",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (4).jpg",
+    highlight: false,
+    description: "Verrière rétractable avec motorisation étanche et guidage silencieux."
+  },
+  {
+    id: "ouvrant-auto-05",
+    title: "Couverture Escamotable Automatique",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (5).jpg",
+    highlight: false,
+    description: "Couverture escamotable automatique étanche aux pluies avec canalisation d'eaux."
+  },
+  {
+    id: "ouvrant-auto-06",
+    title: "Toiture Coulissante Motorisée",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (6).jpg",
+    highlight: false,
+    description: "Toiture coulissante motorisée avec panneaux haute clarté."
+  },
+  {
+    id: "ouvrant-auto-07",
+    title: "Abri Ouvrant Électrique Multi-Vantaux",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (7).jpg",
+    highlight: false,
+    description: "Système multi-vantaux motorisé avec capteur de pluie et vent."
+  },
+  {
+    id: "ouvrant-auto-08",
+    title: "Véranda Coulissante Motorisée",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (8).jpg",
+    highlight: false,
+    description: "Véranda coulissante motorisée grande portée avec rails de guidage usinés."
+  },
+  {
+    id: "ouvrant-auto-09",
+    title: "Toit Rétractable sur Rails Inox",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (9).jpg",
+    highlight: false,
+    description: "Toit rétractable sur rails inox avec galets étanches."
+  },
+  {
+    id: "ouvrant-auto-10",
+    title: "Abri Ouvrant Automatique Haute Transparence",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (10).jpg",
+    highlight: false,
+    description: "Système automatique haute transparence avec polycarbonate traité anti-UV."
+  },
+  {
+    id: "ouvrant-auto-11",
+    title: "Fermeture Motorisée avec Chéneau",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (11).jpg",
+    highlight: false,
+    description: "Fermeture motorisée coulissante avec chéneau d'évacuation intégré."
+  },
+  {
+    id: "ouvrant-auto-12",
+    title: "Toiture Rétractable Maison Arabe",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (12).jpg",
+    highlight: false,
+    description: "Toiture rétractable automatique modernisant une maison arabe traditionnelle."
+  },
+  {
+    id: "ouvrant-auto-13",
+    title: "Abri Ouvrant Motorisé Thermolaqué",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (13).jpg",
+    highlight: false,
+    description: "Abri ouvrant motorisé châssis acier galvanisé thermolaqué."
+  },
+  {
+    id: "ouvrant-auto-14",
+    title: "Verrière Rétractable Patio Central",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (14).jpg",
+    highlight: false,
+    description: "Verrière rétractable électrique pour patio central avec joints EPDM."
+  },
+  {
+    id: "ouvrant-auto-15",
+    title: "Couverture Coulissante Silencieuse",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (15).jpg",
+    highlight: false,
+    description: "Couverture coulissante automatique silencieuse avec roulements haute précision."
+  },
+  {
+    id: "ouvrant-auto-16",
+    title: "Toit Ouvrant Motorisé Villa",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (16).jpg",
+    highlight: false,
+    description: "Toit ouvrant motorisé sur mesure pour villa résidentielle."
+  },
+  {
+    id: "ouvrant-auto-17",
+    title: "Toiture Escamotable Baignée de Lumière",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (17).jpg",
+    highlight: false,
+    description: "Toiture escamotable automatique sur espace de vie baigné de lumière."
+  },
+  {
+    id: "ouvrant-auto-18",
+    title: "Abri Coulissant Profilés Aluminium",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (18).jpg",
+    highlight: false,
+    description: "Abri coulissant motorisé en profilés aluminium haute rigidité."
+  },
+  {
+    id: "ouvrant-auto-19",
+    title: "Verrière Télescopique Motorisée",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (19).jpg",
+    highlight: false,
+    description: "Verrière télescopique motorisée pour maison traditionnelle."
+  },
+  {
+    id: "ouvrant-auto-20",
+    title: "Toiture Coulissante Télécommandée",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (20).jpg",
+    highlight: false,
+    description: "Toiture coulissante télécommandée sans entretien avec automatisation."
+  },
+  {
+    id: "ouvrant-auto-21",
+    title: "Abri Ouvrant Étanchéité Totale",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (21).jpg",
+    highlight: false,
+    description: "Abri ouvrant automatique avec étanchéité totale sous pression."
+  },
+  {
+    id: "ouvrant-auto-22",
+    title: "Toit Rétractable Finition Époxy",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (22).jpg",
+    highlight: false,
+    description: "Toit rétractable motorisé finition blanc époxy au four."
+  },
+  {
+    id: "ouvrant-auto-23",
+    title: "Système Coulissant Charpente Métallique",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (23).jpg",
+    highlight: false,
+    description: "Système coulissant automatique sur charpente métallique de précision."
+  },
+  {
+    id: "ouvrant-auto-24",
+    title: "Abri Ouvrant Guidage Haute Précision",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (24).jpg",
+    highlight: false,
+    description: "Abri ouvrant électrique avec guidage haute précision sur roulements."
+  },
+  {
+    id: "ouvrant-auto-25",
+    title: "Toiture Rétractable Cour Pavée",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (25).jpg",
+    highlight: false,
+    description: "Toiture rétractable automatisée pour cour pavée traditionnelle."
+  },
+  {
+    id: "ouvrant-auto-26",
+    title: "Verrière Coulissante Isolation Thermique",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (26).jpg",
+    highlight: false,
+    description: "Verrière coulissante motorisée avec isolation thermique et protection pluie."
+  },
+  {
+    id: "ouvrant-auto-27",
+    title: "Toit Ouvrant Multi-Modules",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (27).jpg",
+    highlight: false,
+    description: "Toit ouvrant motorisé multi-modules télescopique."
+  },
+  {
+    id: "ouvrant-auto-28",
+    title: "Abri Rétractable Patio Lumineux",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (28).jpg",
+    highlight: false,
+    description: "Abri rétractable électrique pour aménagement de patio lumineux."
+  },
+  {
+    id: "ouvrant-auto-29",
+    title: "Toiture Ouvrante Cachet Architectural",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (29).jpg",
+    highlight: false,
+    description: "Toiture ouvrante motorisée préservant le cachet architectural du bâtiment."
+  },
+  {
+    id: "ouvrant-auto-30",
+    title: "Verrière Mobile Télécommandée",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (30).jpg",
+    highlight: false,
+    description: "Verrière mobile motorisée avec télécommande radio sécurisée."
+  },
+  {
+    id: "ouvrant-auto-31",
+    title: "Toit Rétractable Double Pente",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (31).jpg",
+    highlight: false,
+    description: "Toit rétractable automatique double pente avec évacuation rapide."
+  },
+  {
+    id: "ouvrant-auto-32",
+    title: "Couverture Coulissante Terrasse d'Étage",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (32).jpg",
+    highlight: false,
+    description: "Couverture coulissante électrique sur terrasse d'étage."
+  },
+  {
+    id: "ouvrant-auto-33",
+    title: "Abri Ouvrant Polycarbonate Antichoc",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (33).jpg",
+    highlight: false,
+    description: "Abri ouvrant automatique avec polycarbonate compact antichoc."
+  },
+  {
+    id: "ouvrant-auto-34",
+    title: "Toiture Rétractable Grande Envergure",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-automatique",
+    categoryLabel: "Abri Ouvrant Automatique",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (34).jpg",
+    highlight: false,
+    description: "Toiture rétractable grande envergure avec motorisation haute performance."
+  },
+
+  // --- Abri Ouvrant > Manuelle (8 images + 4 videos) ---
+  {
+    id: "ouvrant-man-01",
+    title: "Abri Ouvrant Manuel à Poussée",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-manuelle",
+    categoryLabel: "Abri Ouvrant Manuel",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (1).jpg",
+    highlight: false,
+    description: "Système coulissant à ouverture manuelle par poussée sur rails usinés."
+  },
+  {
+    id: "ouvrant-man-02",
+    title: "Toiture Coulissante Manuelle Patio",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-manuelle",
+    categoryLabel: "Abri Ouvrant Manuel",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (2).jpg",
+    highlight: false,
+    description: "Toiture coulissante manuelle pour patio et cour intérieure."
+  },
+  {
+    id: "ouvrant-man-03",
+    title: "Abri Ouvrant Manuel Laqué",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-manuelle",
+    categoryLabel: "Abri Ouvrant Manuel",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (3).jpg",
+    highlight: false,
+    description: "Abri ouvrant manuel châssis métallique laqué avec verrouillage de sécurité."
+  },
+  {
+    id: "ouvrant-man-04",
+    title: "Verrière Coulissante Manuelle",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-manuelle",
+    categoryLabel: "Abri Ouvrant Manuel",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (4).jpg",
+    highlight: false,
+    description: "Verrière coulissante manuelle à galets inox et roulements étanches."
+  },
+  {
+    id: "ouvrant-man-05",
+    title: "Toiture Manuelle avec Verrouillage",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-manuelle",
+    categoryLabel: "Abri Ouvrant Manuel",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (5).jpg",
+    highlight: false,
+    description: "Toiture coulissante manuelle avec verrouillage de sécurité intérieur."
+  },
+  {
+    id: "ouvrant-man-06",
+    title: "Abri Ouvrant Manuel Évacuation Intégrée",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-manuelle",
+    categoryLabel: "Abri Ouvrant Manuel",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (6).jpg",
+    highlight: false,
+    description: "Abri ouvrant manuel avec évacuation d'eau pluviale intégrée."
+  },
+  {
+    id: "ouvrant-man-07",
+    title: "Couverture Rétractable Manuelle",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-manuelle",
+    categoryLabel: "Abri Ouvrant Manuel",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (7).jpg",
+    highlight: false,
+    description: "Couverture rétractable manuelle pour terrasse haute."
+  },
+  {
+    id: "ouvrant-man-08",
+    title: "Abri Ouvrant Manuel Économique",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-manuelle",
+    categoryLabel: "Abri Ouvrant Manuel",
+    image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (8).jpg",
+    highlight: false,
+    description: "Solution de fermeture manuelle économique et durable, zéro consommation électrique."
+  },
+
+  // =========================================================================
+  // 4. ENSEIGNE & HABILLAGE DE FAÇADES (5 images + 4 RTS school images + 2 videos)
+  // =========================================================================
+  {
+    id: "facade-01",
+    title: "Habillage de Façade Alucobond",
+    category: "enceigne-set-habillage-de-facades",
+    subCategory: null,
+    categoryLabel: "Enseigne & Habillage de Façades",
+    image: "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enceigne_set_habillage_de_façades (1).jpg",
+    highlight: true,
+    description: "Habillage de façade en panneaux aluminium composite Alucobond avec découpe laser de motifs."
+  },
+  {
+    id: "facade-02",
+    title: "Enseigne Commerciale Sur Mesure",
+    category: "enceigne-set-habillage-de-facades",
+    subCategory: null,
+    categoryLabel: "Enseigne & Habillage de Façades",
+    image: "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enceigne_set_habillage_de_façades (2).jpg",
+    highlight: false,
+    description: "Enseigne commerciale avec panneaux composites et logos découpés au laser."
+  },
+  {
+    id: "facade-03",
+    title: "Décoration de Façade Alucobond",
+    category: "enceigne-set-habillage-de-facades",
+    subCategory: null,
+    categoryLabel: "Enseigne & Habillage de Façades",
+    image: "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enceigne_set_habillage_de_façades (3).jpg",
+    highlight: false,
+    description: "Décoration de façade avec habillages en panneaux aluminium composite."
+  },
+  {
+    id: "facade-04",
+    title: "Habillage Façade Contemporaine",
+    category: "enceigne-set-habillage-de-facades",
+    subCategory: null,
+    categoryLabel: "Enseigne & Habillage de Façades",
+    image: "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enceigne_set_habillage_de_façades (4).jpg",
+    highlight: false,
+    description: "Habillage de façade contemporaine avec finition métallisée brossée."
+  },
+  {
+    id: "facade-05",
+    title: "Parement Décoratif Alucobond",
+    category: "enceigne-set-habillage-de-facades",
+    subCategory: null,
+    categoryLabel: "Enseigne & Habillage de Façades",
+    image: "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enceigne_set_habillage_de_façades (5).jpg",
+    highlight: false,
+    description: "Parement décoratif en panneaux composites aluminium haute densité."
+  },
+  {
+    id: "facade-rts-01",
+    title: "Enseigne RTS School — Vue 1",
+    category: "enceigne-set-habillage-de-facades",
+    subCategory: null,
+    categoryLabel: "Enseigne & Habillage de Façades",
+    image: "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enseigne_rts_school (1).jpg",
+    highlight: false,
+    description: "Réalisation d'enseigne pour établissement scolaire RTS School."
+  },
+  {
+    id: "facade-rts-02",
+    title: "Enseigne RTS School — Vue 2",
+    category: "enceigne-set-habillage-de-facades",
+    subCategory: null,
+    categoryLabel: "Enseigne & Habillage de Façades",
+    image: "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enseigne_rts_school (2).jpg",
+    highlight: false,
+    description: "Vue détaillée de l'enseigne RTS School avec découpe laser."
+  },
+  {
+    id: "facade-rts-03",
+    title: "Enseigne RTS School — Vue 3",
+    category: "enceigne-set-habillage-de-facades",
+    subCategory: null,
+    categoryLabel: "Enseigne & Habillage de Façades",
+    image: "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enseigne_rts_school (3).jpg",
+    highlight: false,
+    description: "Habillage complet de la façade RTS School."
+  },
+  {
+    id: "facade-rts-04",
+    title: "Enseigne RTS School — Vue 4",
+    category: "enceigne-set-habillage-de-facades",
+    subCategory: null,
+    categoryLabel: "Enseigne & Habillage de Façades",
+    image: "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enseigne_rts_school (4).jpg",
+    highlight: false,
+    description: "Détail de finition de l'enseigne et habillage RTS School."
+  },
+
+  // =========================================================================
+  // 5. EXTENSION — Subcategories
+  // =========================================================================
+
+  // --- Extension > En aluminium (5 images) ---
+  {
+    id: "ext-alu-01",
+    title: "Extension en Aluminium",
+    category: "extension",
+    subCategory: "en-aluminium",
+    categoryLabel: "Extension en Aluminium",
+    image: "./Structure 2A PRO CONCEPT/Extension/En aluminium/Extension_en_aluminium (1).jpg",
+    highlight: true,
+    description: "Extension de terrasse en aluminium, structure fixe, ouvrante ou coulissante avec remplissage au choix."
+  },
+  {
+    id: "ext-alu-02",
+    title: "Véranda Aluminium Panoramique",
+    category: "extension",
+    subCategory: "en-aluminium",
+    categoryLabel: "Extension en Aluminium",
+    image: "./Structure 2A PRO CONCEPT/Extension/En aluminium/Extension_en_aluminium (2).jpg",
+    highlight: false,
+    description: "Véranda panoramique en aluminium avec large surface vitrée."
+  },
+  {
+    id: "ext-alu-03",
+    title: "Fermeture Aluminium Terrasse",
+    category: "extension",
+    subCategory: "en-aluminium",
+    categoryLabel: "Extension en Aluminium",
+    image: "./Structure 2A PRO CONCEPT/Extension/En aluminium/Extension_en_aluminium (3).jpg",
+    highlight: false,
+    description: "Fermeture de terrasse en aluminium coulissant avec remplissage au choix."
+  },
+  {
+    id: "ext-alu-04",
+    title: "Extension Aluminium Vitrée",
+    category: "extension",
+    subCategory: "en-aluminium",
+    categoryLabel: "Extension en Aluminium",
+    image: "./Structure 2A PRO CONCEPT/Extension/En aluminium/Extension_en_aluminium (4).jpg",
+    highlight: false,
+    description: "Extension vitrée en aluminium pour agrandir l'espace de vie."
+  },
+  {
+    id: "ext-alu-05",
+    title: "Extension Aluminium Sur Mesure",
+    category: "extension",
+    subCategory: "en-aluminium",
+    categoryLabel: "Extension en Aluminium",
+    image: "./Structure 2A PRO CONCEPT/Extension/En aluminium/Extension_en_aluminium (5).jpg",
+    highlight: false,
+    description: "Extension sur mesure en aluminium adaptée aux dimensions du client."
+  },
+
+  // --- Extension > En tôle (2 images) ---
+  {
+    id: "ext-tole-01",
+    title: "Extension en Tôle Galvanisée",
+    category: "extension",
+    subCategory: "en-tole",
+    categoryLabel: "Extension en Tôle",
+    image: "./Structure 2A PRO CONCEPT/Extension/En tôle/Extension_en_tole_1.jpg",
+    highlight: false,
+    description: "Extension en tôle galvanisée avec découpe laser de motifs selon le choix du client."
+  },
+  {
+    id: "ext-tole-02",
+    title: "Extension Tôle Décorative",
+    category: "extension",
+    subCategory: "en-tole",
+    categoryLabel: "Extension en Tôle",
+    image: "./Structure 2A PRO CONCEPT/Extension/En tôle/Extension_en_tole_2.jpg",
+    highlight: false,
+    description: "Extension décorative en tôle galvanisée avec motifs personnalisés."
+  },
+
+  // --- Extension > En acier (3 images) ---
+  {
+    id: "ext-acier-01",
+    title: "Extension en Acier Galvanisé",
+    category: "extension",
+    subCategory: "en-acier",
+    categoryLabel: "Extension en Acier",
+    image: "./Structure 2A PRO CONCEPT/Extension/En acier/Extension_en_acier.jpg",
+    highlight: false,
+    description: "Structure en acier galvanisée avec peinture au choix et remplissage au choix."
+  },
+  {
+    id: "ext-acier-02",
+    title: "Extension Acier Structure Robuste",
+    category: "extension",
+    subCategory: "en-acier",
+    categoryLabel: "Extension en Acier",
+    image: "./Structure 2A PRO CONCEPT/Extension/En acier/Extension_en_acier (2).jpg",
+    highlight: false,
+    description: "Extension en acier galvanisé haute résistance pour grandes portées."
+  },
+  {
+    id: "ext-acier-03",
+    title: "Extension Rooftop Anthracite",
+    category: "extension",
+    subCategory: "en-acier",
+    categoryLabel: "Extension en Acier",
+    image: "./Structure 2A PRO CONCEPT/Extension/En acier/Extension_rooftop_anthracite.jpg",
+    highlight: false,
+    description: "Extension de terrasse rooftop en acier finition anthracite."
+  },
+
+  // --- Extension > Extension & Brise-Vue (7 images) ---
+  {
+    id: "ext-bv-01",
+    title: "Extension & Brise-Vue Décoratif",
+    category: "extension",
+    subCategory: "extension-brise-vue",
+    categoryLabel: "Extension & Brise-Vue",
+    image: "./Structure 2A PRO CONCEPT/Extension/Extension & Brise-Vue/Extension_brise_soleil_noir (1).jpg",
+    highlight: false,
+    description: "Panneaux brise-vue décoratifs en tôle découpée laser avec motifs personnalisés."
+  },
+  {
+    id: "ext-bv-02",
+    title: "Brise-Soleil Métallique Noir",
+    category: "extension",
+    subCategory: "extension-brise-vue",
+    categoryLabel: "Extension & Brise-Vue",
+    image: "./Structure 2A PRO CONCEPT/Extension/Extension & Brise-Vue/Extension_brise_soleil_noir (2).jpg",
+    highlight: false,
+    description: "Brise-soleil métallique laqué noir pour protection et intimité."
+  },
+  {
+    id: "ext-bv-03",
+    title: "Claustra Brise-Vue Ajouré",
+    category: "extension",
+    subCategory: "extension-brise-vue",
+    categoryLabel: "Extension & Brise-Vue",
+    image: "./Structure 2A PRO CONCEPT/Extension/Extension & Brise-Vue/Extension_brise_soleil_noir (3).jpg",
+    highlight: false,
+    description: "Claustra brise-vue ajouré avec motif moucharabieh moderne."
+  },
+  {
+    id: "ext-bv-04",
+    title: "Panneaux Brise-Vue Géométriques",
+    category: "extension",
+    subCategory: "extension-brise-vue",
+    categoryLabel: "Extension & Brise-Vue",
+    image: "./Structure 2A PRO CONCEPT/Extension/Extension & Brise-Vue/Extension_brise_soleil_noir (4).jpg",
+    highlight: false,
+    description: "Panneaux brise-vue aux motifs géométriques personnalisés."
+  },
+  {
+    id: "ext-bv-05",
+    title: "Extension Métallique Brise-Vent",
+    category: "extension",
+    subCategory: "extension-brise-vue",
+    categoryLabel: "Extension & Brise-Vue",
+    image: "./Structure 2A PRO CONCEPT/Extension/Extension & Brise-Vue/Extension_brise_soleil_noir (5).jpg",
+    highlight: false,
+    description: "Extension métallique et brise-vent pour fermeture latérale de terrasse."
+  },
+  {
+    id: "ext-bv-06",
+    title: "Séparation Décorative Laquée",
+    category: "extension",
+    subCategory: "extension-brise-vue",
+    categoryLabel: "Extension & Brise-Vue",
+    image: "./Structure 2A PRO CONCEPT/Extension/Extension & Brise-Vue/Extension_brise_soleil_noir (6).jpg",
+    highlight: false,
+    description: "Séparation décorative métallique laquée pour délimiter les espaces extérieurs."
+  },
+  {
+    id: "ext-bv-07",
+    title: "Habillage Brise-Vue Sur Mesure",
+    category: "extension",
+    subCategory: "extension-brise-vue",
+    categoryLabel: "Extension & Brise-Vue",
+    image: "./Structure 2A PRO CONCEPT/Extension/Extension & Brise-Vue/Extension_brise_soleil_noir (7).jpg",
+    highlight: false,
+    description: "Habillage brise-vue sur mesure combinant protection et esthétique architecturale."
+  },
+
+  // =========================================================================
+  // 6. GARDE-CORPS & RAMPES EN INOX
+  // =========================================================================
+
+  // --- Garde-corps à tubes inox (9 images + 2 special) ---
+  {
+    id: "gc-tubes-01",
+    title: "Garde-corps à Tubes Inox",
+    category: "garde-corps-rampes-inox",
+    subCategory: "garde-corps-tubes-inox",
+    categoryLabel: "Garde-corps à Tubes Inox",
+    image: "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (1).jpg",
+    highlight: true,
+    description: "Garde-corps en acier inoxydable avec montants verticaux, lisses horizontales et main courante inox."
+  },
+  {
+    id: "gc-tubes-02",
+    title: "Rampe Inox Brossé Escalier",
+    category: "garde-corps-rampes-inox",
+    subCategory: "garde-corps-tubes-inox",
+    categoryLabel: "Garde-corps à Tubes Inox",
+    image: "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (2).jpg",
+    highlight: false,
+    description: "Rampe d'escalier en inox brossé avec montants calibrés aux normes de retenue."
+  },
+  {
+    id: "gc-tubes-03",
+    title: "Garde-corps Inox Balcon",
+    category: "garde-corps-rampes-inox",
+    subCategory: "garde-corps-tubes-inox",
+    categoryLabel: "Garde-corps à Tubes Inox",
+    image: "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (3).jpg",
+    highlight: false,
+    description: "Garde-corps pour balcon en tubes inox avec finition brossée satinée."
+  },
+  {
+    id: "gc-tubes-04",
+    title: "Garde-corps Inox Terrasse",
+    category: "garde-corps-rampes-inox",
+    subCategory: "garde-corps-tubes-inox",
+    categoryLabel: "Garde-corps à Tubes Inox",
+    image: "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (4).jpg",
+    highlight: false,
+    description: "Garde-corps de terrasse en inox résistant aux embruns marins."
+  },
+  {
+    id: "gc-tubes-05",
+    title: "Main Courante Inox Ergonomique",
+    category: "garde-corps-rampes-inox",
+    subCategory: "garde-corps-tubes-inox",
+    categoryLabel: "Garde-corps à Tubes Inox",
+    image: "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (5).jpg",
+    highlight: false,
+    description: "Main courante inox ergonomique avec fixation renforcée."
+  },
+  {
+    id: "gc-tubes-06",
+    title: "Garde-corps Inox Haute Finition",
+    category: "garde-corps-rampes-inox",
+    subCategory: "garde-corps-tubes-inox",
+    categoryLabel: "Garde-corps à Tubes Inox",
+    image: "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (6).jpg",
+    highlight: false,
+    description: "Garde-corps inox haute finition soudé meulé."
+  },
+  {
+    id: "gc-tubes-07",
+    title: "Rampe Inox Résidentielle",
+    category: "garde-corps-rampes-inox",
+    subCategory: "garde-corps-tubes-inox",
+    categoryLabel: "Garde-corps à Tubes Inox",
+    image: "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (7).jpg",
+    highlight: false,
+    description: "Rampe résidentielle en inox qualité supérieure."
+  },
+  {
+    id: "gc-tubes-08",
+    title: "Garde-corps Inox Satiné",
+    category: "garde-corps-rampes-inox",
+    subCategory: "garde-corps-tubes-inox",
+    categoryLabel: "Garde-corps à Tubes Inox",
+    image: "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (8).jpg",
+    highlight: false,
+    description: "Garde-corps en inox satiné zéro corrosion pour milieu côtier."
+  },
+  {
+    id: "gc-tubes-09",
+    title: "Balustrade Inox Moderne",
+    category: "garde-corps-rampes-inox",
+    subCategory: "garde-corps-tubes-inox",
+    categoryLabel: "Garde-corps à Tubes Inox",
+    image: "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (9).jpg",
+    highlight: false,
+    description: "Balustrade moderne en inox avec lisses horizontales profilées."
+  },
+  {
+    id: "gc-escalier-detail",
+    title: "Garde-corps Escalier — Détail",
+    category: "garde-corps-rampes-inox",
+    subCategory: "garde-corps-tubes-inox",
+    categoryLabel: "Garde-corps à Tubes Inox",
+    image: "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde_corps_escalier_detail.jpg",
+    highlight: false,
+    description: "Vue détaillée de la finition garde-corps d'escalier en inox brossé."
+  },
+  {
+    id: "gc-rooftop-panorama",
+    title: "Garde-corps Rooftop Panoramique",
+    category: "garde-corps-rampes-inox",
+    subCategory: "garde-corps-tubes-inox",
+    categoryLabel: "Garde-corps à Tubes Inox",
+    image: "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde_corps_rooftop_panorama.jpg",
+    highlight: false,
+    description: "Garde-corps rooftop panoramique tout inox avec vue dégagée."
+  },
+
+  // --- Garde-corps avec remplissage en verre (2 images) ---
+  {
+    id: "gc-verre-01",
+    title: "Garde-corps avec Remplissage en Verre",
+    category: "garde-corps-rampes-inox",
+    subCategory: "garde-corps-verre",
+    categoryLabel: "Garde-corps Verre",
+    image: "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps avec remplissage en verre/Garde-corps_avec_remplissage_en_verre (1).jpg",
+    highlight: false,
+    description: "Garde-corps avec structure inox et panneaux de verre de sécurité pour transparence totale."
+  },
+  {
+    id: "gc-verre-02",
+    title: "Garde-corps Inox & Verre Feuilleté",
+    category: "garde-corps-rampes-inox",
+    subCategory: "garde-corps-verre",
+    categoryLabel: "Garde-corps Verre",
+    image: "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps avec remplissage en verre/Garde-corps_avec_remplissage_en_verre (2).jpg",
+    highlight: false,
+    description: "Garde-corps inox avec verre feuilleté, fixations adaptées et main courante inox."
+  },
+
+  // =========================================================================
+  // 7. MENUISERIE ALUMINIUM (8 standard + 3 special = 11 images)
+  // =========================================================================
+  {
+    id: "menu-alu-01",
+    title: "Menuiserie Aluminium Sur Mesure",
+    category: "menuiserie-aluminium",
+    subCategory: null,
+    categoryLabel: "Menuiserie Aluminium",
+    image: "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_1.jpg",
+    highlight: true,
+    description: "Fabrication et installation de menuiseries aluminium sur mesure : fenêtre, porte, porte fenêtre."
+  },
+  {
+    id: "menu-alu-02",
+    title: "Baies Coulissantes Aluminium",
+    category: "menuiserie-aluminium",
+    subCategory: null,
+    categoryLabel: "Menuiserie Aluminium",
+    image: "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_2.jpg",
+    highlight: false,
+    description: "Baies vitrées coulissantes en aluminium thermolaqué avec remplissage au choix."
+  },
+  {
+    id: "menu-alu-03",
+    title: "Fenêtres Aluminium",
+    category: "menuiserie-aluminium",
+    subCategory: null,
+    categoryLabel: "Menuiserie Aluminium",
+    image: "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_3.jpg",
+    highlight: false,
+    description: "Fenêtres aluminium sur mesure, fixe, coulissant, à la française et battantes."
+  },
+  {
+    id: "menu-alu-04",
+    title: "Portes Aluminium Design",
+    category: "menuiserie-aluminium",
+    subCategory: null,
+    categoryLabel: "Menuiserie Aluminium",
+    image: "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_4.jpg",
+    highlight: false,
+    description: "Portes en aluminium sur mesure avec quincaillerie haute sécurité."
+  },
+  {
+    id: "menu-alu-05",
+    title: "Menuiserie Aluminium Haute Précision",
+    category: "menuiserie-aluminium",
+    subCategory: null,
+    categoryLabel: "Menuiserie Aluminium",
+    image: "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_5.jpg",
+    highlight: false,
+    description: "Menuiserie aluminium haute précision avec volets roulants et moustiquaires."
+  },
+  {
+    id: "menu-alu-06",
+    title: "Châssis Aluminium Laqué",
+    category: "menuiserie-aluminium",
+    subCategory: null,
+    categoryLabel: "Menuiserie Aluminium",
+    image: "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_6.jpg",
+    highlight: false,
+    description: "Châssis aluminium laqué avec double vitrage isolant."
+  },
+  {
+    id: "menu-alu-07",
+    title: "Menuiserie Aluminium Panoramique",
+    category: "menuiserie-aluminium",
+    subCategory: null,
+    categoryLabel: "Menuiserie Aluminium",
+    image: "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_7.jpg",
+    highlight: false,
+    description: "Menuiserie aluminium panoramique pour vue dégagée et luminosité maximale."
+  },
+  {
+    id: "menu-alu-08",
+    title: "Fermeture Aluminium Complète",
+    category: "menuiserie-aluminium",
+    subCategory: null,
+    categoryLabel: "Menuiserie Aluminium",
+    image: "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_8.jpg",
+    highlight: false,
+    description: "Fermeture complète en aluminium avec isolation thermique et acoustique."
+  },
+  {
+    id: "menu-equipe-piscine",
+    title: "Menuiserie Équipe Piscine",
+    category: "menuiserie-aluminium",
+    subCategory: null,
+    categoryLabel: "Menuiserie Aluminium",
+    image: "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_equipe_piscine.jpg",
+    highlight: false,
+    description: "Installation de menuiserie aluminium sur site — équipe technique sur chantier piscine."
+  },
+  {
+    id: "menu-piscine-overhead",
+    title: "Verrière Piscine Vue Aérienne",
+    category: "menuiserie-aluminium",
+    subCategory: null,
+    categoryLabel: "Menuiserie Aluminium",
+    image: "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_piscine_overhead.jpg",
+    highlight: false,
+    description: "Verrière et fermeture de piscine vue aérienne — menuiserie aluminium haute performance."
+  },
+  {
+    id: "menu-veranda-panoramique",
+    title: "Véranda Panoramique Aluminium",
+    category: "menuiserie-aluminium",
+    subCategory: null,
+    categoryLabel: "Menuiserie Aluminium",
+    image: "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_veranda_panoramique.jpg",
+    highlight: false,
+    description: "Véranda panoramique en aluminium avec baies vitrées sur toute la surface."
+  },
+
+  // =========================================================================
+  // 8. PERGOLA (5 + 1 special = 6 images)
+  // =========================================================================
+  {
+    id: "pergola-01",
+    title: "Pergola Métallique Contemporaine",
+    category: "pergola",
+    subCategory: null,
+    categoryLabel: "Pergola",
+    image: "./Structure 2A PRO CONCEPT/Pergola/Pergola_1.jpg",
+    highlight: true,
+    description: "Pergola en acier galvanisée ou en aluminium, couverture au choix."
+  },
+  {
+    id: "pergola-02",
+    title: "Pergola Design Acier",
+    category: "pergola",
+    subCategory: null,
+    categoryLabel: "Pergola",
+    image: "./Structure 2A PRO CONCEPT/Pergola/Pergola_2.jpg",
+    highlight: false,
+    description: "Pergola design en acier galvanisé avec peinture époxy cuite au four."
+  },
+  {
+    id: "pergola-03",
+    title: "Pergola Grande Portée",
+    category: "pergola",
+    subCategory: null,
+    categoryLabel: "Pergola",
+    image: "./Structure 2A PRO CONCEPT/Pergola/Pergola_3.jpg",
+    highlight: false,
+    description: "Pergola grande portée en acier avec structure renforcée."
+  },
+  {
+    id: "pergola-04",
+    title: "Pergola Aluminium Moderne",
+    category: "pergola",
+    subCategory: null,
+    categoryLabel: "Pergola",
+    image: "./Structure 2A PRO CONCEPT/Pergola/Pergola_4.jpg",
+    highlight: false,
+    description: "Pergola moderne en aluminium avec finition thermolaquée."
+  },
+  {
+    id: "pergola-05",
+    title: "Pergola Espace Détente",
+    category: "pergola",
+    subCategory: null,
+    categoryLabel: "Pergola",
+    image: "./Structure 2A PRO CONCEPT/Pergola/Pergola_5.jpg",
+    highlight: false,
+    description: "Pergola pour espace détente et salon d'été."
+  },
+  {
+    id: "pergola-freestanding",
+    title: "Pergola Autoportante Blanche",
+    category: "pergola",
+    subCategory: null,
+    categoryLabel: "Pergola",
+    image: "./Structure 2A PRO CONCEPT/Pergola/Pergola_freestanding_white.jpg",
+    highlight: false,
+    description: "Pergola autoportante blanche, idéale pour abords de piscine ou terrasse ouverte."
+  }
+];
+
+// ---------------------------------------------------------------------------
+// VIDEO ASSETS — Available videos from the authoritative structure
+// ---------------------------------------------------------------------------
+window.videoAssets = [
+  {
+    id: "video-ouvrant-man-01",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-manuelle",
+    categoryLabel: "Abri Ouvrant Manuel",
+    title: "Abri Ouvrant Manuel — Démonstration Vidéo 1",
+    src: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri ouvrant manuelle video (1).mp4",
+    type: "video/mp4"
+  },
+  {
+    id: "video-ouvrant-man-02",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-manuelle",
+    categoryLabel: "Abri Ouvrant Manuel",
+    title: "Abri Ouvrant Manuel — Démonstration Vidéo 2",
+    src: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri ouvrant manuelle video (2).mp4",
+    type: "video/mp4"
+  },
+  {
+    id: "video-ouvrant-man-03",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-manuelle",
+    categoryLabel: "Abri Ouvrant Manuel",
+    title: "Abri Ouvrant Manuel — Démonstration Vidéo 3",
+    src: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri ouvrant manuelle video (3).mp4",
+    type: "video/mp4"
+  },
+  {
+    id: "video-ouvrant-man-04",
+    category: "abri-ouvrant",
+    subCategory: "abri-ouvrant-manuelle",
+    categoryLabel: "Abri Ouvrant Manuel",
+    title: "Abri Ouvrant Manuel — Démonstration Vidéo 4",
+    src: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri ouvrant manuelle video (4).mp4",
+    type: "video/mp4"
+  },
+  {
+    id: "video-facade-01",
+    category: "enceigne-set-habillage-de-facades",
+    subCategory: null,
+    categoryLabel: "Enseigne & Habillage de Façades",
+    title: "Enseigne & Habillage de Façades — Vidéo 1",
+    src: "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enceigne_set_habillage_de_façades_video (1).mp4",
+    type: "video/mp4"
+  },
+  {
+    id: "video-facade-02",
+    category: "enceigne-set-habillage-de-facades",
+    subCategory: null,
+    categoryLabel: "Enseigne & Habillage de Façades",
+    title: "Enseigne & Habillage de Façades — Vidéo 2",
+    src: "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enceigne_set_habillage_de_façades_video (2).mp4",
+    type: "video/mp4"
+  }
+];

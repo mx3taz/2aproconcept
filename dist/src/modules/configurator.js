@@ -26,6 +26,32 @@ function initConfigurator() {
     }
   }
 
+  // Support URL pre-selection: e.g. devis.html?type=pergola
+  try {
+    const urlParams = new URLSearchParams(window.location.search);
+    const typeParam = (urlParams.get('type') || urlParams.get('structure') || '').toLowerCase().trim();
+    if (typeParam) {
+      for (const radio of structureRadios) {
+        const val = radio.value.toLowerCase();
+        if (
+          val.includes(typeParam) ||
+          (typeParam === 'pergola' && val.includes('pergola')) ||
+          (typeParam.includes('suspendu') && val.includes('suspendu')) ||
+          (typeParam.includes('terrasse') && val.includes('terrasse')) ||
+          (typeParam.includes('ouvrant') && val.includes('ouvrant')) ||
+          (typeParam.includes('menuiserie') && val.includes('menuiserie')) ||
+          (typeParam.includes('inox') && val.includes('inox')) ||
+          (typeParam.includes('alucobond') && val.includes('alucobond'))
+        ) {
+          radio.checked = true;
+          break;
+        }
+      }
+    }
+  } catch (err) {
+    // Graceful fallback
+  }
+
   form.addEventListener('input', updateSummary);
   form.addEventListener('change', updateSummary);
   updateSummary();

@@ -28,7 +28,8 @@ function initScrollAnimations() {
       .from('.hero-title', { opacity: 0, y: 30, duration: 1 }, '-=0.5')
       .from('.hero-description', { opacity: 0, y: 20, duration: 0.8 }, '-=0.6')
       .from('.hero-cta-group', { opacity: 0, y: 20, duration: 0.8 }, '-=0.6')
-      .from('.hero-stats-bar', { opacity: 0, y: 20, duration: 0.8 }, '-=0.5');
+      .from('.hero-stats-bar', { opacity: 0, y: 20, duration: 0.8 }, '-=0.5')
+      .from('.hero-spotlight-col', { opacity: 0, x: 30, duration: 0.9 }, '-=0.8');
   }
 
   // Section Headers (static in HTML)
@@ -54,6 +55,7 @@ function initScrollAnimations() {
       el.closest('#services-grid-container') ||
       el.closest('#gallery-grid-container') ||
       el.closest('.materials-grid') ||
+      el.closest('.trust-strip') ||
       el.closest('#savoir-faire') ||
       el.classList.contains('material-card')
     ) {
@@ -109,6 +111,29 @@ function initScrollAnimations() {
         y: 0,
         stagger: 0.08,
         duration: 0.65,
+        ease: 'power2.out',
+        clearProps: 'transform,opacity'
+      }
+    );
+  }
+
+  // Trust Strip Cards in #pourquoi-nous
+  const trustItems = document.querySelectorAll('.trust-strip .trust-item');
+  if (trustItems.length > 0) {
+    gsap.fromTo(
+      trustItems,
+      { opacity: 0, y: 30 },
+      {
+        scrollTrigger: {
+          trigger: '.trust-strip',
+          start: 'top 85%',
+          toggleActions: 'play none none none',
+          once: true
+        },
+        opacity: 1,
+        y: 0,
+        stagger: 0.1,
+        duration: 0.7,
         ease: 'power2.out',
         clearProps: 'transform,opacity'
       }

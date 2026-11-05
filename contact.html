@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact & Atelier | 2A PRO CONCEPT - Métal & Aluminium Tunisie</title>
+    <meta
+      name="description"
+      content="Contactez 2A PRO CONCEPT à Raoued (Ariana) pour votre projet métallique ou aluminium : abris de voitures, toitures ouvrantes, pergolas, menuiseries alu, garde-corps. Réponse sous 24h."
+    />
+    <meta name="keywords" content="contact 2A PRO CONCEPT, atelier métallerie tunisie, devis raoued, téléphone 2A pro concept, adresse ferronnerie ariana" />
+    <meta name="theme-color" content="#070a12" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contact & Atelier | 2A PRO CONCEPT" />
+    <meta property="og:description" content="Contactez notre atelier pour vos projets métalliques et aluminium sur mesure en Tunisie." />
+    <meta property="og:image" content="./public/logo/logo.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="./public/logo/logo.jpg" />
+    <link rel="apple-touch-icon" href="./public/logo/logo.jpg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Master Stylesheets -->
+    <link rel="stylesheet" href="./src/styles/tokens.css" />
+    <link rel="stylesheet" href="./src/styles/base.css" />
+    <link rel="stylesheet" href="./src/styles/layout.css" />
+    <link rel="stylesheet" href="./src/styles/components.css" />
+    <link rel="stylesheet" href="./src/styles/animations.css" />
+    <link rel="stylesheet" href="./src/styles/loader.css" />
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <!-- Critical Anti-FOUC Styles -->
+    <style>
+      html, body {
+        background-color: #070911 !important;
+        color: #f8fafc;
+        overflow-x: hidden;
+      }
+      .contact-page-wrapper {
+        padding-top: calc(var(--header-height) + 2.5rem);
+        padding-bottom: 5rem;
+      }
+    </style>
+
+    <!-- JSON-LD Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "2A PRO CONCEPT",
+      "telephone": "+21698804061",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Route de Raoued Plage KM 12",
+        "addressLocality": "Raoued",
+        "addressRegion": "Ariana",
+        "addressCountry": "TN"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <!-- Premium Architectural Page Loader -->
+    <div id="page-loader" class="page-loader" aria-hidden="true">
+      <div class="loader-content">
+        <div class="loader-logo-ring">
+          <div class="loader-ring-pulse"></div>
+          <div class="loader-ring-outer"></div>
+          <img src="./public/logo/logo.jpg" alt="2A PRO CONCEPT" class="loader-logo-img" />
+        </div>
+        <div class="loader-brand-text">
+          <div class="loader-title">2A PRO <span class="highlight-cyan">CONCEPT</span></div>
+          <div class="loader-subtitle">Métal &amp; Aluminium Sur Mesure</div>
+        </div>
+        <div class="loader-progress-track">
+          <div class="loader-progress-bar"></div>
+        </div>
+        <div class="loader-status" id="loader-status-text">Chargement de la page contact...</div>
+      </div>
+    </div>
+
+    <!-- Ambient Lighting Glow Background -->
+    <div class="ambient-glow-top" aria-hidden="true"></div>
+
+    <!-- 1. HEADER & NAVIGATION -->
+    <header class="site-header" role="banner">
+      <div class="container-wide header-inner">
+        <a href="./index.html" class="brand-logo-link" aria-label="2A PRO CONCEPT - Retour à l'accueil">
+          <img src="./public/logo/logo.jpg" alt="Logo 2A PRO CONCEPT" class="brand-logo-img" width="44" height="44" />
+          <div class="brand-logo-text">
+            <span class="brand-title">2A PRO <span>CONCEPT</span></span>
+            <span class="brand-tagline">Métal & Aluminium</span>
+          </div>
+        </a>
+
+        <nav class="nav-desktop" role="navigation" aria-label="Navigation principale">
+          <a href="./index.html" class="nav-link">Accueil</a>
+          <a href="./solutions.html" class="nav-link">Nos Solutions</a>
+          <a href="./realisations.html" class="nav-link">Réalisations</a>
+          <a href="./devis.html" class="nav-link">Devis en Ligne</a>
+          <a href="./solutions.html#savoir-faire" class="nav-link">Matériaux</a>
+          <a href="./contact.html" class="nav-link active">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a 
+            href="https://wa.me/21698804061?text=Bonjour%202A%20PRO%20CONCEPT%2C%20je%20souhaite%20un%20devis%20pour%20mon%20projet" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="btn btn-whatsapp"
+            aria-label="Contacter sur WhatsApp"
+          >
+            <span>WhatsApp Direct</span>
+          </a>
+
+          <button class="mobile-nav-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Backdrop -->
+    <div class="mobile-nav-backdrop" aria-hidden="true"></div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Menu Mobile" data-lenis-prevent>
+      <div class="mobile-drawer-header">
+        <div class="mobile-drawer-brand">
+          <img src="./public/logo/logo.jpg" alt="Logo 2A PRO CONCEPT" class="mobile-drawer-logo" width="36" height="36" />
+          <div class="mobile-drawer-title">2A PRO <span>CONCEPT</span></div>
+        </div>
+        <button class="mobile-drawer-close-btn" aria-label="Fermer le menu de navigation" type="button">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <a href="./index.html" class="mobile-nav-link">Accueil</a>
+      <a href="./solutions.html" class="mobile-nav-link">Nos Solutions Sur Mesure</a>
+      <a href="./realisations.html" class="mobile-nav-link">Galerie Réalisations (130 chantiers &amp; vidéos)</a>
+      <a href="./devis.html" class="mobile-nav-link">Devis en Ligne</a>
+      <a href="./solutions.html#savoir-faire" class="mobile-nav-link">Matériaux &amp; Savoir-Faire</a>
+      <a href="./contact.html" class="mobile-nav-link active">Nous Contacter</a>
+
+      <div class="mobile-drawer-footer">
+        <a href="tel:+21698804061" class="btn btn-primary" style="width: 100%;">
+          <span>📞 Appeler : 98 804 061</span>
+        </a>
+        <a 
+          href="https://wa.me/21698804061?text=Bonjour%202A%20PRO%20CONCEPT%2C%20je%20souhaite%20un%20devis%20pour%20mon%20projet" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn btn-whatsapp" 
+          style="width: 100%;"
+        >
+          <span>📲 WhatsApp Direct</span>
+        </a>
+      </div>
+    </div>
+
+    <main id="main-content" role="main">
+      <!-- CONTACT SECTION -->
+      <section class="section contact-page-wrapper" id="contact">
+        <div class="container">
+          <!-- Breadcrumb Navigation -->
+          <nav class="breadcrumb-nav" aria-label="Fil d'Ariane" style="margin-bottom: 2rem;">
+            <a href="./index.html" class="breadcrumb-link">Accueil</a>
+            <span class="breadcrumb-separator">/</span>
+            <span class="breadcrumb-current">Contact</span>
+          </nav>
+
+          <div class="section-header text-center">
+            <span class="eyebrow">• CONTACT & DEVIS •</span>
+            <h1 class="section-title">Donnez Vie à Votre Projet</h1>
+            <p class="section-subtitle">
+              Notre équipe technique est à votre écoute pour vous conseiller et concevoir la solution métallique ou aluminium adaptée à vos exigences.
+            </p>
+          </div>
+
+          <div class="contact-section-wrapper">
+            <!-- Left Info Panel -->
+            <div class="contact-info-panel">
+              <div>
+                <h2 style="font-size: 1.65rem; margin-bottom: 0.75rem; color: var(--text-white);">2A PRO CONCEPT</h2>
+                <p style="color: var(--brand-cyan-400); font-family: var(--font-mono); font-size: 0.9rem; margin-bottom: 1.5rem;">
+                  "Votre extérieur en toute sérénité"
+                </p>
+                <p>
+                  Contactez-nous directement par téléphone ou WhatsApp pour convenir d'un rendez-vous sur votre chantier ou obtenir des conseils personnalisés.
+                </p>
+
+                <div class="contact-channels-list">
+                  <a href="tel:+21698804061" class="contact-channel-item">
+                    <div class="channel-icon-wrapper phone">📞</div>
+                    <div>
+                      <span class="channel-label">Appel Direct / Ligne Principale</span>
+                      <div class="channel-value">+216 98 804 061</div>
+                    </div>
+                  </a>
+
+                  <a 
+                    href="https://wa.me/21698804061?text=Bonjour%202A%20PRO%20CONCEPT%2C%20je%20souhaite%20un%20devis%20ou%20des%20informations" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="contact-channel-item"
+                  >
+                    <div class="channel-icon-wrapper whatsapp">💬</div>
+                    <div>
+                      <span class="channel-label">WhatsApp Messagerie Immédiate</span>
+                      <div class="channel-value">+216 98 804 061</div>
+                    </div>
+                  </a>
+
+                  <a 
+                    href="https://www.facebook.com/2A.pro.concept.raoued/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="contact-channel-item"
+                  >
+                    <div class="channel-icon-wrapper" style="background: rgba(24, 119, 242, 0.15); color: #1877f2;">🌐</div>
+                    <div>
+                      <span class="channel-label">Page Facebook Officielle (26 000+ abonnés)</span>
+                      <div class="channel-value">@2A.pro.concept.raoued</div>
+                    </div>
+                  </a>
+
+                  <div class="contact-channel-item" style="cursor: default;">
+                    <div class="channel-icon-wrapper" style="background: rgba(255, 255, 255, 0.08); color: #cbd5e1;">📍</div>
+                    <div>
+                      <span class="channel-label">Atelier & Siège</span>
+                      <div class="channel-value" style="font-size: 1rem;">Route de Raoued Plage KM 12, Raoued, Ariana, Tunisie</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="padding-top: 1.5rem; border-top: 1px solid var(--border-subtle); display: flex; align-items: center; gap: 0.75rem;">
+                <span class="status-dot"></span>
+                <span style="font-size: 0.85rem; color: var(--text-muted);">
+                  Horaires d'ouverture : Du Lundi au Samedi, 8h00 – 18h00
+                </span>
+              </div>
+            </div>
+
+            <!-- Right Direct Form Panel -->
+            <div class="contact-form-panel">
+              <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem; color: var(--text-white);">Demande de Rappel ou d'Information</h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.75rem;">
+                Remplissez ce formulaire court. Un responsable technique vous rappelle sous 24h.
+              </p>
+
+              <form id="contact-direct-form" class="contact-form">
+                <div class="form-group">
+                  <label for="form-name" class="input-label">Nom complet *</label>
+                  <input type="text" id="form-name" class="input-control" style="width: 100%;" required placeholder="Votre nom" />
+                </div>
+
+                <div class="form-group">
+                  <label for="form-phone" class="input-label">Numéro de téléphone *</label>
+                  <input type="tel" id="form-phone" class="input-control" style="width: 100%;" required placeholder="+216 98 ... ..." />
+                </div>
+
+                <div class="form-group">
+                  <label for="form-city" class="input-label">Ville ou Région du chantier</label>
+                  <input type="text" id="form-city" class="input-control" style="width: 100%;" placeholder="Ex: Raoued, La Marsa, Tunis..." />
+                </div>
+
+                <div class="form-group">
+                  <label for="form-subject" class="input-label">Type d'ouvrage souhaité</label>
+                  <select id="form-subject" class="input-control" style="width: 100%;">
+                    <option value="abri-de-voiture">Abri de Voiture (Standard ou Suspendu)</option>
+                    <option value="abri-de-terrace">Abri de Terrasse (Fixe ou Galbé)</option>
+                    <option value="abri-ouvrant">Abri Ouvrant / Toiture Rétractable (Manuel ou Motorisé)</option>
+                    <option value="pergola">Pergola Métallique ou Aluminium</option>
+                    <option value="extension">Extension de Terrasse &amp; Brise-Vue</option>
+                    <option value="menuiserie-aluminium">Menuiserie Aluminium Sur Mesure</option>
+                    <option value="garde-corps-rampes-inox">Garde-Corps ou Rampe en Inox</option>
+                    <option value="enceigne-set-habillage-de-facades">Enseigne ou Habillage Façade Alucobond</option>
+                    <option value="autre">Autre solution métallique sur mesure</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-message" class="input-label">Détails de votre projet (dimensions, besoins particuliers)</label>
+                  <textarea id="form-message" class="input-control form-textarea" style="width: 100%;" placeholder="Décrivez succinctement votre projet..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">
+                  Envoyer ma Demande
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-top">
+        <div>
+          <a href="./index.html" class="brand-logo-link" style="margin-bottom: 1.25rem;">
+            <img src="./public/logo/logo.jpg" alt="Logo 2A PRO CONCEPT" class="brand-logo-img" width="40" height="40" />
+            <span class="brand-title">2A PRO <span>CONCEPT</span></span>
+          </a>
+          <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem; color: var(--text-secondary);">
+            Conception, fabrication et installation de solutions métalliques et aluminium sur mesure. Spécialiste des abris de voitures, abris ouvrants, pergolas, menuiseries aluminium et façades Alucobond en Tunisie.
+          </p>
+          <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--brand-cyan-400);">
+            "Votre extérieur en toute sérénité"
+          </span>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Nos Solutions</h4>
+          <div class="footer-links">
+            <a href="./solutions.html#abri-de-terrace" class="footer-link">Abris de Terrasses</a>
+            <a href="./solutions.html#abri-de-voiture" class="footer-link">Abris de Voitures (Standard &amp; Suspendus)</a>
+            <a href="./solutions.html#abri-ouvrant" class="footer-link">Abris Ouvrants &amp; Toits Coulissants</a>
+            <a href="./solutions.html#pergola" class="footer-link">Pergolas Métalliques &amp; Aluminium</a>
+            <a href="./solutions.html#extension" class="footer-link">Extensions de Terrasses &amp; Brise-Vue</a>
+            <a href="./solutions.html#menuiserie-aluminium" class="footer-link">Menuiserie Aluminium Sur Mesure</a>
+            <a href="./solutions.html#garde-corps-rampes-inox" class="footer-link">Garde-Corps &amp; Rampes Inox</a>
+            <a href="./solutions.html#enceigne-set-habillage-de-facades" class="footer-link">Enseignes &amp; Façades Alucobond</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <div class="footer-links">
+            <a href="./index.html" class="footer-link">Accueil</a>
+            <a href="./solutions.html" class="footer-link">Nos Solutions (Catalogue)</a>
+            <a href="./realisations.html" class="footer-link">Galerie de Réalisations (130 chantiers &amp; vidéos)</a>
+            <a href="./devis.html" class="footer-link">Devis en Ligne</a>
+            <a href="./solutions.html#savoir-faire" class="footer-link">Matériaux &amp; Qualité</a>
+            <a href="./solutions.html#processus" class="footer-link">Méthodologie en 4 Étapes</a>
+            <a href="./contact.html" class="footer-link">Contact &amp; Localisation</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact & Atelier</h4>
+          <div class="footer-links">
+            <span style="color: var(--text-secondary); font-size: 0.92rem;">
+              📍 Route de Raoued Plage KM 12, Raoued, Ariana, Tunisie
+            </span>
+            <a href="tel:+21698804061" class="footer-link" style="color: var(--text-white); font-weight: 600;">
+              📞 +216 98 804 061
+            </a>
+            <a href="https://wa.me/21698804061" target="_blank" rel="noopener noreferrer" class="footer-link" style="color: var(--accent-whatsapp);">
+              💬 WhatsApp : +216 98 804 061
+            </a>
+            <a href="https://www.facebook.com/2A.pro.concept.raoued/" target="_blank" rel="noopener noreferrer" class="footer-link">
+              🌐 Facebook : 2A PRO CONCEPT
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <div>
+          © 2026 2A PRO CONCEPT. Tous droits réservés. Conception, fabrication et installation métallique et aluminium en Tunisie.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#" style="color: var(--text-muted); font-size: 0.85rem;">Haut de page ↑</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- CDN: GSAP & ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <!-- CDN: Lenis Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+
+    <!-- Modules -->
+    <script src="./src/modules/pageLoader.js"></script>
+    <script src="./src/modules/smoothScroll.js"></script>
+    <script src="./src/modules/navigation.js"></script>
+    <script src="./src/modules/scrollAnimations.js"></script>
+
+    <!-- App Entrypoint -->
+    <script src="./src/main.js"></script>
+  </body>
+</html>
+

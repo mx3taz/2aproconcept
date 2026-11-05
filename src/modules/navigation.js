@@ -128,15 +128,38 @@ function initNavigation() {
   const pathname = window.location.pathname.toLowerCase();
   const isSolutions = pathname.includes('solutions');
   const isRealisations = pathname.includes('realisations');
-  const isHome = !isSolutions && !isRealisations;
+  const isDevis = pathname.includes('devis');
+  const isContact = pathname.includes('contact');
+  const isHome = !isSolutions && !isRealisations && !isDevis && !isContact;
 
   desktopLinks.forEach((link) => {
     const href = (link.getAttribute('href') || '').toLowerCase();
-    if (isSolutions && href.includes('solutions')) {
+    if (isContact && href.includes('contact')) {
+      link.classList.add('active');
+    } else if (isDevis && href.includes('devis')) {
+      link.classList.add('active');
+    } else if (isSolutions && href.includes('solutions')) {
       link.classList.add('active');
     } else if (isRealisations && href.includes('realisations')) {
       link.classList.add('active');
-    } else if (isHome && (href === '/' || href === '/index.html' || href === '#accueil' || href === 'index.html')) {
+    } else if (isHome && (href === '/' || href === '/index.html' || href === '#accueil' || href === 'index.html' || href === './index.html')) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+
+  mobileLinks.forEach((link) => {
+    const href = (link.getAttribute('href') || '').toLowerCase();
+    if (isContact && href.includes('contact')) {
+      link.classList.add('active');
+    } else if (isDevis && href.includes('devis')) {
+      link.classList.add('active');
+    } else if (isSolutions && href.includes('solutions')) {
+      link.classList.add('active');
+    } else if (isRealisations && href.includes('realisations')) {
+      link.classList.add('active');
+    } else if (isHome && (href === '/' || href === '/index.html' || href === '#accueil' || href === 'index.html' || href === './index.html')) {
       link.classList.add('active');
     } else {
       link.classList.remove('active');

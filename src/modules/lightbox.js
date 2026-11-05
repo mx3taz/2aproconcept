@@ -1,3 +1,8 @@
+// ============================================================================
+// lightbox.js — Interactive High-Definition Media Lightbox
+// Supports both high-resolution images and responsive video playback
+// ============================================================================
+
 let currentLightboxElement = null;
 let currentProjectList = [];
 let currentProjectIndex = -1;
@@ -10,9 +15,28 @@ function initLightbox() {
   const prevBtn = modal.querySelector('.lightbox-prev-btn');
   const nextBtn = modal.querySelector('.lightbox-next-btn');
 
+  // Ensure video element exists inside .lightbox-media
+  const mediaContainer = modal.querySelector('.lightbox-media');
+  if (mediaContainer && !mediaContainer.querySelector('.lightbox-video')) {
+    const video = document.createElement('video');
+    video.className = 'lightbox-video';
+    video.controls = true;
+    video.playsInline = true;
+    video.style.display = 'none';
+    video.style.width = '100%';
+    video.style.maxHeight = '75vh';
+    video.style.borderRadius = '8px';
+    mediaContainer.appendChild(video);
+  }
+
   const closeModal = () => {
     modal.classList.remove('active');
     document.body.style.overflow = '';
+    const videoEl = modal.querySelector('.lightbox-video');
+    if (videoEl) {
+      videoEl.pause();
+      videoEl.src = '';
+    }
   };
 
   const showPrev = () => {
@@ -73,11 +97,12 @@ function initLightbox() {
   currentLightboxElement = modal;
 }
 
-function displayProject(project) {
+function displayProject(item) {
   const modal = currentLightboxElement || document.querySelector('#project-lightbox-modal');
-  if (!modal || !project) return;
+  if (!modal || !item) return;
 
   const imgEl = modal.querySelector('.lightbox-img');
+  let videoEl = modal.querySelector('.lightbox-video');
   const titleEl = modal.querySelector('.lightbox-title');
   const catEl = modal.querySelector('.lightbox-category');
   const locEl = modal.querySelector('.lightbox-location');
@@ -86,42 +111,79 @@ function displayProject(project) {
   const ctaBtn = modal.querySelector('.lightbox-cta-btn');
   const counterEl = modal.querySelector('#lightbox-counter');
 
-  if (imgEl) {
-    imgEl.style.opacity = '0.4';
-    imgEl.style.transform = 'scale(0.98)';
-    const tempImg = new Image();
-    tempImg.src = project.image;
-    const applyImg = () => {
-      imgEl.src = project.image;
-      imgEl.alt = project.title || 'Réalisation 2A PRO CONCEPT';
-      requestAnimationFrame(() => {
-        imgEl.style.opacity = '1';
-        imgEl.style.transform = 'scale(1)';
-      });
-    };
-    tempImg.onload = applyImg;
-    tempImg.onerror = () => {
-      const src = project.image;
-      if (src.includes('%20')) {
-        imgEl.src = decodeURI(src);
-      } else if (src.includes('./reference/')) {
-        imgEl.src = src.replace('./reference/', './public/reference/');
-      } else {
-        applyImg();
+  const isVideo = Boolean(item.src && item.type);
+
+  if (isVideo) {
+    if (imgEl) imgEl.style.display = 'none';
+    if (!videoEl) {
+      const mediaContainer = modal.querySelector('.lightbox-media');
+      if (mediaContainer) {
+        videoEl = document.createElement('video');
+        videoEl.className = 'lightbox-video';
+        videoEl.controls = true;
+        videoEl.playsInline = true;
+        videoEl.style.width = '100%';
+        videoEl.style.maxHeight = '75vh';
+        videoEl.style.borderRadius = '8px';
+        mediaContainer.appendChild(videoEl);
       }
-    };
+    }
+    if (videoEl) {
+      videoEl.style.display = 'block';
+      videoEl.src = item.src;
+      videoEl.onerror = () => {
+        if (!videoEl.src.includes('./public/')) {
+          videoEl.src = './public/' + item.src.replace('./', '');
+        }
+      };
+      videoEl.load();
+      videoEl.play().catch(() => {});
+    }
+  } else {
+    if (videoEl) {
+      videoEl.pause();
+      videoEl.style.display = 'none';
+      videoEl.src = '';
+    }
+    if (imgEl) {
+      imgEl.style.display = 'block';
+      imgEl.style.opacity = '0.4';
+      imgEl.style.transform = 'scale(0.98)';
+
+      const tempImg = new Image();
+      const applyImg = (src) => {
+        imgEl.src = src;
+        imgEl.alt = item.title || 'Réalisation 2A PRO CONCEPT';
+        requestAnimationFrame(() => {
+          imgEl.style.opacity = '1';
+          imgEl.style.transform = 'scale(1)';
+        });
+      };
+
+      tempImg.onload = () => applyImg(tempImg.src);
+      tempImg.onerror = () => {
+        if (!tempImg.src.includes('./public/')) {
+          const fallbackSrc = './public/' + item.image.replace('./', '');
+          applyImg(fallbackSrc);
+        } else {
+          applyImg(item.image);
+        }
+      };
+      tempImg.src = item.image;
+    }
   }
-  if (titleEl) titleEl.textContent = project.title;
-  if (catEl) catEl.textContent = project.categoryLabel;
-  if (locEl) locEl.textContent = `📍 ${project.location}`;
-  if (descEl) descEl.textContent = project.description;
+
+  if (titleEl) titleEl.textContent = item.title || '';
+  if (catEl) catEl.textContent = item.categoryLabel || '';
+  if (locEl) locEl.textContent = item.location ? `📍 ${item.location}` : '📍 Tunisie';
+  if (descEl) descEl.textContent = item.description || '';
 
   if (counterEl && currentProjectList.length > 0) {
     counterEl.textContent = `${currentProjectIndex + 1} / ${currentProjectList.length}`;
   }
 
   if (materialsListEl) {
-    materialsListEl.innerHTML = (project.materials || []).map(m => `
+    materialsListEl.innerHTML = (item.materials || []).map(m => `
       <span class="covering-pill" style="background: rgba(0, 174, 239, 0.1); border-color: rgba(0, 174, 239, 0.25); color: #7dd3fc;">
         ✓ ${m}
       </span>
@@ -129,24 +191,24 @@ function displayProject(project) {
   }
 
   if (ctaBtn) {
-    const projectRef = project.id ? ` (Réf: ${project.id})` : '';
-    const projectTitle = project.title ? ` : "${project.title}"` : '';
+    const projectRef = item.id ? ` (Réf: ${item.id})` : '';
+    const projectTitle = item.title ? ` : "${item.title}"` : '';
     ctaBtn.href = `https://wa.me/21698804061?text=${encodeURIComponent(`Bonjour 2A PRO CONCEPT, je souhaite demander un devis pour ce projet${projectTitle}${projectRef}.`)}`;
   }
 }
 
-function openLightbox(project, projectList = []) {
+function openLightbox(item, itemList = []) {
   const modal = currentLightboxElement || document.querySelector('#project-lightbox-modal');
-  if (!modal || !project) return;
+  if (!modal || !item) return;
 
-  currentProjectList = projectList.length > 0 ? projectList : [project];
-  currentProjectIndex = currentProjectList.findIndex(p => p.id === project.id);
+  currentProjectList = itemList.length > 0 ? itemList : [item];
+  currentProjectIndex = currentProjectList.findIndex(p => p.id === item.id);
   if (currentProjectIndex === -1) {
     currentProjectIndex = 0;
-    currentProjectList = [project];
+    currentProjectList = [item];
   }
 
-  displayProject(project);
+  displayProject(item);
 
   modal.classList.add('active');
   document.body.style.overflow = 'hidden';
@@ -154,4 +216,3 @@ function openLightbox(project, projectList = []) {
 
 window.initLightbox = initLightbox;
 window.openLightbox = openLightbox;
-

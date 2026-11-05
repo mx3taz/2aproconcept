@@ -143,11 +143,11 @@
 
         <nav class="nav-desktop" role="navigation" aria-label="Navigation principale">
           <a href="./index.html" class="nav-link active">Accueil</a>
-          <a href="./solutions.html" class="nav-link">Nos Solutions</a>
           <a href="./realisations.html" class="nav-link">Réalisations</a>
-          <a href="#configurateur" class="nav-link">Devis en Ligne</a>
-          <a href="#savoir-faire" class="nav-link">Matériaux</a>
-          <a href="#contact" class="nav-link">Contact</a>
+          <a href="./solutions.html" class="nav-link">Nos Solutions</a>
+          <a href="#pourquoi-nous" class="nav-link">Pourquoi Nous</a>
+          <a href="./devis.html" class="nav-link">Devis en Ligne</a>
+          <a href="./contact.html" class="nav-link">Contact</a>
         </nav>
 
         <div class="header-actions">
@@ -190,11 +190,11 @@
       </div>
 
       <a href="./index.html" class="mobile-nav-link active">Accueil</a>
+      <a href="./realisations.html" class="mobile-nav-link">Réalisations</a>
       <a href="./solutions.html" class="mobile-nav-link">Nos Solutions Sur Mesure</a>
-      <a href="./realisations.html" class="mobile-nav-link">Galerie Réalisations (27 projets)</a>
-      <a href="#configurateur" class="mobile-nav-link">Calculateur de Devis</a>
-      <a href="#savoir-faire" class="mobile-nav-link">Matériaux & Qualité</a>
-      <a href="#contact" class="mobile-nav-link">Nous Contacter</a>
+      <a href="#pourquoi-nous" class="mobile-nav-link">Pourquoi 2A PRO CONCEPT</a>
+      <a href="./devis.html" class="mobile-nav-link">Devis en Ligne</a>
+      <a href="./contact.html" class="mobile-nav-link">Nous Contacter</a>
 
       <div class="mobile-drawer-footer">
         <a href="tel:+21698804061" class="btn btn-primary" style="width: 100%;">
@@ -213,626 +213,251 @@
     </div>
 
     <main id="main-content" role="main">
-      <!-- 2. HERO SECTION -->
+      <!-- 1. HERO SECTION — Ambient Blurred Stream & Spotlight Showcase -->
       <section class="hero-section" id="accueil">
         <div class="hero-background-wrapper" aria-hidden="true">
-          <img 
-            src="./public/images/p07_08_menuiserie_8.jpg" 
-            alt="Véranda et extension aluminium de nuit réalisée par 2A PRO CONCEPT" 
-            class="hero-bg-image"
-          />
+          <!-- Ambient moving multi-card slider background (contains real project images, blurred & fluid) -->
+          <div class="hero-ambient-stream" id="hero-ambient-stream">
+            <div class="hero-stream-row" id="hero-stream-row-1">
+              <!-- Dynamically populated from projectsData -->
+            </div>
+            <div class="hero-stream-row hero-stream-row-reverse" id="hero-stream-row-2">
+              <!-- Dynamically populated from projectsData in reverse order -->
+            </div>
+          </div>
           <div class="hero-overlay-gradient"></div>
           <div class="hero-overlay-radial"></div>
         </div>
 
         <div class="container hero-content">
-          <div class="hero-badge-container">
-            <span class="eyebrow">
-              <span class="status-dot"></span>
-              Atelier de Fabrication & Installation en Tunisie
-            </span>
-          </div>
-
-          <h1 class="hero-title">
-            L'Ingénierie du <span class="highlight-cyan">Métal & de l'Aluminium</span> Sur Mesure.
-          </h1>
-
-          <p class="hero-description lead">
-            Conception, fabrication et pose de solutions architecturales d'exception : abris de voitures, toitures ouvrantes motorisées, pergolas, vérandas, menuiseries aluminium et façades Alucobond.
-          </p>
-
-          <div class="hero-cta-group">
-            <a href="./solutions.html" class="btn btn-primary btn-lg">
-              Découvrir Nos Solutions
-            </a>
-            <a href="./realisations.html" class="btn btn-secondary btn-lg">
-              Voir Nos Réalisations (27 Chantiers)
-            </a>
-            <a href="#configurateur" class="btn btn-secondary btn-lg" style="border-style: dashed;">
-              Devis Gratuit
-            </a>
-          </div>
-
-          <div class="hero-stats-bar">
-            <div class="hero-stat-item">
-              <span class="stat-label">Conception</span>
-              <span class="stat-value">100% Sur Mesure</span>
-            </div>
-            <div class="hero-stat-item">
-              <span class="stat-label">Protection</span>
-              <span class="stat-value">Époxy & Galvanisation</span>
-            </div>
-            <div class="hero-stat-item">
-              <span class="stat-label">Engagement</span>
-              <span class="stat-value">Votre Extérieur en Toute Sérénité</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 3. BRAND STATEMENT & MANIFESTO -->
-      <section class="section" id="manifeste">
-        <div class="container">
-          <div class="statement-card gsap-reveal">
-            <div class="grid-2 items-center">
-              <div>
-                <span class="eyebrow">Notre Philosophie</span>
-                <blockquote class="statement-quote">
-                  "Chaque structure métallique que nous concevons est pensée comme un prolongement naturel et pérenne de votre architecture."
-                </blockquote>
-                <p>
-                  Chez <strong>2A PRO CONCEPT</strong>, basée à Raoued (Ariana), nous maîtrisons l'intégralité de la chaîne de valeur : du relevé millimétrique sur site à l'usinage en atelier, jusqu'à la pose finale par nos équipes qualifiées. Pas de compromis sur les épaisseurs de profilés, pas d'assemblages approximatifs : une rigueur industrielle au service de votre confort.
-                </p>
-                <div class="statement-team-preview">
-                  <img 
-                    src="./public/images/p07_10_menuiserie_equipe_piscine.jpg" 
-                    alt="Équipe 2A PRO CONCEPT inspectant une fermeture de piscine en verre sur site client" 
-                    class="statement-team-img" 
-                    loading="lazy" 
-                  />
-                  <div class="statement-team-caption">
-                    <span class="team-badge">👷 Équipe 2A PRO CONCEPT</span>
-                    <span>Expertise terrain & intervention directe sur vos chantiers</span>
-                  </div>
-                </div>
+          <div class="hero-grid">
+            <div class="hero-main-col">
+              <div class="hero-badge-container">
+                <span class="eyebrow">
+                  Atelier de Fabrication &amp; Installation en Tunisie
+                </span>
               </div>
-              <div style="display: flex; flex-direction: column; gap: 1.25rem;">
-                <div class="material-card" style="background: rgba(10, 13, 22, 0.6);">
-                  <div style="display: flex; align-items: center; gap: 1rem;">
-                    <div class="material-icon">📐</div>
-                    <div>
-                      <h4 style="color: var(--text-white); margin-bottom: 0.2rem;">Étude Personnalisée</h4>
-                      <p style="font-size: 0.9rem; margin: 0;">Adaptation aux contraintes de vent, soleil et esthétique de votre villa ou commerce.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="material-card" style="background: rgba(10, 13, 22, 0.6);">
-                  <div style="display: flex; align-items: center; gap: 1rem;">
-                    <div class="material-icon">🛡️</div>
-                    <div>
-                      <h4 style="color: var(--text-white); margin-bottom: 0.2rem;">Matériaux Résistants à l'Air Marin</h4>
-                      <p style="font-size: 0.9rem; margin: 0;">Inox qualité supérieure, acier galvanisé thermolaqué et aluminium inoxydable.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="material-card" style="background: rgba(10, 13, 22, 0.6);">
-                  <div style="display: flex; align-items: center; gap: 1rem;">
-                    <div class="material-icon">⚡</div>
-                    <div>
-                      <h4 style="color: var(--text-white); margin-bottom: 0.2rem;">Systèmes Manuels & Motorisés</h4>
-                      <p style="font-size: 0.9rem; margin: 0;">Toitures coulissantes motorisées à commande murale ou télécommande sans fil.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- 4. EXECUTIVE SOLUTIONS OVERVIEW -->
-      <section class="section" id="solutions">
-        <div class="container">
-          <div class="section-header text-center">
-            <span class="eyebrow">Nos 3 Domaines d'Ingénierie</span>
-            <h2 class="section-title">Ce Que Nous Concevons & Fabriquons</h2>
-            <p class="section-subtitle">
-              De l'abri de villa à la toiture coulissante motorisée, découvrez nos 7 gammes sur mesure réparties en 3 pôles d'expertise.
-            </p>
-          </div>
+              <h1 class="hero-title">
+                L'Ingénierie du <span class="highlight-cyan">Métal &amp; de l'Aluminium</span> Sur Mesure.
+              </h1>
 
-          <div class="overview-clusters-grid">
-            <div class="overview-cluster-card gsap-reveal">
-              <div>
-                <div class="cluster-icon">🚗</div>
-                <h3 class="overview-cluster-title">Pôle A : Protection Extérieure</h3>
-                <p class="overview-cluster-desc">
-                  Structures d'ombrage et toitures étanches haute résistance pour abriter véhicules, patios et terrasses du soleil et des intempéries.
-                </p>
-                <ul class="overview-cluster-list">
-                  <li>Abris de Voitures (Standard & Suspendus)</li>
-                  <li>Abris Ouvrants & Toitures Rétractables</li>
-                  <li>Abris de Terrasses & Pergolas Fixes</li>
-                </ul>
-              </div>
-              <a href="./solutions.html?cluster=structures-exterieures" class="btn btn-secondary" style="width: 100%; justify-content: center;">
-                Consulter les 3 solutions ↗
-              </a>
-            </div>
-
-            <div class="overview-cluster-card gsap-reveal">
-              <div>
-                <div class="cluster-icon">🪟</div>
-                <h3 class="overview-cluster-title">Pôle B : Espaces Vitrés & Fermetures</h3>
-                <p class="overview-cluster-desc">
-                  Création d'espaces de vie lumineux et fermetures panoramiques avec isolation et vitrages de sécurité.
-                </p>
-                <ul class="overview-cluster-list">
-                  <li>Extensions de Terrasses & Vérandas</li>
-                  <li>Menuiserie Aluminium Haute Précision</li>
-                  <li>Dômes & Verrières de Piscines</li>
-                </ul>
-              </div>
-              <a href="./solutions.html?cluster=espaces-vitres" class="btn btn-secondary" style="width: 100%; justify-content: center;">
-                Consulter les 2 solutions ↗
-              </a>
-            </div>
-
-            <div class="overview-cluster-card gsap-reveal">
-              <div>
-                <div class="cluster-icon">🛡️</div>
-                <h3 class="overview-cluster-title">Pôle C : Finitions Métalliques d'Art</h3>
-                <p class="overview-cluster-desc">
-                  Rampes nobles en inox marin inaltérable et habillages de façades commerciales modernes avec découpe laser 3D.
-                </p>
-                <ul class="overview-cluster-list">
-                  <li>Garde-Corps Inox à Tubes & Verre</li>
-                  <li>Habillage de Façades Alucobond</li>
-                  <li>Enseignes & Parements Découpés Laser</li>
-                </ul>
-              </div>
-              <a href="./solutions.html?cluster=finitions-metalliques" class="btn btn-secondary" style="width: 100%; justify-content: center;">
-                Consulter les 2 solutions ↗
-              </a>
-            </div>
-          </div>
-
-          <!-- Cross-page link banner to full solutions page -->
-          <div class="cross-page-banner gsap-reveal">
-            <div class="cross-page-content">
-              <span class="eyebrow" style="margin-bottom: 0.5rem; display: inline-block;">Catalogue Technique Dédié</span>
-              <h3>Consultez les spécifications techniques de chaque solution</h3>
-              <p>
-                Découvrez les types de profilés, options de motorisation, finitions thermolaquées et fiches techniques détaillées de nos 7 gammes.
+              <p class="hero-description lead">
+                Conception, fabrication et pose d'abris de voitures, toitures ouvrantes, pergolas, menuiseries aluminium et façades Alucobond.
               </p>
+
+              <div class="hero-cta-group">
+                <a href="#realisations" class="btn btn-primary btn-lg">
+                  Voir Nos Réalisations
+                </a>
+                <a href="./devis.html" class="btn btn-secondary btn-lg">
+                  Devis en Ligne →
+                </a>
+              </div>
+
+              <div class="hero-stats-bar">
+                <div class="hero-stat-item">
+                  <span class="stat-value">130+</span>
+                  <span class="stat-label">Chantiers Livrés</span>
+                </div>
+                <div class="hero-stat-item">
+                  <span class="stat-value">100%</span>
+                  <span class="stat-label">Sur Mesure</span>
+                </div>
+                <div class="hero-stat-item">
+                  <span class="stat-value">8</span>
+                  <span class="stat-label">Gammes de Solutions</span>
+                </div>
+              </div>
             </div>
-            <a href="./solutions.html" class="btn btn-primary" style="white-space: nowrap; padding: 0.9rem 1.75rem;">
-              Ouvrir le Catalogue   ↗
-            </a>
+
+            <!-- Creative Hero Live Spotlight Card -->
+            <div class="hero-spotlight-col">
+              <div class="hero-live-card" id="hero-live-card" tabindex="0" role="button" aria-label="Agrandir cette réalisation en direct">
+                <div class="hero-live-card-media">
+                  <img id="hero-live-img" src="./Structure 2A PRO CONCEPT/Abri de voiture/Abri suspendu/Abri_suspendu_polycarbonate.jpg" alt="Chantier récent 2A PRO CONCEPT" onerror="handleGalleryImgError(this)" />
+                  <span class="hero-live-pulse-badge">
+                    <span class="pulse-dot"></span>
+                    En direct de nos chantiers
+                  </span>
+                  <div class="hero-live-counter" id="hero-live-counter">01 / 130</div>
+                </div>
+                <div class="hero-live-card-body">
+                  <div class="hero-live-tag" id="hero-live-tag">Abri de Voiture Suspendu</div>
+                  <div class="hero-live-title" id="hero-live-title">Structure métallique autoportante &amp; polycarbonate</div>
+                  <div class="hero-live-action">
+                    <span>Explorer la réalisation</span>
+                    <span class="arrow-icon">↗</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- 5. REALISATIONS PHARES & SHOWCASE -->
-      <section class="section" id="realisations" style="background: var(--bg-secondary);">
+      <!-- 2. RÉALISATIONS PHARES & SHOWCASE IMMERSIF -->
+      <section class="section" id="realisations" style="background: var(--bg-secondary); position: relative;">
         <div class="container">
           <div class="section-header text-center">
-            <span class="eyebrow">Réalisations Phares</span>
-            <h2 class="section-title">Aperçu de Nos Chantiers Récents en Tunisie</h2>
+            <span class="eyebrow">• RÉALISATIONS PHARES & CHANTIERS RÉELS •</span>
+            <h2 class="section-title">Nos Ouvrages d'Exception en Tunisie</h2>
             <p class="section-subtitle">
-              Une sélection de nos réalisations emblématiques livrées chez nos clients. Pour voir l'ensemble de nos 27 chantiers classés par catégorie, explorez la galerie dédiée.
+              Plus de 130 chantiers photographiés : villas d'architectes, patios, rooftops et façades de prestige.
             </p>
+          </div>
+
+          <!-- Interactive Carousel Slider Showcase -->
+          <div class="showcase-slider-wrapper">
+            <div class="showcase-slider-header">
+              <div class="slider-badge-info">
+                <span class="live-dot"></span>
+                <span>Défilement immersif de nos chantiers récents</span>
+              </div>
+              <div class="showcase-slider-controls">
+                <button type="button" class="slider-nav-btn slider-prev-btn" id="slider-prev" aria-label="Projet précédent">‹</button>
+                <button type="button" class="slider-nav-btn slider-next-btn" id="slider-next" aria-label="Projet suivant">›</button>
+              </div>
+            </div>
+
+            <!-- Horizontal Carousel Slider Track -->
+            <div class="showcase-slider-track" id="homepage-carousel-track" role="region" aria-label="Carrousel de réalisations">
+              <!-- Dynamically populated by galleryRenderer.js -->
+            </div>
+          </div>
+
+          <!-- Interactive Category Filter Tabs -->
+          <div class="featured-filter-bar" id="featured-filter-bar" role="tablist" aria-label="Filtrer les réalisations phares">
+            <button type="button" class="featured-filter-btn active" data-filter="highlight">✨ Réalisations Phares</button>
+            <button type="button" class="featured-filter-btn" data-filter="abri-de-voiture">🚗 Abris Voitures</button>
+            <button type="button" class="featured-filter-btn" data-filter="abri-ouvrant">☀️ Toitures Ouvrantes</button>
+            <button type="button" class="featured-filter-btn" data-filter="pergola">🏡 Pergolas</button>
+            <button type="button" class="featured-filter-btn" data-filter="extension">🪟 Extensions &amp; Terrasses</button>
+            <button type="button" class="featured-filter-btn" data-filter="menuiserie-aluminium">🚪 Menuiserie Aluminium</button>
+            <button type="button" class="featured-filter-btn" data-filter="enceigne-set-habillage-de-facades">🏢 Façades Alucobond</button>
+            <button type="button" class="featured-filter-btn" data-filter="garde-corps-rampes-inox">🛡️ Garde-Corps Inox</button>
           </div>
 
           <!-- Featured Gallery Grid Container -->
           <div class="gallery-grid" id="featured-gallery-container">
-            <!-- Populated dynamically by galleryRenderer.js with top highlights -->
+            <!-- Populated dynamically by galleryRenderer.js -->
           </div>
 
-          <div class="text-center" style="margin-top: 3rem; margin-inline: auto;">
+          <div class="text-center" style="margin-top: 3rem;">
             <a href="./realisations.html" class="btn btn-primary btn-lg" style="display: inline-flex; align-items: center; gap: 0.75rem;">
-              <span>Explorer Toutes Nos Réalisations </span>
+              <span>Explorer les 130 Chantiers &amp; Vidéos</span>
               <span>↗</span>
             </a>
           </div>
         </div>
       </section>
 
-      <!-- 6. INTERACTIVE PROJECT CONFIGURATOR / DEVIS ESTIMATOR -->
-      <section class="section" id="configurateur">
-        <div class="container">
-          <div class="configurator-wrapper gsap-reveal">
-            <div class="section-header text-center">
-              <span class="eyebrow">Devis Personnalisé Immédiat</span>
-              <h2 class="section-title">Configurez Votre Solution Sur Mesure</h2>
-              <p class="section-subtitle">
-                Sélectionnez vos critères techniques en quelques clics. Nous générons instantanément un récapitulatif prêt à être transmis à notre bureau d'études sur WhatsApp.
-              </p>
-            </div>
-
-            <form id="project-config-form" class="config-form" onsubmit="return false;">
-              <!-- Step 1: Type de Structure -->
-              <div class="config-form-step">
-                <div class="config-step-title">
-                  <span class="config-step-number">1</span>
-                  <span>Sélectionnez votre type d'ouvrage</span>
-                </div>
-                <div class="config-option-cards">
-                  <label class="config-radio-card">
-                    <input type="radio" name="config-structure" value="Abri de voiture suspendu" checked />
-                    <div class="config-card-label">
-                      <span class="config-card-icon">🚗</span>
-                      <span class="config-card-name">Abri Voiture Suspendu</span>
-                    </div>
-                  </label>
-
-                  <label class="config-radio-card">
-                    <input type="radio" name="config-structure" value="Abri de voiture standard à poteaux" />
-                    <div class="config-card-label">
-                      <span class="config-card-icon">🚙</span>
-                      <span class="config-card-name">Abri Voiture Standard</span>
-                    </div>
-                  </label>
-
-                  <label class="config-radio-card">
-                    <input type="radio" name="config-structure" value="Toiture ouvrante rétractable motorisée" />
-                    <div class="config-card-label">
-                      <span class="config-card-icon">☀️</span>
-                      <span class="config-card-name">Abri Ouvrant Motorisé</span>
-                    </div>
-                  </label>
-
-                  <label class="config-radio-card">
-                    <input type="radio" name="config-structure" value="Pergola de terrasse sur mesure" />
-                    <div class="config-card-label">
-                      <span class="config-card-icon">🏡</span>
-                      <span class="config-card-name">Pergola de Terrasse</span>
-                    </div>
-                  </label>
-
-                  <label class="config-radio-card">
-                    <input type="radio" name="config-structure" value="Extension véranda vitrée" />
-                    <div class="config-card-label">
-                      <span class="config-card-icon">🪟</span>
-                      <span class="config-card-name">Extension Vitrée</span>
-                    </div>
-                  </label>
-
-                  <label class="config-radio-card">
-                    <input type="radio" name="config-structure" value="Garde-corps & rampe inox" />
-                    <div class="config-card-label">
-                      <span class="config-card-icon">🛡️</span>
-                      <span class="config-card-name">Garde-Corps Inox</span>
-                    </div>
-                  </label>
-
-                  <label class="config-radio-card">
-                    <input type="radio" name="config-structure" value="Habillage façade Alucobond" />
-                    <div class="config-card-label">
-                      <span class="config-card-icon">🏢</span>
-                      <span class="config-card-name">Façade Alucobond</span>
-                    </div>
-                  </label>
-                </div>
-              </div>
-
-              <!-- Step 2: Dimensions & Options -->
-              <div class="config-form-step">
-                <div class="config-step-title">
-                  <span class="config-step-number">2</span>
-                  <span>Dimensions estimées & Finitions</span>
-                </div>
-                <div class="config-input-group">
-                  <div class="input-field-wrapper">
-                    <label for="config-length" class="input-label">Longueur approximative (mètres)</label>
-                    <input type="number" id="config-length" class="input-control" placeholder="Ex: 5" min="1" max="50" value="5" />
-                  </div>
-                  <div class="input-field-wrapper">
-                    <label for="config-width" class="input-label">Largeur approximative (mètres)</label>
-                    <input type="number" id="config-width" class="input-control" placeholder="Ex: 3" min="1" max="30" value="3" />
-                  </div>
-                  <div class="input-field-wrapper">
-                    <label for="config-covering" class="input-label">Type de couverture / remplissage</label>
-                    <select id="config-covering" class="input-control">
-                      <option value="polycarbonate">Polycarbonate (Résistance chocs & anti-UV)</option>
-                      <option value="sandwich">Panneaux Sandwich (Isolation thermique max)</option>
-                      <option value="toile">Toile PVC tendue haute densité</option>
-                      <option value="pvc">PVC rigide thermoformé</option>
-                      <option value="verre">Vitrage de sécurité / verre feuilleté</option>
-                      <option value="laser">Tôle galvanisée découpée au laser</option>
-                      <option value="alucobond">Panneaux composites Alucobond</option>
-                    </select>
-                  </div>
-                  <div class="input-field-wrapper">
-                    <label for="config-system" class="input-label">Système d'ouverture</label>
-                    <select id="config-system" class="input-control">
-                      <option value="fixe">Structure Fixe</option>
-                      <option value="motorise">Automatique & Motorisé (Télécommande)</option>
-                      <option value="manuel">Coulissant Manuel à Poussée</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Step 3: Contact Details -->
-              <div class="config-form-step">
-                <div class="config-step-title">
-                  <span class="config-step-number">3</span>
-                  <span>Vos Coordonnées pour l'Étude</span>
-                </div>
-                <div class="config-input-group">
-                  <div class="input-field-wrapper">
-                    <label for="config-city" class="input-label">Ville / Région d'installation</label>
-                    <input type="text" id="config-city" class="input-control" placeholder="Ex: Raoued, La Marsa, Gammarth, Tunis..." value="Grand Tunis" />
-                  </div>
-                  <div class="input-field-wrapper">
-                    <label for="config-name" class="input-label">Votre Nom ou Entreprise</label>
-                    <input type="text" id="config-name" class="input-control" placeholder="Votre nom" />
-                  </div>
-                  <div class="input-field-wrapper">
-                    <label for="config-phone" class="input-label">Numéro de Téléphone (recommandé)</label>
-                    <input type="tel" id="config-phone" class="input-control" placeholder="Ex: 98 123 456" />
-                  </div>
-                </div>
-              </div>
-
-              <!-- Summary & Direct Action -->
-              <div class="config-summary-box">
-                <div>
-                  <span style="font-family: var(--font-mono); font-size: 0.78rem; text-transform: uppercase; color: var(--brand-cyan-400);">
-                    Aperçu de votre demande :
-                  </span>
-                  <div id="config-summary-preview" style="color: #cbd5e1; font-size: 0.95rem; margin-top: 0.35rem;">
-                    Chargement...
-                  </div>
-                </div>
-
-                <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
-                  <button type="button" id="config-send-whatsapp" class="btn btn-whatsapp btn-lg">
-                    <span>📲 Transmettre sur WhatsApp</span>
-                  </button>
-                  <a href="tel:+21698804061" class="btn btn-phone btn-lg">
-                    <span>📞 Appeler le 98 804 061</span>
-                  </a>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
-
-      <!-- 7. CRAFTSMANSHIP & MATERIALS -->
-      <section class="section" id="savoir-faire">
+      <!-- 3. SOLUTIONS OVERVIEW — Compact -->
+      <section class="section" id="solutions">
         <div class="container">
           <div class="section-header text-center">
-            <span class="eyebrow">Excellence Technique</span>
-            <h2 class="section-title">Matériaux Certifiés & Procédés Industriels</h2>
-            <p class="section-subtitle">
-              La durabilité d'un ouvrage métallique se joue dans le choix des alliages, l'épaisseur des profilés et la qualité du traitement de surface.
-            </p>
+            <span class="eyebrow">Nos Solutions Sur Mesure</span>
+            <h2 class="section-title">3 Pôles d'Expertise, 8 Gammes</h2>
           </div>
 
-          <div class="grid-3 materials-grid">
-            <div class="material-card">
-              <div class="material-icon">🛡️</div>
-              <h3 class="material-name">Acier Galvanisé à Chaud</h3>
-              <p class="material-benefit">
-                Traitement en profondeur contre l'oxydation, garantissant une longévité structurelle face aux embruns marins et aux variations thermiques extrêmes.
-              </p>
-            </div>
-
-            <div class="material-card">
-              <div class="material-icon">⚙️</div>
-              <h3 class="material-name">Aluminium Thermolaqué</h3>
-              <p class="material-benefit">
-                Alliage léger, inoxydable par nature, revêtu d'une peinture poudre polyester cuite au four résistante aux rayures et aux rayons UV.
-              </p>
-            </div>
-
-            <div class="material-card">
-              <div class="material-icon">✨</div>
-              <h3 class="material-name">Inox Qualité Supérieure</h3>
-              <p class="material-benefit">
-                Acier inoxydable brossé ou poli miroir pour garde-corps et rampes. Aucun risque de piqûre de rouille même en environnement littoral.
-              </p>
-            </div>
-
-            <div class="material-card">
-              <div class="material-icon">☀️</div>
-              <h3 class="material-name">Polycarbonate Anti-UV</h3>
-              <p class="material-benefit">
-                Plaques alvéolaires ou compactes 250 fois plus résistantes que le verre standard, traitées contre le jaunissement et filtrant 99% des UV.
-              </p>
-            </div>
-
-            <div class="material-card">
-              <div class="material-icon">🏢</div>
-              <h3 class="material-name">Alucobond Composite</h3>
-              <p class="material-benefit">
-                Panneaux aluminium composite haute densité pour façades modernes ventilées, enseignes et habillages décoratifs découpés au laser.
-              </p>
-            </div>
-
-            <div class="material-card">
-              <div class="material-icon">🔒</div>
-              <h3 class="material-name">Verre de Sécurité Feuilleté</h3>
-              <p class="material-benefit">
-                Assemblage de vitrages avec film intercalaire PVB retenant les éclats en cas d'impact, indispensable pour garde-corps et verrières.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 8. PROCESS: THE 4 STEPS TO PEACE OF MIND -->
-      <section class="section" id="processus" style="background: var(--bg-secondary);">
-        <div class="container">
-          <div class="section-header text-center">
-            <span class="eyebrow">Méthodologie</span>
-            <h2 class="section-title">Notre Processus de Réalisation</h2>
-            <p class="section-subtitle">
-              De l'esquisse initiale à la réception finale des travaux, chaque étape est rigoureusement maîtrisée.
-            </p>
-          </div>
-
-          <div class="process-grid">
-            <div class="process-step-card">
-              <span class="process-number">01</span>
-              <h3 class="process-title">Relevé & Diagnostic</h3>
-              <p class="process-desc">
-                Visite sur place pour mesurer précisément les cotes, analyser les points d'ancrage, les évacuations d'eau et les prises au vent.
-              </p>
-            </div>
-
-            <div class="process-step-card">
-              <span class="process-number">02</span>
-              <h3 class="process-title">Conception & Devis</h3>
-              <p class="process-desc">
-                Élaboration de la proposition technique adaptée avec choix des profilés, des couvertures et transmission d'un devis clair et détaillé.
-              </p>
-            </div>
-
-            <div class="process-step-card">
-              <span class="process-number">03</span>
-              <h3 class="process-title">Fabrication en Atelier</h3>
-              <p class="process-desc">
-                Découpe, soudure, usinage de précision et application des finitions époxy ou laquage au four dans nos installations.
-              </p>
-            </div>
-
-            <div class="process-step-card">
-              <span class="process-number">04</span>
-              <h3 class="process-title">Pose & Réception</h3>
-              <p class="process-desc">
-                Installation minutieuse par nos équipes spécialisées, tests d'étanchéité et mise en service des motorisations.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 9. CONTACT & LOCAL PRESENCE -->
-      <section class="section" id="contact">
-        <div class="container">
-          <div class="section-header text-center">
-            <span class="eyebrow">Contact & Devis</span>
-            <h2 class="section-title">Donnez Vie à Votre Projet</h2>
-            <p class="section-subtitle">
-              Notre équipe technique est à votre écoute pour vous conseiller et concevoir la solution métallique ou aluminium adaptée à vos exigences.
-            </p>
-          </div>
-
-          <div class="contact-section-wrapper">
-            <!-- Left Info Panel -->
-            <div class="contact-info-panel">
+          <div class="overview-clusters-grid">
+            <a href="./solutions.html?cluster=structures-exterieures" class="overview-cluster-card gsap-reveal" style="text-decoration: none; color: inherit;">
               <div>
-                <h3 style="font-size: 1.65rem; margin-bottom: 0.75rem; color: var(--text-white);">2A PRO CONCEPT</h3>
-                <p style="color: var(--brand-cyan-400); font-family: var(--font-mono); font-size: 0.9rem; margin-bottom: 1.5rem;">
-                  "Votre extérieur en toute sérénité"
+                <div class="cluster-icon">🚗</div>
+                <h3 class="overview-cluster-title">Protection Extérieure</h3>
+                <p class="overview-cluster-desc">
+                  Abris de voitures, terrasses, toitures ouvrantes motorisées et pergolas.
                 </p>
-                <p>
-                  Contactez-nous directement par téléphone ou WhatsApp pour convenir d'un rendez-vous sur votre chantier ou obtenir des conseils personnalisés.
+              </div>
+              <span class="btn btn-secondary" style="width: 100%; justify-content: center;">
+                4 solutions ↗
+              </span>
+            </a>
+
+            <a href="./solutions.html?cluster=espaces-vitres" class="overview-cluster-card gsap-reveal" style="text-decoration: none; color: inherit;">
+              <div>
+                <div class="cluster-icon">🪟</div>
+                <h3 class="overview-cluster-title">Espaces Vitrés & Fermetures</h3>
+                <p class="overview-cluster-desc">
+                  Extensions de terrasses, menuiserie aluminium et verrières de piscines.
                 </p>
-
-                <div class="contact-channels-list">
-                  <a href="tel:+21698804061" class="contact-channel-item">
-                    <div class="channel-icon-wrapper phone">📞</div>
-                    <div>
-                      <span class="channel-label">Appel Direct / Ligne Principale</span>
-                      <div class="channel-value">+216 98 804 061</div>
-                    </div>
-                  </a>
-
-                  <a 
-                    href="https://wa.me/21698804061?text=Bonjour%202A%20PRO%20CONCEPT%2C%20je%20souhaite%20un%20devis%20ou%20des%20informations" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    class="contact-channel-item"
-                  >
-                    <div class="channel-icon-wrapper whatsapp">💬</div>
-                    <div>
-                      <span class="channel-label">WhatsApp Messagerie Immédiate</span>
-                      <div class="channel-value">+216 98 804 061</div>
-                    </div>
-                  </a>
-
-                  <a 
-                    href="https://www.facebook.com/2A.pro.concept.raoued/" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    class="contact-channel-item"
-                  >
-                    <div class="channel-icon-wrapper" style="background: rgba(24, 119, 242, 0.15); color: #1877f2;">🌐</div>
-                    <div>
-                      <span class="channel-label">Page Facebook Officielle (26 000+ abonnés)</span>
-                      <div class="channel-value">@2A.pro.concept.raoued</div>
-                    </div>
-                  </a>
-
-                  <div class="contact-channel-item" style="cursor: default;">
-                    <div class="channel-icon-wrapper" style="background: rgba(255, 255, 255, 0.08); color: #cbd5e1;">📍</div>
-                    <div>
-                      <span class="channel-label">Atelier & Siège</span>
-                      <div class="channel-value" style="font-size: 1rem;">Route de Raoued Plage KM 12, Raoued, Ariana, Tunisie</div>
-                    </div>
-                  </div>
-                </div>
               </div>
+              <span class="btn btn-secondary" style="width: 100%; justify-content: center;">
+                3 solutions ↗
+              </span>
+            </a>
 
-              <div style="padding-top: 1.5rem; border-top: 1px solid var(--border-subtle); display: flex; align-items: center; gap: 0.75rem;">
-                <span class="status-dot"></span>
-                <span style="font-size: 0.85rem; color: var(--text-muted);">
-                  Horaires d'ouverture : Du Lundi au Samedi, 8h00 – 18h00
-                </span>
+            <a href="./solutions.html?cluster=finitions-metalliques" class="overview-cluster-card gsap-reveal" style="text-decoration: none; color: inherit;">
+              <div>
+                <div class="cluster-icon">🛡️</div>
+                <h3 class="overview-cluster-title">Finitions Métalliques d'Art</h3>
+                <p class="overview-cluster-desc">
+                  Garde-corps inox, habillages de façades Alucobond et enseignes découpées au laser.
+                </p>
               </div>
+              <span class="btn btn-secondary" style="width: 100%; justify-content: center;">
+                3 solutions ↗
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. POURQUOI NOUS — Compact Trust Strip -->
+      <section class="section trust-strip-section" id="pourquoi-nous" style="background: var(--bg-secondary);">
+        <div class="container">
+          <div class="trust-strip">
+            <div class="trust-item gsap-reveal">
+              <div class="trust-icon">📐</div>
+              <h4 class="trust-title">100% Sur Mesure</h4>
+              <p class="trust-desc">Relevé sur site, conception et fabrication adaptée à vos cotes exactes.</p>
             </div>
+            <div class="trust-item gsap-reveal">
+              <div class="trust-icon">🛡️</div>
+              <h4 class="trust-title">Matériaux Certifiés</h4>
+              <p class="trust-desc">Acier galvanisé, aluminium thermolaqué, inox marin et verre feuilleté.</p>
+            </div>
+            <div class="trust-item gsap-reveal">
+              <div class="trust-icon">⚙️</div>
+              <h4 class="trust-title">4 Étapes Clés</h4>
+              <p class="trust-desc">Diagnostic, conception, fabrication en atelier et pose par nos équipes.</p>
+            </div>
+            <div class="trust-item gsap-reveal">
+              <div class="trust-icon">📍</div>
+              <h4 class="trust-title">Toute la Tunisie</h4>
+              <p class="trust-desc">Intervention depuis notre atelier de Raoued (Ariana) sur tout le territoire.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <!-- Right Direct Form Panel -->
-            <div class="contact-form-panel">
-              <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem; color: var(--text-white);">Demande de Rappel ou d'Information</h3>
-              <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.75rem;">
-                Remplissez ce formulaire court. Un responsable technique vous rappelle sous 24h.
-              </p>
-
-              <form id="contact-direct-form" class="contact-form">
-                <div class="form-group">
-                  <label for="form-name" class="input-label">Nom complet *</label>
-                  <input type="text" id="form-name" class="input-control" style="width: 100%;" required placeholder="Votre nom" />
-                </div>
-
-                <div class="form-group">
-                  <label for="form-phone" class="input-label">Numéro de téléphone *</label>
-                  <input type="tel" id="form-phone" class="input-control" style="width: 100%;" required placeholder="+216 98 ... ..." />
-                </div>
-
-                <div class="form-group">
-                  <label for="form-city" class="input-label">Ville ou Région du chantier</label>
-                  <input type="text" id="form-city" class="input-control" style="width: 100%;" placeholder="Ex: Raoued, La Marsa, Tunis..." />
-                </div>
-
-                <div class="form-group">
-                  <label for="form-subject" class="input-label">Type d'ouvrage souhaité</label>
-                  <select id="form-subject" class="input-control" style="width: 100%;">
-                    <option value="abri-voiture">Abri de Voiture (Standard ou Suspendu)</option>
-                    <option value="abri-ouvrant">Abri Ouvrant / Toiture Rétractable</option>
-                    <option value="pergola">Pergola ou Abri de Terrasse</option>
-                    <option value="extension">Extension de Terrasse / Véranda</option>
-                    <option value="menuiserie">Menuiserie Aluminium</option>
-                    <option value="garde-corps">Garde-Corps ou Rampe en Inox</option>
-                    <option value="facade">Enseigne ou Habillage Alucobond</option>
-                    <option value="autre">Autre solution métallique sur mesure</option>
-                  </select>
-                </div>
-
-                <div class="form-group">
-                  <label for="form-message" class="input-label">Détails de votre projet (dimensions, besoins particuliers)</label>
-                  <textarea id="form-message" class="input-control form-textarea" style="width: 100%;" placeholder="Décrivez succinctement votre projet..."></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">
-                  Envoyer ma Demande
-                </button>
-              </form>
+      <!-- 5. UNIFIED CTA — Devis + Contact -->
+      <section class="section" id="section-cta">
+        <div class="container">
+          <div class="cross-page-banner gsap-reveal" style="background: linear-gradient(135deg, rgba(14, 165, 233, 0.12), rgba(15, 23, 42, 0.85)); border: 1px solid var(--border-glow); padding: clamp(2.5rem, 5vw, 4rem) clamp(1.5rem, 4vw, 3rem); border-radius: var(--radius-xl); text-align: center; display: flex; flex-direction: column; align-items: center; gap: 1.5rem; margin: 0 auto;">
+            <span class="eyebrow">• PRÊT À LANCER VOTRE PROJET ? •</span>
+            <h2 class="section-title" style="margin-bottom: 0.5rem; max-width: 750px;">
+              Obtenez Votre Devis Gratuit
+            </h2>
+            <p class="section-subtitle" style="max-width: 680px; margin-bottom: 0.5rem;">
+              Configurez votre solution en ligne ou contactez directement notre bureau d'études. Réponse sous 24h.
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin-top: 0.5rem;">
+              <a href="./devis.html" class="btn btn-primary btn-lg" style="display: inline-flex; align-items: center; gap: 0.65rem;">
+                <span>Devis en Ligne</span>
+                <span>→</span>
+              </a>
+              <a href="./contact.html" class="btn btn-secondary btn-lg">
+                Nous Contacter
+              </a>
+              <a 
+                href="https://wa.me/21698804061?text=Bonjour%202A%20PRO%20CONCEPT%2C%20je%20souhaite%20un%20devis%20pour%20mon%20projet" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn btn-whatsapp btn-lg"
+              >
+                <span>📲 WhatsApp Direct</span>
+              </a>
             </div>
           </div>
         </div>
@@ -858,13 +483,14 @@
         <div>
           <h4 class="footer-col-title">Nos Solutions</h4>
           <div class="footer-links">
-            <a href="./solutions.html#abris-voitures" class="footer-link">Abris de Voitures (Standard & Suspendus)</a>
-            <a href="./solutions.html#abris-ouvrants" class="footer-link">Abris Ouvrants & Toits Coulissants</a>
-            <a href="./solutions.html#abris-terrasses-pergolas" class="footer-link">Abris de Terrasses & Pergolas</a>
-            <a href="./solutions.html#extensions-terrasses" class="footer-link">Extensions de Terrasses & Vérandas</a>
-            <a href="./solutions.html#menuiserie-aluminium" class="footer-link">Menuiserie Aluminium Haute Précision</a>
-            <a href="./solutions.html#garde-corps-inox" class="footer-link">Garde-Corps & Rampes Inox</a>
-            <a href="./solutions.html#enseignes-facades" class="footer-link">Enseignes & Façades Alucobond</a>
+            <a href="./solutions.html#abri-de-terrace" class="footer-link">Abris de Terrasses</a>
+            <a href="./solutions.html#abri-de-voiture" class="footer-link">Abris de Voitures (Standard &amp; Suspendus)</a>
+            <a href="./solutions.html#abri-ouvrant" class="footer-link">Abris Ouvrants &amp; Toits Coulissants</a>
+            <a href="./solutions.html#pergola" class="footer-link">Pergolas Métalliques &amp; Aluminium</a>
+            <a href="./solutions.html#extension" class="footer-link">Extensions de Terrasses &amp; Brise-Vue</a>
+            <a href="./solutions.html#menuiserie-aluminium" class="footer-link">Menuiserie Aluminium Sur Mesure</a>
+            <a href="./solutions.html#garde-corps-rampes-inox" class="footer-link">Garde-Corps &amp; Rampes Inox</a>
+            <a href="./solutions.html#enceigne-set-habillage-de-facades" class="footer-link">Enseignes &amp; Façades Alucobond</a>
           </div>
         </div>
 
@@ -873,11 +499,10 @@
           <div class="footer-links">
             <a href="./index.html" class="footer-link">Accueil</a>
             <a href="./solutions.html" class="footer-link">Nos Solutions (Catalogue)</a>
-            <a href="./realisations.html" class="footer-link">Galerie de Réalisations (27 projets)</a>
-            <a href="#configurateur" class="footer-link">Calculateur de Devis</a>
-            <a href="#savoir-faire" class="footer-link">Matériaux & Qualité</a>
-            <a href="#processus" class="footer-link">Méthodologie en 4 Étapes</a>
-            <a href="#contact" class="footer-link">Contact & Localisation</a>
+            <a href="./realisations.html" class="footer-link">Galerie de Réalisations (130 chantiers &amp; vidéos)</a>
+            <a href="#pourquoi-nous" class="footer-link">Pourquoi 2A PRO CONCEPT</a>
+            <a href="./devis.html" class="footer-link">Devis en Ligne</a>
+            <a href="./contact.html" class="footer-link">Contact &amp; Localisation</a>
           </div>
         </div>
 
@@ -919,7 +544,7 @@
       
       <div class="lightbox-content-card">
         <div class="lightbox-header-bar">
-          <span class="lightbox-counter" id="lightbox-counter">1 / 6</span>
+          <span class="lightbox-counter" id="lightbox-counter">1 / 130</span>
           <button class="lightbox-close-btn" aria-label="Fermer la vue agrandie">&times;</button>
         </div>
         

@@ -1,29 +1,38 @@
+// ============================================================================
+// servicesData.js — AUTHORITATIVE SERVICES & SOLUTIONS CATALOG
+// Source: "2a pro concept Informations.txt" + "Structure 2A PRO CONCEPT"
+// 8 Authoritative Domains of Activity in 3 Engineering Clusters
+// ============================================================================
+
 window.servicesData = [
+  // --------------------------------------------------------------------------
+  // PÔLE A : PROTECTION & COUVERTURE EXTÉRIEURE
+  // --------------------------------------------------------------------------
   {
-    id: "abris-voitures",
+    id: "abri-de-voiture",
     cluster: "structures-exterieures",
     clusterTitle: "Protection & Couverture Extérieure",
     title: "Abris de Voitures",
     shortSubtitle: "Protection solaire & intempéries sur mesure",
-    heroImage: "./images/p02_09_abri_voiture_cantilever_rouge.jpg",
-    description: "Conception, fabrication et pose d'abris de voitures haut de gamme, parfaitement calibrés aux dimensions de vos véhicules et aux contraintes de votre propriété. Disponibles en configuration standard à poteaux ou en structure suspendue moderne pour faciliter chaque manÅ“uvre.",
+    heroImage: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (1).jpg",
+    description: "Conception, fabrication et pose d'abris de voitures sur mesure, adaptés aux dimensions et aux besoins du client (structure galvanisé/alu, peinture epoxy au four/au pistolet, forme plat/arrondi). Disponibles en configuration standard à poteaux et traverse ou en abri suspendu sans poteaux frontaux.",
     types: [
       {
         name: "Abri Standard",
-        description: "Structure équilibrée à poteaux verticaux et traverses porteuses renforcées.",
-        image: "./images/p02_01_abri_standard_polycarbonate.jpg"
+        description: "Abris avec une structure en poteaux et traverse. Configuration classique robuste.",
+        image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri standard/Abri_standard_COUVERTURE_polycarbonate.jpg"
       },
       {
         name: "Abri Suspendu (Cantilever)",
-        description: "Architecture en porte-à-faux supprimant les poteaux frontaux pour un dégagement total et un stationnement fluide.",
-        image: "./images/p02_07_abri_suspendu_toile_pvc.jpg"
+        description: "Abris avec une structure permettant de réduire ou supprimer les poteaux frontaux pour libérer l'espace au sol.",
+        image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri suspendu/Abri_suspendu_polycarbonate.jpg"
       }
     ],
     coverings: [
-      { name: "Polycarbonate", detail: "Haute résistance aux chocs et filtre anti-UV préservant la carrosserie", image: "./images/p02_01_abri_standard_polycarbonate.jpg" },
-      { name: "PVC Rigide", detail: "Opacité protectrice et durabilité sans entretien face au soleil", image: "./images/p02_02_abri_standard_pvc.jpg" },
-      { name: "Toile PVC Tendue", detail: "Esthétique tendue moderne avec résistance mécanique renforcée", image: "./images/p02_03_abri_standard_toile_pvc.jpg" },
-      { name: "Panneaux Sandwich", detail: "Isolation thermique maximale contre la chaleur caniculaire et le froid", image: "./images/p02_04_abri_standard_panneaux_sandwich.jpg" }
+      { name: "Couverture Polycarbonate", detail: "Haute résistance aux chocs, filtre anti-UV et excellente transmission lumineuse", image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri standard/Abri_standard_COUVERTURE_polycarbonate.jpg" },
+      { name: "Couverture PVC", detail: "Opacité protectrice, étanchéité totale et durabilité sans entretien face au soleil", image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri standard/Abri_standard_COUVERTURE_pvc.jpg" },
+      { name: "Couverture Toile PVC", detail: "Esthétique tendue contemporaine avec haute résistance mécanique et prise au vent", image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri standard/Abri_standard_COUVERTURE_toile_pvc.jpg" },
+      { name: "Couverture Panneaux Sandwich", detail: "Isolation thermique maximale contre la chaleur caniculaire et le froid", image: "./Structure 2A PRO CONCEPT/Abri de voiture/Abri standard/Abri_standard_COUVERTURE_panneaux_sandwich.jpg" }
     ],
     technicalSpecs: [
       "Ossature en acier galvanisé traité anti-corrosion ou aluminium thermolaqué",
@@ -33,102 +42,142 @@ window.servicesData = [
     ]
   },
   {
-    id: "abris-ouvrants",
+    id: "abri-de-terrace",
+    cluster: "structures-exterieures",
+    clusterTitle: "Protection & Couverture Extérieure",
+    title: "Abris de Terrasses",
+    shortSubtitle: "Couverture fixe sur mesure pour terrasses de villas & résidences",
+    heroImage: "./Structure 2A PRO CONCEPT/Abri de terrace/Abri_de_terrace (1).jpg",
+    description: "Conception fabrication et pose d'abris de terrasse sur mesure, adaptés aux dimensions et aux besoins du client (étanchéité complète, structure galvanisé/alu, peinture epoxy au four/au pistolet, forme plat/arrondi, couverture au choix).",
+    types: [
+      {
+        name: "Abri de Terrasse Fixe Plat",
+        description: "Couverture permanente au profil plat moderne avec chéneau d'évacuation d'eaux pluviales discrètement intégré.",
+        image: "./Structure 2A PRO CONCEPT/Abri de terrace/Abri_de_terrace (1).jpg"
+      },
+      {
+        name: "Abri de Terrasse Galbé",
+        description: "Structure cintrée offrant un écoulement rapide des eaux et une élégance architecturale arrondie.",
+        image: "./Structure 2A PRO CONCEPT/Abri de terrace/Abri_de_terrace (2).jpg"
+      }
+    ],
+    coverings: [
+      { name: "Polycarbonate Compact / Alvéolaire", detail: "Luminosité naturelle zénithale sans effet de serre", image: "./Structure 2A PRO CONCEPT/Abri de terrace/Abri_de_terrace (1).jpg" },
+      { name: "Panneaux Sandwich Isolants", detail: "Confort thermique été comme hiver pour les terrasses de vie", image: "./Structure 2A PRO CONCEPT/Abri de terrace/Abri_de_terrace (2).jpg" }
+    ],
+    technicalSpecs: [
+      "Étanchéité complète périphérique garantie par joints haute performance",
+      "Structure sur mesure en acier galvanisé ou aluminium haute rigidité",
+      "Peinture époxy cuite au four ou pistolet (coloris au choix du nuancier RAL)",
+      "Forme toiture plane monopente ou cintre galbé"
+    ]
+  },
+  {
+    id: "abri-ouvrant",
     cluster: "structures-exterieures",
     clusterTitle: "Protection & Couverture Extérieure",
     title: "Abris Ouvrants & Toitures Rétractables",
-    shortSubtitle: "Toits coulissants manuels ou motorisés pour patio & terrasses",
-    heroImage: "./images/p03_06_abri_ouvrant_auto_patio_arches.jpg",
-    description: "La signature d'ingénierie de 2A Pro Concept : des abris ouvrants sur mesure adaptés aux patios de maisons arabes traditionnelles, terrasses de villas et verrières d'exception. Ouvrez votre espace au ciel azur d'un geste ou protégez-le hermétiquement des intempéries.",
+    shortSubtitle: "Systèmes coulissants manuels & automatiques pour patios et terrasses",
+    heroImage: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (1).jpg",
+    description: "Conception, fabrication et pose d'abris ouvrants de maison arabe, terrasse, etc. sur mesure, adaptés aux dimensions et aux besoins du client (étanchéité complète, ouverture sur une seule partie / ouverture sur plusieurs modules, structure galvanisé/alu, peinture epoxy au four/au pistolet, forme plat/arrondi, avec canalisation d'eaux / sans canalisation, couverture au choix).",
     types: [
       {
-        name: "Système Manuel Ergonomique",
-        description: "Coulissement par poussée douce guidée sur rails usinés haute précision avec poignées de guidage.",
-        image: "./images/p03_01_abri_ouvrant_manuelle.jpg"
+        name: "Abri Ouvrant Manuel",
+        description: "Système coulissant à ouverture manuelle par poussée sur rails usinés de haute précision.",
+        image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (1).jpg"
       },
       {
-        name: "Système Automatique Motorisé",
-        description: "Motorisation étanche intégrée avec télécommande sans fil ou commande murale déportée.",
-        image: "./images/p03_07_abri_ouvrant_auto_laser_remote.jpg"
+        name: "Abri Ouvrant Automatique (Motorisé)",
+        description: "Système coulissant à ouverture automatique motorisé avec système de commande pour l'ouverture motorisée (télécommande ou commande murale).",
+        image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (1).jpg"
       }
     ],
     coverings: [
-      { name: "Polycarbonate Compact / Alvéolaire", detail: "Lumière naturelle zénithale sans effet de serre", image: "./images/p03_04_abri_ouvrant_auto_3.jpg" },
-      { name: "Panneaux Sandwich Isolants", detail: "Confort thermique été comme hiver pour les espaces de vie", image: "./images/p03_05_abri_ouvrant_auto_4.jpg" }
+      { name: "Polycarbonate Traité Anti-UV", detail: "Transmission de lumière claire ou opale anti-éblouissement", image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (10).jpg" },
+      { name: "Panneaux Sandwich Isolants", detail: "Protection thermique complète et isolation phonique", image: "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (15).jpg" }
     ],
     technicalSpecs: [
-      "Ã‰tanchéité complète aux infiltrations d'eau et aux poussières",
-      "Système de canalisation d'eaux pluviales intégré avec évacuation discrète",
-      "Ouverture modulable : un tiers, moitié ou télescopique multi-modules",
-      "Structure galvanisée ou aluminium avec thermolaquage époxy au four",
-      "Profils d'étanchéité à joints EPDM résistants aux UV méditerranéens"
+      "Étanchéité complète garantie aux infiltrations d'eau et aux poussières",
+      "Canalisation d'eaux pluviales intégrée avec évacuation discrète",
+      "Ouverture modulable : simple poussée ou motorisation télécommandée",
+      "Structure en acier galvanisé ou aluminium avec thermolaquage époxy au four"
     ]
   },
   {
-    id: "abris-terrasses-pergolas",
+    id: "pergola",
     cluster: "structures-exterieures",
     clusterTitle: "Protection & Couverture Extérieure",
-    title: "Abris de Terrasses & Pergolas",
-    shortSubtitle: "Valorisation architecturale de vos espaces de détente",
-    heroImage: "./images/p04_03_pergola_1.jpg",
-    description: "Prolongez la vie de votre terrasse toute l'année avec nos pergolas et abris fixes. Alliant la noblesse des profilés métalliques à des finitions impeccables, nos structures s'intègrent avec élégance à l'architecture de votre villa ou de votre établissement professionnel.",
+    title: "Pergolas Métalliques & Aluminium",
+    shortSubtitle: "Pergolas bioclimatiques et contemporaines pour terrasses & jardins",
+    heroImage: "./Structure 2A PRO CONCEPT/Pergola/Pergola_1.jpg",
+    description: "Conception, fabrication et pose de pergola en acier galvanisé ou en aluminium avec couverture au choix. Structures architecturales contemporaines alliant design épuré et robustesse durable face au vent.",
     types: [
       {
-        name: "Abris de Terrasse Fixes",
-        description: "Couverture permanente robuste, profil plat ou arrondi avec évacuation d'eau.",
-        image: "./images/p04_01_abri_terrace_1.jpg"
+        name: "Pergola en Acier Galvanisé",
+        description: "Structure métallique robuste grande portée avec peinture époxy cuite au four.",
+        image: "./Structure 2A PRO CONCEPT/Pergola/Pergola_1.jpg"
       },
       {
-        name: "Pergolas Architecturales",
-        description: "Structures contemporaines en acier galvanisé ou aluminium épuré pour terrasses et jardins.",
-        image: "./images/p04_05_pergola_freestanding_white.jpg"
+        name: "Pergola Autoportante Aluminium",
+        description: "Pergola contemporaine autoportante laquée blanche ou anthracite, idéale abords de piscine.",
+        image: "./Structure 2A PRO CONCEPT/Pergola/Pergola_freestanding_white.jpg"
       }
     ],
     coverings: [
-      { name: "Couverture Polycarbonate", detail: "Transmission de lumière claire ou opale anti-éblouissement", image: "./images/p04_02_abri_terrace_2.jpg" },
-      { name: "Couverture Métallique / Sandwich", detail: "Protection solaire totale et fraîcheur sous toiture", image: "./images/p04_03_pergola_1.jpg" }
+      { name: "Couverture Polycarbonate", detail: "Protection solaire filtrante et clarté naturelle", image: "./Structure 2A PRO CONCEPT/Pergola/Pergola_2.jpg" },
+      { name: "Lames Brise-Soleil", detail: "Ombrage calibré et ventilation naturelle sous toiture", image: "./Structure 2A PRO CONCEPT/Pergola/Pergola_4.jpg" }
     ],
     technicalSpecs: [
-      "Structure sur mesure en acier galvanisé ou aluminium haute rigidité",
-      "Peinture époxy cuite au four (coloris au choix du nuancier RAL)",
-      "Formes adaptées : toiture plane monopente ou cintre galbé",
-      "Ã‰tanchéité périphérique complète en raccord de façade"
+      "Structure en acier galvanisé ou aluminium haute rigidité",
+      "Peinture époxy au four résistante aux agressions marines et UV",
+      "Ancrages muraux et platines au sol masqués sans vis apparentes",
+      "Couverture au choix : polycarbonate, toile PVC, tôle perforée ou lames"
     ]
   },
+
+  // --------------------------------------------------------------------------
+  // PÔLE B : ESPACES VITRÉS & FERMETURES
+  // --------------------------------------------------------------------------
   {
-    id: "extensions-terrasses",
+    id: "extension",
     cluster: "espaces-vitres",
     clusterTitle: "Espaces Vitrés & Fermetures",
-    title: "Extensions de Terrasses & Séparations",
-    shortSubtitle: "Vérandas, fermetures de terrasses pour villas, cafés & restaurants",
-    heroImage: "./images/p05_07_extension_rooftop_anthracite.jpg",
-    description: "Transformez vos terrasses extérieures en véritables pièces à vivre protégées. Que ce soit pour agrandir un salon de villa, couvrir la terrasse d'un café ou créer des séparations élégantes, nous concevons des extensions solides et hautement lumineuses.",
+    title: "Extensions de Terrasses & Brise-Vue",
+    shortSubtitle: "Vérandas, fermetures de terrasses maison & café, séparations",
+    heroImage: "./Structure 2A PRO CONCEPT/Extension/En aluminium/Extension_en_aluminium (1).jpg",
+    description: "Conception fabrication et pose d'extension de terrasse maison, terrasse café, séparation. Remplissage en tous types de verres, panneaux sandwich, pvc. Déclinaisons en aluminium, tôle galvanisée découpée laser ou acier galvanisé.",
     types: [
       {
         name: "Extension en Aluminium",
-        description: "Profilés alu fixes, coulissants ou ouvrants avec large surface vitrée panoramique.",
-        image: "./images/p05_01_extension_aluminium_1.jpg"
+        description: "Structure en aluminium (fixe, ouvrant, coulissant) avec remplissage au choix.",
+        image: "./Structure 2A PRO CONCEPT/Extension/En aluminium/Extension_en_aluminium (1).jpg"
       },
       {
-        name: "Extension en Tôle Découpée Laser",
-        description: "Brise-vues et parements en tôle galvanisée avec découpe laser personnalisée de motifs.",
-        image: "./images/p05_02_extension_tole_1.jpg"
+        name: "Extension en Tôle",
+        description: "Extension en tôle galvanisée, dimensions au besoin du client, découpe laser de motifs selon le choix.",
+        image: "./Structure 2A PRO CONCEPT/Extension/En tôle/Extension_en_tole_1.jpg"
       },
       {
-        name: "Extension en Acier Galvanisé",
-        description: "Charpente métallique robuste pour de grandes portées et charges de toiture importantes.",
-        image: "./images/p05_03_extension_acier_1.jpg"
+        name: "Extension en Acier",
+        description: "Structure en acier galvanisée, peinture au choix, remplissage au choix.",
+        image: "./Structure 2A PRO CONCEPT/Extension/En acier/Extension_en_acier.jpg"
+      },
+      {
+        name: "Extension & Brise-Vue",
+        description: "Panneaux brise-vue décoratifs découpés au laser et extensions de séparation d'intimité.",
+        image: "./Structure 2A PRO CONCEPT/Extension/Extension & Brise-Vue/Extension_brise_soleil_noir (1).jpg"
       }
     ],
     coverings: [
-      { name: "Vitrage de Sécurité", detail: "Simple, double vitrage ou verre feuilleté pour isolation et clarté", image: "./images/p05_05_extension_aluminium_2.jpg" },
-      { name: "Panneaux Sandwich & PVC", detail: "Remplissages pleins thermiquement isolés et occultants", image: "./images/p05_04_extension_tole_2.jpg" }
+      { name: "Tous types de verres", detail: "Simple, double vitrage isolant ou verre feuilleté de sécurité", image: "./Structure 2A PRO CONCEPT/Extension/En aluminium/Extension_en_aluminium (2).jpg" },
+      { name: "Panneaux Sandwich & PVC", detail: "Remplissages pleins isolants et durables sans entretien", image: "./Structure 2A PRO CONCEPT/Extension/En aluminium/Extension_en_aluminium (4).jpg" },
+      { name: "Tôle Découpée Laser", detail: "Motifs géométriques ou orientaux personnalisés sur commande numérique", image: "./Structure 2A PRO CONCEPT/Extension/Extension & Brise-Vue/Extension_brise_soleil_noir (3).jpg" }
     ],
     technicalSpecs: [
-      "Châssis aluminium ou acier traité sur mesure selon relevé millimétrique",
-      "Découpe laser de motifs personnalisés (moucharabiehs modernes, géométries)",
-      "Adaptation aux contraintes des cafés, salons de thé et terrasses de résidences",
-      "Système de joints périphériques et bavettes d'étanchéité"
+      "Structure adaptée aux terrasses de villas résidentielles et terrasses de cafés",
+      "Remplissage sur mesure : verre de sécurité, tôle ajourée, panneaux sandwich",
+      "Système d'ouverture fixe, battant ou coulissant au choix",
+      "Découpe laser 5 motifs ou dessin vectoriel personnalisé"
     ]
   },
   {
@@ -136,93 +185,101 @@ window.servicesData = [
     cluster: "espaces-vitres",
     clusterTitle: "Espaces Vitrés & Fermetures",
     title: "Menuiserie Aluminium Sur Mesure",
-    shortSubtitle: "Fenêtres, baies coulissantes, portes, volets roulants & moustiquaires",
-    heroImage: "./images/p07_02_menuiserie_2.jpg",
-    description: "Fabrication artisanale et industrielle de menuiseries aluminium de haute précision. Des baies vitrées coulissantes panoramiques aux dômes vitrés de piscines intérieures, nos menuiseries combinent fluidité d'usage, durabilité maritime et esthétique moderne.",
+    shortSubtitle: "Fenêtres, portes, portes-fenêtres, moustiquaires & volets roulants",
+    heroImage: "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_1.jpg",
+    description: "Fabrication et installation de menuiseries aluminium sur mesure : fenêtre, porte, porte-fenêtre, moustiquaire, volet roulant. Configurations fixe, coulissant, à la française et battantes avec remplissage au besoin du client.",
     types: [
       {
-        name: "Baies & Fenêtres Coulissantes",
-        description: "Systèmes 2, 3 ou 4 vantaux à roulement doux sur rails inox intégrés.",
-        image: "./images/p07_04_menuiserie_4.jpg"
+        name: "Fenêtres & Baies Coulissantes",
+        description: "Systèmes coulissants fluides sur rails inox intégrés, haute étanchéité acoustique et thermique.",
+        image: "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_2.jpg"
       },
       {
-        name: "Ouvrants à la Française & Battants",
-        description: "Portes et fenêtres à ouverture battante ou oscillo-battante pour une étanchéité optimale.",
-        image: "./images/p07_06_menuiserie_6.jpg"
+        name: "Portes & Portes-Fenêtres Battantes",
+        description: "Ouvrants à la française et oscillo-battants avec quincaillerie de sécurité renforcée.",
+        image: "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_4.jpg"
       },
       {
-        name: "Ouvrages Vitrés Spéciaux",
-        description: "Verrières architecturales, fermetures de piscines et sas d'entrée sur mesure.",
-        image: "./images/p07_09_menuiserie_piscine_overhead.jpg"
+        name: "Fermetures Spéciales & Dômes Piscines",
+        description: "Verrières architecturales, dômes de piscines intérieures et sas d'entrée sur mesure.",
+        image: "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_piscine_overhead.jpg"
       }
     ],
     coverings: [
-      { name: "Volets Roulants", detail: "Lames aluminium thermolaquées avec motorisation ou sangle", image: "./images/p07_01_menuiserie_1.jpg" },
-      { name: "Moustiquaires Plissées", detail: "Protection fine discrète sans entraver la circulation d'air", image: "./images/p07_07_menuiserie_7.jpg" }
+      { name: "Volets Roulants Aluminium", detail: "Lames aluminium thermolaquées avec commande manuelle ou motorisée", image: "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_5.jpg" },
+      { name: "Moustiquaires Plissées / Enroulables", detail: "Protection fine discrète sans entraver la circulation d'air", image: "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_7.jpg" }
     ],
     technicalSpecs: [
       "Profilés aluminium de premier choix certifiés et thermolaqués",
-      "Accessoires et ferrures anticorrosion garantis pour climat côtier",
+      "Systèmes fixe, coulissant, à la française et battantes",
       "Vitrage feuilleté de sécurité ou double vitrage isolant au choix",
-      "Pose soignée avec calfeutrement silicone neutre de haute qualité"
+      "Pose directe sans intermédiaire par nos équipes d'atelier"
     ]
   },
+
+  // --------------------------------------------------------------------------
+  // PÔLE C : FINITIONS MÉTALLIQUES D'ART
+  // --------------------------------------------------------------------------
   {
-    id: "garde-corps-inox",
+    id: "garde-corps-rampes-inox",
     cluster: "finitions-metalliques",
     clusterTitle: "Finitions Métalliques d'Art",
     title: "Garde-Corps & Rampes en Inox",
-    shortSubtitle: "Sécurité et pureté de l'acier inoxydable pour escaliers & balcons",
-    heroImage: "./images/p06_06_garde_corps_rooftop_panorama.jpg",
-    description: "Conception et fabrication soignée de garde-corps et rampes en acier inoxydable pour escaliers, balcons, mezzanines et terrasses. L'inox apporte une modernité intemporelle, une sécurité absolue et une résistance incomparable face à l'humidité et à l'air marin.",
+    shortSubtitle: "Sécurité et pureté de l'acier inoxydable pour escaliers, balcons & terrasses",
+    heroImage: "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (1).jpg",
+    description: "Conception et fabrication de garde-corps en acier inoxydable pour escaliers, balcons, terrasses. L'inox apporte une modernité intemporelle, une sécurité absolue et une résistance exemplaire face à l'humidité côtière.",
     types: [
       {
         name: "Garde-corps à Tubes Inox",
-        description: "Montants verticaux rigides, lisses horizontales profilées et main courante inox ergonomique.",
-        image: "./images/p06_07_garde_corps_escalier_detail.jpg"
+        description: "Montants verticaux, lisses horizontales et main courante en acier inoxydable haute finition.",
+        image: "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (1).jpg"
       },
       {
-        name: "Garde-corps Inox avec Verre de Sécurité",
-        description: "Poteaux en inox avec pinces et panneaux de verre sécurit feuilleté pour une transparence totale.",
-        image: "./images/p06_02_garde_corps_verre_1.jpg"
+        name: "Garde-corps avec Remplissage en Verre",
+        description: "Structure inox, poteaux inox, main courante inox, verre de sécurité et fixations adaptées pour une transparence totale.",
+        image: "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps avec remplissage en verre/Garde-corps_avec_remplissage_en_verre (1).jpg"
       }
     ],
-    coverings: [],
+    coverings: [
+      { name: "Inox Brossé Satiné", detail: "Finition noble mate sans traces de doigts", image: "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde_corps_escalier_detail.jpg" },
+      { name: "Verre de Sécurité Feuilleté", detail: "Panneaux trempés sécurit pour rooftop et balcons avec vue panoramique", image: "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde_corps_rooftop_panorama.jpg" }
+    ],
     technicalSpecs: [
-      "Acier inoxydable de qualité supérieure (finition brossée satinée ou poli miroir)",
+      "Acier inoxydable de qualité marine supérieure (zéro corrosion)",
       "Montants verticaux solidement chevillés dans la dalle ou fixation à l'anglaise",
       "Lisses de sécurité horizontales calibrées aux normes de retenue",
-      "Verre de sécurité feuilleté trempé haute résistance aux impacts"
+      "Verre de sécurité feuilleté trempé avec pinces inox massives"
     ]
   },
   {
-    id: "enseignes-facades",
+    id: "enceigne-set-habillage-de-facades",
     cluster: "finitions-metalliques",
     clusterTitle: "Finitions Métalliques d'Art",
     title: "Enseignes & Habillage de Façades (Alucobond)",
-    shortSubtitle: "Panneaux composites alu & découpe laser sur mesure",
-    heroImage: "./images/p08_01_enseigne_facade_1.jpg",
-    description: "Donnez une identité visuelle saisissante à vos locaux professionnels, magasins et bâtiments commerciaux. Spécialiste de l'habillage en panneaux aluminium composite (Alucobond), 2A Pro Concept réalise des façades ventilées modernes, des enseignes lumineuses et des parements découpés au laser.",
+    shortSubtitle: "Panneaux aluminium composite Alucobond & découpe laser sur mesure",
+    heroImage: "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enceigne_set_habillage_de_façades (1).jpg",
+    description: "Conception et réalisation d'enseignes, habillages et décorations de façades en panneaux aluminium composite (Alucobond), avec découpe laser de motifs et logos sur mesure.",
     types: [
       {
         name: "Habillage de Façades Alucobond",
-        description: "Pose de cassettes composites créant des surfaces parfaitement planes, modernes et isolantes.",
-        image: "./images/p08_04_enseigne_facade_4.jpg"
+        description: "Pose de cassettes composites créant des surfaces planes, modernes, isolantes et durables.",
+        image: "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enceigne_set_habillage_de_façades (3).jpg"
       },
       {
-        name: "Enseignes & Logos Découpés Laser",
-        description: "Conception de lettrages 3D, caissons lumineux et découpe numérique de logos d'entreprise.",
-        image: "./images/p08_01_enseigne_facade_1.jpg"
+        name: "Enseignes Commerciales & Découpe Laser",
+        description: "Conception de logos, lettrages 3D et caissons lumineux découpés au laser numérique sur mesure.",
+        image: "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enseigne_rts_school (1).jpg"
       }
     ],
-    coverings: [],
+    coverings: [
+      { name: "Alucobond Composite 4mm", detail: "Planéité irréprochable et résistance éprouvée aux fortes chaleurs", image: "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enceigne_set_habillage_de_façades (4).jpg" },
+      { name: "Découpe Numérique Laser", detail: "Reproduction fidèle des chartes graphiques et logos institutionnels", image: "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enseigne_rts_school (2).jpg" }
+    ],
     technicalSpecs: [
-      "Panneaux composites aluminium de haute densité (Alucobond)",
-      "Planéité irréprochable et résistance éprouvée aux fortes expositions solaires",
-      "Découpe laser numérique de haute précision pour logos et motifs graphiques",
-      "Ossature secondaire porteuse traitée contre la corrosion"
+      "Panneaux aluminium composite (Alucobond) haute densité",
+      "Sous-structure secondaire porteuse traitée contre la corrosion",
+      "Découpe laser numérique de haute précision pour motifs et logos",
+      "Intégration d'éclairage LED et fixations invisibles"
     ]
   }
 ];
-
-

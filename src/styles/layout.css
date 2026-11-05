@@ -29,12 +29,12 @@
 /* Sections */
 .section {
   position: relative;
-  padding-top: clamp(4rem, 8vw, 7.5rem);
-  padding-bottom: clamp(4rem, 8vw, 7.5rem);
+  padding-top: clamp(2.75rem, 5vw, 4.25rem);
+  padding-bottom: clamp(2.75rem, 5vw, 4.25rem);
 }
 
 .section-header {
-  margin-bottom: clamp(2.5rem, 5vw, 4.5rem);
+  margin-bottom: clamp(2rem, 3.5vw, 3rem);
 }
 
 .section-header.text-center {

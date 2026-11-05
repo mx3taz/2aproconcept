@@ -1,0 +1,1382 @@
+{
+  "metadata": {
+    "project": "2A PRO CONCEPT",
+    "directive": "Authoritative Structure & Media Inventory",
+    "generatedAt": "2026-11-03T18:18:14.009Z",
+    "totalCategories": 8,
+    "totalImages": 124,
+    "totalVideos": 6,
+    "totalMediaAssets": 130,
+    "sourceDirectory": "public/Structure 2A PRO CONCEPT",
+    "sourceInformationDocument": "public/Structure 2A PRO CONCEPT/2a pro concept Informations.txt"
+  },
+  "hierarchy": [
+    {
+      "categoryId": "abri-de-terrace",
+      "categoryName": "Abri de terrace",
+      "displayName": "Abris de Terrasses",
+      "order": 1,
+      "description": "Conception fabrication et pose d'abris de terrasse sur mesure, adaptés aux dimensions et aux besoins du client (étanchéité complète, structure galvanisé/alu, peinture epoxy au four/au pistolet, forme plat/arrondi, couverture au choix).",
+      "directImagesCount": 2,
+      "directVideosCount": 0,
+      "directMedia": [
+        {
+          "id": "terrace-01",
+          "type": "image",
+          "title": "Abri de Terrasse Sur Mesure",
+          "relativePath": "./Structure 2A PRO CONCEPT/Abri de terrace/Abri_de_terrace (1).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de terrace/Abri_de_terrace (1).jpg",
+          "fileSize": 46407,
+          "highlight": true
+        },
+        {
+          "id": "terrace-02",
+          "type": "image",
+          "title": "Abri de Terrasse Contemporain",
+          "relativePath": "./Structure 2A PRO CONCEPT/Abri de terrace/Abri_de_terrace (2).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de terrace/Abri_de_terrace (2).jpg",
+          "fileSize": 38542,
+          "highlight": false
+        }
+      ],
+      "subcategories": []
+    },
+    {
+      "categoryId": "abri-de-voiture",
+      "categoryName": "Abri de voiture",
+      "displayName": "Abris de Voitures",
+      "order": 2,
+      "description": "Conception fabrication et pose d'abris de voitures sur mesure, adaptés aux dimensions et aux besoins du client (structure galvanisé/alu, peinture epoxy au four/au pistolet, forme plat/arrondi).",
+      "directImagesCount": 16,
+      "directVideosCount": 0,
+      "directMedia": [
+        {
+          "id": "voiture-01",
+          "type": "image",
+          "title": "Abri de Voiture Sur Mesure",
+          "relativePath": "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (1).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (1).jpg",
+          "fileSize": 275500,
+          "highlight": true
+        },
+        {
+          "id": "voiture-02",
+          "type": "image",
+          "title": "Abri de Voiture Structure Métallique",
+          "relativePath": "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (2).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (2).jpg",
+          "fileSize": 560349,
+          "highlight": false
+        },
+        {
+          "id": "voiture-03",
+          "type": "image",
+          "title": "Abri Voiture Robuste",
+          "relativePath": "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (3).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (3).jpg",
+          "fileSize": 362971,
+          "highlight": false
+        },
+        {
+          "id": "voiture-04",
+          "type": "image",
+          "title": "Carport Design Pour Villa",
+          "relativePath": "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (4).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (4).jpg",
+          "fileSize": 388258,
+          "highlight": false
+        },
+        {
+          "id": "voiture-05",
+          "type": "image",
+          "title": "Abri de Voiture Protection Intempéries",
+          "relativePath": "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (5).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (5).jpg",
+          "fileSize": 323345,
+          "highlight": false
+        },
+        {
+          "id": "voiture-06",
+          "type": "image",
+          "title": "Abri Voiture Double",
+          "relativePath": "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (6).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (6).jpg",
+          "fileSize": 390487,
+          "highlight": false
+        },
+        {
+          "id": "voiture-07",
+          "type": "image",
+          "title": "Abri Voiture Profil Galbé",
+          "relativePath": "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (7).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (7).jpg",
+          "fileSize": 47224,
+          "highlight": false
+        },
+        {
+          "id": "voiture-08",
+          "type": "image",
+          "title": "Abri de Voiture Compact",
+          "relativePath": "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (8).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (8).jpg",
+          "fileSize": 41976,
+          "highlight": false
+        },
+        {
+          "id": "voiture-09",
+          "type": "image",
+          "title": "Carport Laqué Haute Durabilité",
+          "relativePath": "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (9).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (9).jpg",
+          "fileSize": 46148,
+          "highlight": false
+        },
+        {
+          "id": "voiture-10",
+          "type": "image",
+          "title": "Abri Voiture Grande Envergure",
+          "relativePath": "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (10).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (10).jpg",
+          "fileSize": 451957,
+          "highlight": false
+        },
+        {
+          "id": "voiture-11",
+          "type": "image",
+          "title": "Abri de Voiture Contemporain",
+          "relativePath": "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (11).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (11).jpg",
+          "fileSize": 355661,
+          "highlight": false
+        },
+        {
+          "id": "voiture-12",
+          "type": "image",
+          "title": "Abri Voiture Résidentiel",
+          "relativePath": "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (12).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (12).jpg",
+          "fileSize": 348564,
+          "highlight": false
+        },
+        {
+          "id": "voiture-13",
+          "type": "image",
+          "title": "Carport Multiplace Renforcé",
+          "relativePath": "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (13).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (13).jpg",
+          "fileSize": 487898,
+          "highlight": false
+        },
+        {
+          "id": "voiture-14",
+          "type": "image",
+          "title": "Abri de Voiture Profilés Tubulaires",
+          "relativePath": "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (14).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (14).jpg",
+          "fileSize": 436661,
+          "highlight": false
+        },
+        {
+          "id": "voiture-15",
+          "type": "image",
+          "title": "Abri Voiture Anti-UV",
+          "relativePath": "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (15).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (15).jpg",
+          "fileSize": 426505,
+          "highlight": false
+        },
+        {
+          "id": "voiture-16",
+          "type": "image",
+          "title": "Carport Finition Premium",
+          "relativePath": "./Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (16).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de voiture/Abri_voiture (16).jpg",
+          "fileSize": 514067,
+          "highlight": false
+        }
+      ],
+      "subcategories": [
+        {
+          "subcategoryId": "abri-standard",
+          "subcategoryName": "Abri standard",
+          "displayName": "Abri Standard",
+          "order": 1,
+          "description": "Abris avec une structure en poteaux et traverse. Couvertures disponibles : Polycarbonate, PVC, Toile PVC, Panneaux Sandwich.",
+          "mediaCount": 4,
+          "media": [
+            {
+              "id": "voiture-std-poly",
+              "type": "image",
+              "title": "Abri Standard — Couverture Polycarbonate",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri de voiture/Abri standard/Abri_standard_COUVERTURE_polycarbonate.jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de voiture/Abri standard/Abri_standard_COUVERTURE_polycarbonate.jpg",
+              "fileSize": 39867,
+              "highlight": false
+            },
+            {
+              "id": "voiture-std-pvc",
+              "type": "image",
+              "title": "Abri Standard — Couverture PVC",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri de voiture/Abri standard/Abri_standard_COUVERTURE_pvc.jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de voiture/Abri standard/Abri_standard_COUVERTURE_pvc.jpg",
+              "fileSize": 34560,
+              "highlight": false
+            },
+            {
+              "id": "voiture-std-toile",
+              "type": "image",
+              "title": "Abri Standard — Couverture Toile PVC",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri de voiture/Abri standard/Abri_standard_COUVERTURE_toile_pvc.jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de voiture/Abri standard/Abri_standard_COUVERTURE_toile_pvc.jpg",
+              "fileSize": 26222,
+              "highlight": false
+            },
+            {
+              "id": "voiture-std-sandwich",
+              "type": "image",
+              "title": "Abri Standard — Couverture Panneaux Sandwich",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri de voiture/Abri standard/Abri_standard_COUVERTURE_panneaux_sandwich.jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de voiture/Abri standard/Abri_standard_COUVERTURE_panneaux_sandwich.jpg",
+              "fileSize": 21395,
+              "highlight": false
+            }
+          ]
+        },
+        {
+          "subcategoryId": "abri-suspendu",
+          "subcategoryName": "Abri suspendu",
+          "displayName": "Abri Suspendu",
+          "order": 2,
+          "description": "Abris avec une structure permettant de réduire ou supprimer les poteaux frontaux. Couvertures disponibles : Polycarbonate, PVC, Toile PVC, Panneaux Sandwich.",
+          "mediaCount": 4,
+          "media": [
+            {
+              "id": "voiture-susp-poly",
+              "type": "image",
+              "title": "Abri Suspendu — Polycarbonate",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri de voiture/Abri suspendu/Abri_suspendu_polycarbonate.jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de voiture/Abri suspendu/Abri_suspendu_polycarbonate.jpg",
+              "fileSize": 36852,
+              "highlight": false
+            },
+            {
+              "id": "voiture-susp-pvc",
+              "type": "image",
+              "title": "Abri Suspendu — PVC",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri de voiture/Abri suspendu/Abri_suspendu_pvc.jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de voiture/Abri suspendu/Abri_suspendu_pvc.jpg",
+              "fileSize": 26087,
+              "highlight": false
+            },
+            {
+              "id": "voiture-susp-toile",
+              "type": "image",
+              "title": "Abri Suspendu — Toile PVC",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri de voiture/Abri suspendu/Abri_suspendu_toile_pvc.jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de voiture/Abri suspendu/Abri_suspendu_toile_pvc.jpg",
+              "fileSize": 33619,
+              "highlight": false
+            },
+            {
+              "id": "voiture-susp-sandwich",
+              "type": "image",
+              "title": "Abri Suspendu — Panneaux Sandwich",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri de voiture/Abri suspendu/Abri_suspendu_panneaux_sandwich.jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri de voiture/Abri suspendu/Abri_suspendu_panneaux_sandwich.jpg",
+              "fileSize": 13920,
+              "highlight": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryId": "abri-ouvrant",
+      "categoryName": "Abri ouvrant",
+      "displayName": "Abris Ouvrants",
+      "order": 3,
+      "description": "Conception, fabrication et pose d'abris ouvrants de maison arabe, terrasse, sur mesure, adaptés aux dimensions et aux besoins du client (étanchéité complète, ouverture sur une seule partie/ouverture sur plusieurs modules, structure galvanisé/alu, peinture epoxy au four/au pistolet, couverture au choix).",
+      "directImagesCount": 0,
+      "directVideosCount": 0,
+      "directMedia": [],
+      "subcategories": [
+        {
+          "subcategoryId": "abri-ouvrant-automatique",
+          "subcategoryName": "Abri ouvrant automatique",
+          "displayName": "Abri Ouvrant Automatique",
+          "order": 1,
+          "description": "Système coulissant à ouverture automatique (motorisé). Système de commande pour l'ouverture motorisée.",
+          "mediaCount": 34,
+          "media": [
+            {
+              "id": "ouvrant-auto-01",
+              "type": "image",
+              "title": "Abri Ouvrant Automatique",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (1).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (1).jpg",
+              "fileSize": 120576,
+              "highlight": true
+            },
+            {
+              "id": "ouvrant-auto-02",
+              "type": "image",
+              "title": "Toiture Rétractable Motorisée",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (2).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (2).jpg",
+              "fileSize": 253590,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-03",
+              "type": "image",
+              "title": "Abri Coulissant Automatique",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (3).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (3).jpg",
+              "fileSize": 322156,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-04",
+              "type": "image",
+              "title": "Verrière Rétractable Électrique",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (4).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (4).jpg",
+              "fileSize": 360695,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-05",
+              "type": "image",
+              "title": "Couverture Escamotable Automatique",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (5).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (5).jpg",
+              "fileSize": 158182,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-06",
+              "type": "image",
+              "title": "Toiture Coulissante Motorisée",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (6).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (6).jpg",
+              "fileSize": 297462,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-07",
+              "type": "image",
+              "title": "Abri Ouvrant Électrique Multi-Vantaux",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (7).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (7).jpg",
+              "fileSize": 303723,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-08",
+              "type": "image",
+              "title": "Véranda Coulissante Motorisée",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (8).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (8).jpg",
+              "fileSize": 312982,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-09",
+              "type": "image",
+              "title": "Toit Rétractable sur Rails Inox",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (9).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (9).jpg",
+              "fileSize": 347731,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-10",
+              "type": "image",
+              "title": "Abri Ouvrant Automatique Haute Transparence",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (10).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (10).jpg",
+              "fileSize": 376937,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-11",
+              "type": "image",
+              "title": "Fermeture Motorisée avec Chéneau",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (11).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (11).jpg",
+              "fileSize": 357325,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-12",
+              "type": "image",
+              "title": "Toiture Rétractable Maison Arabe",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (12).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (12).jpg",
+              "fileSize": 250997,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-13",
+              "type": "image",
+              "title": "Abri Ouvrant Motorisé Thermolaqué",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (13).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (13).jpg",
+              "fileSize": 329534,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-14",
+              "type": "image",
+              "title": "Verrière Rétractable Patio Central",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (14).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (14).jpg",
+              "fileSize": 374644,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-15",
+              "type": "image",
+              "title": "Couverture Coulissante Silencieuse",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (15).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (15).jpg",
+              "fileSize": 327053,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-16",
+              "type": "image",
+              "title": "Toit Ouvrant Motorisé Villa",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (16).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (16).jpg",
+              "fileSize": 334305,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-17",
+              "type": "image",
+              "title": "Toiture Escamotable Baignée de Lumière",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (17).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (17).jpg",
+              "fileSize": 234805,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-18",
+              "type": "image",
+              "title": "Abri Coulissant Profilés Aluminium",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (18).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (18).jpg",
+              "fileSize": 257599,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-19",
+              "type": "image",
+              "title": "Verrière Télescopique Motorisée",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (19).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (19).jpg",
+              "fileSize": 175058,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-20",
+              "type": "image",
+              "title": "Toiture Coulissante Télécommandée",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (20).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (20).jpg",
+              "fileSize": 279950,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-21",
+              "type": "image",
+              "title": "Abri Ouvrant Étanchéité Totale",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (21).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (21).jpg",
+              "fileSize": 283741,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-22",
+              "type": "image",
+              "title": "Toit Rétractable Finition Époxy",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (22).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (22).jpg",
+              "fileSize": 337907,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-23",
+              "type": "image",
+              "title": "Système Coulissant Charpente Métallique",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (23).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (23).jpg",
+              "fileSize": 418559,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-24",
+              "type": "image",
+              "title": "Abri Ouvrant Guidage Haute Précision",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (24).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (24).jpg",
+              "fileSize": 166341,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-25",
+              "type": "image",
+              "title": "Toiture Rétractable Cour Pavée",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (25).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (25).jpg",
+              "fileSize": 289307,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-26",
+              "type": "image",
+              "title": "Verrière Coulissante Isolation Thermique",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (26).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (26).jpg",
+              "fileSize": 319845,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-27",
+              "type": "image",
+              "title": "Toit Ouvrant Multi-Modules",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (27).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (27).jpg",
+              "fileSize": 185698,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-28",
+              "type": "image",
+              "title": "Abri Rétractable Patio Lumineux",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (28).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (28).jpg",
+              "fileSize": 356458,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-29",
+              "type": "image",
+              "title": "Toiture Ouvrante Cachet Architectural",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (29).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (29).jpg",
+              "fileSize": 128421,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-30",
+              "type": "image",
+              "title": "Verrière Mobile Télécommandée",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (30).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (30).jpg",
+              "fileSize": 131966,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-31",
+              "type": "image",
+              "title": "Toit Rétractable Double Pente",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (31).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (31).jpg",
+              "fileSize": 370447,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-32",
+              "type": "image",
+              "title": "Couverture Coulissante Terrasse d'Étage",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (32).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (32).jpg",
+              "fileSize": 208214,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-33",
+              "type": "image",
+              "title": "Abri Ouvrant Polycarbonate Antichoc",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (33).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (33).jpg",
+              "fileSize": 201709,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-auto-34",
+              "type": "image",
+              "title": "Toiture Rétractable Grande Envergure",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (34).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant automatique/Abri_ouvrant_automatique (34).jpg",
+              "fileSize": 404506,
+              "highlight": false
+            }
+          ]
+        },
+        {
+          "subcategoryId": "abri-ouvrant-manuelle",
+          "subcategoryName": "Abri ouvrant manuelle",
+          "displayName": "Abri Ouvrant Manuel",
+          "order": 2,
+          "description": "Système coulissant à ouverture manuelle par poussée.",
+          "mediaCount": 12,
+          "media": [
+            {
+              "id": "ouvrant-man-01",
+              "type": "image",
+              "title": "Abri Ouvrant Manuel à Poussée",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (1).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (1).jpg",
+              "fileSize": 400701,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-man-02",
+              "type": "image",
+              "title": "Toiture Coulissante Manuelle Patio",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (2).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (2).jpg",
+              "fileSize": 36959,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-man-03",
+              "type": "image",
+              "title": "Abri Ouvrant Manuel Laqué",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (3).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (3).jpg",
+              "fileSize": 310135,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-man-04",
+              "type": "image",
+              "title": "Verrière Coulissante Manuelle",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (4).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (4).jpg",
+              "fileSize": 202697,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-man-05",
+              "type": "image",
+              "title": "Toiture Manuelle avec Verrouillage",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (5).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (5).jpg",
+              "fileSize": 161572,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-man-06",
+              "type": "image",
+              "title": "Abri Ouvrant Manuel Évacuation Intégrée",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (6).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (6).jpg",
+              "fileSize": 216735,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-man-07",
+              "type": "image",
+              "title": "Couverture Rétractable Manuelle",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (7).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (7).jpg",
+              "fileSize": 397369,
+              "highlight": false
+            },
+            {
+              "id": "ouvrant-man-08",
+              "type": "image",
+              "title": "Abri Ouvrant Manuel Économique",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (8).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri_ouvrant_manuelle (8).jpg",
+              "fileSize": 179595,
+              "highlight": false
+            },
+            {
+              "id": "video-ouvrant-man-01",
+              "type": "video",
+              "title": "Abri Ouvrant Manuel — Démonstration Vidéo 1",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri ouvrant manuelle video (1).mp4",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri ouvrant manuelle video (1).mp4",
+              "fileSize": 26287273,
+              "format": "video/mp4"
+            },
+            {
+              "id": "video-ouvrant-man-02",
+              "type": "video",
+              "title": "Abri Ouvrant Manuel — Démonstration Vidéo 2",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri ouvrant manuelle video (2).mp4",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri ouvrant manuelle video (2).mp4",
+              "fileSize": 15689936,
+              "format": "video/mp4"
+            },
+            {
+              "id": "video-ouvrant-man-03",
+              "type": "video",
+              "title": "Abri Ouvrant Manuel — Démonstration Vidéo 3",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri ouvrant manuelle video (3).mp4",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri ouvrant manuelle video (3).mp4",
+              "fileSize": 12847809,
+              "format": "video/mp4"
+            },
+            {
+              "id": "video-ouvrant-man-04",
+              "type": "video",
+              "title": "Abri Ouvrant Manuel — Démonstration Vidéo 4",
+              "relativePath": "./Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri ouvrant manuelle video (4).mp4",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Abri ouvrant/Abri ouvrant manuelle/Abri ouvrant manuelle video (4).mp4",
+              "fileSize": 16247836,
+              "format": "video/mp4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryId": "enceigne-set-habillage-de-facades",
+      "categoryName": "Enceigne set habillage de façades",
+      "displayName": "Enseigne & Habillage de Façades",
+      "order": 4,
+      "description": "Conception et réalisation d'enseignes, habillages et décorations de façades en panneaux aluminium composite (Alucobond), avec découpe laser de motifs et logos sur mesure.",
+      "directImagesCount": 9,
+      "directVideosCount": 2,
+      "directMedia": [
+        {
+          "id": "facade-01",
+          "type": "image",
+          "title": "Habillage de Façade Alucobond",
+          "relativePath": "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enceigne_set_habillage_de_façades (1).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enceigne_set_habillage_de_façades (1).jpg",
+          "fileSize": 82620,
+          "highlight": true
+        },
+        {
+          "id": "facade-02",
+          "type": "image",
+          "title": "Enseigne Commerciale Sur Mesure",
+          "relativePath": "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enceigne_set_habillage_de_façades (2).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enceigne_set_habillage_de_façades (2).jpg",
+          "fileSize": 30338,
+          "highlight": false
+        },
+        {
+          "id": "facade-03",
+          "type": "image",
+          "title": "Décoration de Façade Alucobond",
+          "relativePath": "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enceigne_set_habillage_de_façades (3).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enceigne_set_habillage_de_façades (3).jpg",
+          "fileSize": 34727,
+          "highlight": false
+        },
+        {
+          "id": "facade-04",
+          "type": "image",
+          "title": "Habillage Façade Contemporaine",
+          "relativePath": "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enceigne_set_habillage_de_façades (4).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enceigne_set_habillage_de_façades (4).jpg",
+          "fileSize": 39171,
+          "highlight": false
+        },
+        {
+          "id": "facade-05",
+          "type": "image",
+          "title": "Parement Décoratif Alucobond",
+          "relativePath": "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enceigne_set_habillage_de_façades (5).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enceigne_set_habillage_de_façades (5).jpg",
+          "fileSize": 54812,
+          "highlight": false
+        },
+        {
+          "id": "facade-rts-01",
+          "type": "image",
+          "title": "Enseigne RTS School — Vue 1",
+          "relativePath": "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enseigne_rts_school (1).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enseigne_rts_school (1).jpg",
+          "fileSize": 107352,
+          "highlight": false
+        },
+        {
+          "id": "facade-rts-02",
+          "type": "image",
+          "title": "Enseigne RTS School — Vue 2",
+          "relativePath": "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enseigne_rts_school (2).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enseigne_rts_school (2).jpg",
+          "fileSize": 380773,
+          "highlight": false
+        },
+        {
+          "id": "facade-rts-03",
+          "type": "image",
+          "title": "Enseigne RTS School — Vue 3",
+          "relativePath": "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enseigne_rts_school (3).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enseigne_rts_school (3).jpg",
+          "fileSize": 178793,
+          "highlight": false
+        },
+        {
+          "id": "facade-rts-04",
+          "type": "image",
+          "title": "Enseigne RTS School — Vue 4",
+          "relativePath": "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enseigne_rts_school (4).jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enseigne_rts_school (4).jpg",
+          "fileSize": 270440,
+          "highlight": false
+        },
+        {
+          "id": "video-facade-01",
+          "type": "video",
+          "title": "Enseigne & Habillage de Façades — Vidéo 1",
+          "relativePath": "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enceigne_set_habillage_de_façades_video (1).mp4",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enceigne_set_habillage_de_façades_video (1).mp4",
+          "fileSize": 28751311,
+          "format": "video/mp4"
+        },
+        {
+          "id": "video-facade-02",
+          "type": "video",
+          "title": "Enseigne & Habillage de Façades — Vidéo 2",
+          "relativePath": "./Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enceigne_set_habillage_de_façades_video (2).mp4",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Enceigne set habillage de façades/Enceigne_set_habillage_de_façades_video (2).mp4",
+          "fileSize": 38819060,
+          "format": "video/mp4"
+        }
+      ],
+      "subcategories": []
+    },
+    {
+      "categoryId": "extension",
+      "categoryName": "Extension",
+      "displayName": "Extensions",
+      "order": 5,
+      "description": "Conception fabrication et pose d'extension de terrasse maison, terrasse café, séparation. Remplissage en tout types de verres, panneaux sandwich, pvc.",
+      "directImagesCount": 0,
+      "directVideosCount": 0,
+      "directMedia": [],
+      "subcategories": [
+        {
+          "subcategoryId": "en-aluminium",
+          "subcategoryName": "En aluminium",
+          "displayName": "En Aluminium",
+          "order": 1,
+          "description": "Structure en aluminium (fixe, ouvrant, coulissant). Remplissage au choix.",
+          "mediaCount": 5,
+          "media": [
+            {
+              "id": "ext-alu-01",
+              "type": "image",
+              "title": "Extension en Aluminium",
+              "relativePath": "./Structure 2A PRO CONCEPT/Extension/En aluminium/Extension_en_aluminium (1).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Extension/En aluminium/Extension_en_aluminium (1).jpg",
+              "fileSize": 388659,
+              "highlight": true
+            },
+            {
+              "id": "ext-alu-02",
+              "type": "image",
+              "title": "Véranda Aluminium Panoramique",
+              "relativePath": "./Structure 2A PRO CONCEPT/Extension/En aluminium/Extension_en_aluminium (2).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Extension/En aluminium/Extension_en_aluminium (2).jpg",
+              "fileSize": 250893,
+              "highlight": false
+            },
+            {
+              "id": "ext-alu-03",
+              "type": "image",
+              "title": "Fermeture Aluminium Terrasse",
+              "relativePath": "./Structure 2A PRO CONCEPT/Extension/En aluminium/Extension_en_aluminium (3).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Extension/En aluminium/Extension_en_aluminium (3).jpg",
+              "fileSize": 284247,
+              "highlight": false
+            },
+            {
+              "id": "ext-alu-04",
+              "type": "image",
+              "title": "Extension Aluminium Vitrée",
+              "relativePath": "./Structure 2A PRO CONCEPT/Extension/En aluminium/Extension_en_aluminium (4).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Extension/En aluminium/Extension_en_aluminium (4).jpg",
+              "fileSize": 40080,
+              "highlight": false
+            },
+            {
+              "id": "ext-alu-05",
+              "type": "image",
+              "title": "Extension Aluminium Sur Mesure",
+              "relativePath": "./Structure 2A PRO CONCEPT/Extension/En aluminium/Extension_en_aluminium (5).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Extension/En aluminium/Extension_en_aluminium (5).jpg",
+              "fileSize": 42786,
+              "highlight": false
+            }
+          ]
+        },
+        {
+          "subcategoryId": "en-tole",
+          "subcategoryName": "En tôle",
+          "displayName": "En Tôle",
+          "order": 2,
+          "description": "Extension en tôle galvanisée. Dimension au besoin du client. Découpe laser motifs selon le choix.",
+          "mediaCount": 2,
+          "media": [
+            {
+              "id": "ext-tole-01",
+              "type": "image",
+              "title": "Extension en Tôle Galvanisée",
+              "relativePath": "./Structure 2A PRO CONCEPT/Extension/En tôle/Extension_en_tole_1.jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Extension/En tôle/Extension_en_tole_1.jpg",
+              "fileSize": 54700,
+              "highlight": false
+            },
+            {
+              "id": "ext-tole-02",
+              "type": "image",
+              "title": "Extension Tôle Décorative",
+              "relativePath": "./Structure 2A PRO CONCEPT/Extension/En tôle/Extension_en_tole_2.jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Extension/En tôle/Extension_en_tole_2.jpg",
+              "fileSize": 44672,
+              "highlight": false
+            }
+          ]
+        },
+        {
+          "subcategoryId": "en-acier",
+          "subcategoryName": "En acier",
+          "displayName": "En Acier",
+          "order": 3,
+          "description": "Structure en acier galvanisée. Peinture au choix. Remplissage au choix.",
+          "mediaCount": 3,
+          "media": [
+            {
+              "id": "ext-acier-01",
+              "type": "image",
+              "title": "Extension en Acier Galvanisé",
+              "relativePath": "./Structure 2A PRO CONCEPT/Extension/En acier/Extension_en_acier.jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Extension/En acier/Extension_en_acier.jpg",
+              "fileSize": 46491,
+              "highlight": false
+            },
+            {
+              "id": "ext-acier-02",
+              "type": "image",
+              "title": "Extension Acier Structure Robuste",
+              "relativePath": "./Structure 2A PRO CONCEPT/Extension/En acier/Extension_en_acier (2).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Extension/En acier/Extension_en_acier (2).jpg",
+              "fileSize": 304151,
+              "highlight": false
+            },
+            {
+              "id": "ext-acier-03",
+              "type": "image",
+              "title": "Extension Rooftop Anthracite",
+              "relativePath": "./Structure 2A PRO CONCEPT/Extension/En acier/Extension_rooftop_anthracite.jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Extension/En acier/Extension_rooftop_anthracite.jpg",
+              "fileSize": 157965,
+              "highlight": false
+            }
+          ]
+        },
+        {
+          "subcategoryId": "extension-brise-vue",
+          "subcategoryName": "Extension & Brise-Vue",
+          "displayName": "Extension & Brise-Vue",
+          "order": 4,
+          "description": "Panneaux brise-vue décoratifs et extensions de séparation.",
+          "mediaCount": 7,
+          "media": [
+            {
+              "id": "ext-bv-01",
+              "type": "image",
+              "title": "Extension & Brise-Vue Décoratif",
+              "relativePath": "./Structure 2A PRO CONCEPT/Extension/Extension & Brise-Vue/Extension_brise_soleil_noir (1).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Extension/Extension & Brise-Vue/Extension_brise_soleil_noir (1).jpg",
+              "fileSize": 239845,
+              "highlight": false
+            },
+            {
+              "id": "ext-bv-02",
+              "type": "image",
+              "title": "Brise-Soleil Métallique Noir",
+              "relativePath": "./Structure 2A PRO CONCEPT/Extension/Extension & Brise-Vue/Extension_brise_soleil_noir (2).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Extension/Extension & Brise-Vue/Extension_brise_soleil_noir (2).jpg",
+              "fileSize": 196506,
+              "highlight": false
+            },
+            {
+              "id": "ext-bv-03",
+              "type": "image",
+              "title": "Claustra Brise-Vue Ajouré",
+              "relativePath": "./Structure 2A PRO CONCEPT/Extension/Extension & Brise-Vue/Extension_brise_soleil_noir (3).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Extension/Extension & Brise-Vue/Extension_brise_soleil_noir (3).jpg",
+              "fileSize": 277918,
+              "highlight": false
+            },
+            {
+              "id": "ext-bv-04",
+              "type": "image",
+              "title": "Panneaux Brise-Vue Géométriques",
+              "relativePath": "./Structure 2A PRO CONCEPT/Extension/Extension & Brise-Vue/Extension_brise_soleil_noir (4).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Extension/Extension & Brise-Vue/Extension_brise_soleil_noir (4).jpg",
+              "fileSize": 223835,
+              "highlight": false
+            },
+            {
+              "id": "ext-bv-05",
+              "type": "image",
+              "title": "Extension Métallique Brise-Vent",
+              "relativePath": "./Structure 2A PRO CONCEPT/Extension/Extension & Brise-Vue/Extension_brise_soleil_noir (5).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Extension/Extension & Brise-Vue/Extension_brise_soleil_noir (5).jpg",
+              "fileSize": 300188,
+              "highlight": false
+            },
+            {
+              "id": "ext-bv-06",
+              "type": "image",
+              "title": "Séparation Décorative Laquée",
+              "relativePath": "./Structure 2A PRO CONCEPT/Extension/Extension & Brise-Vue/Extension_brise_soleil_noir (6).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Extension/Extension & Brise-Vue/Extension_brise_soleil_noir (6).jpg",
+              "fileSize": 239242,
+              "highlight": false
+            },
+            {
+              "id": "ext-bv-07",
+              "type": "image",
+              "title": "Habillage Brise-Vue Sur Mesure",
+              "relativePath": "./Structure 2A PRO CONCEPT/Extension/Extension & Brise-Vue/Extension_brise_soleil_noir (7).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Extension/Extension & Brise-Vue/Extension_brise_soleil_noir (7).jpg",
+              "fileSize": 313002,
+              "highlight": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryId": "garde-corps-rampes-inox",
+      "categoryName": "GARDE-CORPS & RAMPES EN INOX",
+      "displayName": "Garde-Corps & Rampes en Inox",
+      "order": 6,
+      "description": "Conception et fabrication de garde-corps en acier inoxydable pour escaliers, balcons, terrasses.",
+      "directImagesCount": 0,
+      "directVideosCount": 0,
+      "directMedia": [],
+      "subcategories": [
+        {
+          "subcategoryId": "garde-corps-tubes-inox",
+          "subcategoryName": "Garde-corps à tubes inox",
+          "displayName": "Garde-corps à Tubes Inox",
+          "order": 1,
+          "description": "Montants verticaux, lisses horizontales, main courante en inox.",
+          "mediaCount": 11,
+          "media": [
+            {
+              "id": "gc-tubes-01",
+              "type": "image",
+              "title": "Garde-corps à Tubes Inox",
+              "relativePath": "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (1).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (1).jpg",
+              "fileSize": 240372,
+              "highlight": true
+            },
+            {
+              "id": "gc-tubes-02",
+              "type": "image",
+              "title": "Rampe Inox Brossé Escalier",
+              "relativePath": "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (2).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (2).jpg",
+              "fileSize": 133289,
+              "highlight": false
+            },
+            {
+              "id": "gc-tubes-03",
+              "type": "image",
+              "title": "Garde-corps Inox Balcon",
+              "relativePath": "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (3).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (3).jpg",
+              "fileSize": 162346,
+              "highlight": false
+            },
+            {
+              "id": "gc-tubes-04",
+              "type": "image",
+              "title": "Garde-corps Inox Terrasse",
+              "relativePath": "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (4).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (4).jpg",
+              "fileSize": 7123,
+              "highlight": false
+            },
+            {
+              "id": "gc-tubes-05",
+              "type": "image",
+              "title": "Main Courante Inox Ergonomique",
+              "relativePath": "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (5).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (5).jpg",
+              "fileSize": 142728,
+              "highlight": false
+            },
+            {
+              "id": "gc-tubes-06",
+              "type": "image",
+              "title": "Garde-corps Inox Haute Finition",
+              "relativePath": "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (6).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (6).jpg",
+              "fileSize": 193211,
+              "highlight": false
+            },
+            {
+              "id": "gc-tubes-07",
+              "type": "image",
+              "title": "Rampe Inox Résidentielle",
+              "relativePath": "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (7).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (7).jpg",
+              "fileSize": 37329,
+              "highlight": false
+            },
+            {
+              "id": "gc-tubes-08",
+              "type": "image",
+              "title": "Garde-corps Inox Satiné",
+              "relativePath": "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (8).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (8).jpg",
+              "fileSize": 35955,
+              "highlight": false
+            },
+            {
+              "id": "gc-tubes-09",
+              "type": "image",
+              "title": "Balustrade Inox Moderne",
+              "relativePath": "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (9).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde-corps_à_tubes_inox (9).jpg",
+              "fileSize": 42659,
+              "highlight": false
+            },
+            {
+              "id": "gc-escalier-detail",
+              "type": "image",
+              "title": "Garde-corps Escalier — Détail",
+              "relativePath": "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde_corps_escalier_detail.jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde_corps_escalier_detail.jpg",
+              "fileSize": 129181,
+              "highlight": false
+            },
+            {
+              "id": "gc-rooftop-panorama",
+              "type": "image",
+              "title": "Garde-corps Rooftop Panoramique",
+              "relativePath": "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde_corps_rooftop_panorama.jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps à tubes inox/Garde_corps_rooftop_panorama.jpg",
+              "fileSize": 191225,
+              "highlight": false
+            }
+          ]
+        },
+        {
+          "subcategoryId": "garde-corps-verre",
+          "subcategoryName": "Garde-corps avec remplissage en verre",
+          "displayName": "Garde-corps avec Remplissage en Verre",
+          "order": 2,
+          "description": "Structure inox, poteaux inox, main courante inox, verre de sécurité, fixations adaptées.",
+          "mediaCount": 2,
+          "media": [
+            {
+              "id": "gc-verre-01",
+              "type": "image",
+              "title": "Garde-corps avec Remplissage en Verre",
+              "relativePath": "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps avec remplissage en verre/Garde-corps_avec_remplissage_en_verre (1).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps avec remplissage en verre/Garde-corps_avec_remplissage_en_verre (1).jpg",
+              "fileSize": 23808,
+              "highlight": false
+            },
+            {
+              "id": "gc-verre-02",
+              "type": "image",
+              "title": "Garde-corps Inox & Verre Feuilleté",
+              "relativePath": "./Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps avec remplissage en verre/Garde-corps_avec_remplissage_en_verre (2).jpg",
+              "sourceDiskPath": "public/Structure 2A PRO CONCEPT/GARDE-CORPS & RAMPES EN INOX/Garde-corps avec remplissage en verre/Garde-corps_avec_remplissage_en_verre (2).jpg",
+              "fileSize": 19238,
+              "highlight": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryId": "menuiserie-aluminium",
+      "categoryName": "Menuiserie aluminium",
+      "displayName": "Menuiserie Aluminium",
+      "order": 7,
+      "description": "Fabrication et installation de menuiseries aluminium sur mesure : fenêtre, porte, porte fenêtre, moustiquaire, volet roulant. (Fixe, coulissant, à la française et battantes), remplissage au besoin du client.",
+      "directImagesCount": 11,
+      "directVideosCount": 0,
+      "directMedia": [
+        {
+          "id": "menu-alu-01",
+          "type": "image",
+          "title": "Menuiserie Aluminium Sur Mesure",
+          "relativePath": "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_1.jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_1.jpg",
+          "fileSize": 34056,
+          "highlight": true
+        },
+        {
+          "id": "menu-alu-02",
+          "type": "image",
+          "title": "Baies Coulissantes Aluminium",
+          "relativePath": "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_2.jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_2.jpg",
+          "fileSize": 61070,
+          "highlight": false
+        },
+        {
+          "id": "menu-alu-03",
+          "type": "image",
+          "title": "Fenêtres Aluminium",
+          "relativePath": "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_3.jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_3.jpg",
+          "fileSize": 32310,
+          "highlight": false
+        },
+        {
+          "id": "menu-alu-04",
+          "type": "image",
+          "title": "Portes Aluminium Design",
+          "relativePath": "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_4.jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_4.jpg",
+          "fileSize": 49147,
+          "highlight": false
+        },
+        {
+          "id": "menu-alu-05",
+          "type": "image",
+          "title": "Menuiserie Aluminium Haute Précision",
+          "relativePath": "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_5.jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_5.jpg",
+          "fileSize": 49102,
+          "highlight": false
+        },
+        {
+          "id": "menu-alu-06",
+          "type": "image",
+          "title": "Châssis Aluminium Laqué",
+          "relativePath": "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_6.jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_6.jpg",
+          "fileSize": 33926,
+          "highlight": false
+        },
+        {
+          "id": "menu-alu-07",
+          "type": "image",
+          "title": "Menuiserie Aluminium Panoramique",
+          "relativePath": "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_7.jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_7.jpg",
+          "fileSize": 49166,
+          "highlight": false
+        },
+        {
+          "id": "menu-alu-08",
+          "type": "image",
+          "title": "Fermeture Aluminium Complète",
+          "relativePath": "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_8.jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_aluminium_8.jpg",
+          "fileSize": 44680,
+          "highlight": false
+        },
+        {
+          "id": "menu-equipe-piscine",
+          "type": "image",
+          "title": "Menuiserie Équipe Piscine",
+          "relativePath": "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_equipe_piscine.jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_equipe_piscine.jpg",
+          "fileSize": 141972,
+          "highlight": false
+        },
+        {
+          "id": "menu-piscine-overhead",
+          "type": "image",
+          "title": "Verrière Piscine Vue Aérienne",
+          "relativePath": "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_piscine_overhead.jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_piscine_overhead.jpg",
+          "fileSize": 160807,
+          "highlight": false
+        },
+        {
+          "id": "menu-veranda-panoramique",
+          "type": "image",
+          "title": "Véranda Panoramique Aluminium",
+          "relativePath": "./Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_veranda_panoramique.jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Menuiserie aluminium/Menuiserie_veranda_panoramique.jpg",
+          "fileSize": 171531,
+          "highlight": false
+        }
+      ],
+      "subcategories": []
+    },
+    {
+      "categoryId": "pergola",
+      "categoryName": "Pergola",
+      "displayName": "Pergola",
+      "order": 8,
+      "description": "Conception fabrication et pose de pergola en acier galvanisée ou en aluminium couverture au choix.",
+      "directImagesCount": 6,
+      "directVideosCount": 0,
+      "directMedia": [
+        {
+          "id": "pergola-01",
+          "type": "image",
+          "title": "Pergola Métallique Contemporaine",
+          "relativePath": "./Structure 2A PRO CONCEPT/Pergola/Pergola_1.jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Pergola/Pergola_1.jpg",
+          "fileSize": 63071,
+          "highlight": true
+        },
+        {
+          "id": "pergola-02",
+          "type": "image",
+          "title": "Pergola Design Acier",
+          "relativePath": "./Structure 2A PRO CONCEPT/Pergola/Pergola_2.jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Pergola/Pergola_2.jpg",
+          "fileSize": 69677,
+          "highlight": false
+        },
+        {
+          "id": "pergola-03",
+          "type": "image",
+          "title": "Pergola Grande Portée",
+          "relativePath": "./Structure 2A PRO CONCEPT/Pergola/Pergola_3.jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Pergola/Pergola_3.jpg",
+          "fileSize": 203980,
+          "highlight": false
+        },
+        {
+          "id": "pergola-04",
+          "type": "image",
+          "title": "Pergola Aluminium Moderne",
+          "relativePath": "./Structure 2A PRO CONCEPT/Pergola/Pergola_4.jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Pergola/Pergola_4.jpg",
+          "fileSize": 212750,
+          "highlight": false
+        },
+        {
+          "id": "pergola-05",
+          "type": "image",
+          "title": "Pergola Espace Détente",
+          "relativePath": "./Structure 2A PRO CONCEPT/Pergola/Pergola_5.jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Pergola/Pergola_5.jpg",
+          "fileSize": 162575,
+          "highlight": false
+        },
+        {
+          "id": "pergola-freestanding",
+          "type": "image",
+          "title": "Pergola Autoportante Blanche",
+          "relativePath": "./Structure 2A PRO CONCEPT/Pergola/Pergola_freestanding_white.jpg",
+          "sourceDiskPath": "public/Structure 2A PRO CONCEPT/Pergola/Pergola_freestanding_white.jpg",
+          "fileSize": 97190,
+          "highlight": false
+        }
+      ],
+      "subcategories": []
+    }
+  ]
+}

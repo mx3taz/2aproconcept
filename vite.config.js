@@ -59,7 +59,9 @@ export default defineConfig({
       input: {
         main: resolve(import.meta.dirname, 'index.html'),
         solutions: resolve(import.meta.dirname, 'solutions.html'),
-        realisations: resolve(import.meta.dirname, 'realisations.html')
+        realisations: resolve(import.meta.dirname, 'realisations.html'),
+        devis: resolve(import.meta.dirname, 'devis.html'),
+        contact: resolve(import.meta.dirname, 'contact.html')
       }
     }
   },

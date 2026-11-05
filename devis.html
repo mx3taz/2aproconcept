@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devis en Ligne Sur Mesure | 2A PRO CONCEPT - Abris, Pergolas & Métal Tunisie</title>
+    <meta
+      name="description"
+      content="Configurez votre projet métallique ou aluminium sur mesure avec 2A PRO CONCEPT : abris de voiture suspendus, toitures ouvrantes, pergolas, menuiseries alu, garde-corps. Réponse express sous 24h."
+    />
+    <meta name="keywords" content="devis abri voiture tunisie, configurateur pergola tunisie, prix toiture ouvrante tunisie, menuiserie aluminium devis raoued, 2A PRO CONCEPT" />
+    <meta name="theme-color" content="#070a12" />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Devis en Ligne Sur Mesure | 2A PRO CONCEPT" />
+    <meta property="og:description" content="Configurez votre projet métallique ou aluminium sur mesure. Étude technique et devis personnalisés gratuits en Tunisie." />
+    <meta property="og:image" content="./public/logo/logo.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="./public/logo/logo.jpg" />
+    <link rel="apple-touch-icon" href="./public/logo/logo.jpg" />
+
+    <!-- Preload Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Master Stylesheet (Render-Blocking to Prevent FOUC) -->
+    <link rel="stylesheet" href="./src/styles/tokens.css" />
+    <link rel="stylesheet" href="./src/styles/base.css" />
+    <link rel="stylesheet" href="./src/styles/layout.css" />
+    <link rel="stylesheet" href="./src/styles/components.css" />
+    <link rel="stylesheet" href="./src/styles/animations.css" />
+    <link rel="stylesheet" href="./src/styles/loader.css" />
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <!-- Critical Anti-FOUC Styles -->
+    <style>
+      html, body {
+        background-color: #070911 !important;
+        color: #f8fafc;
+        overflow-x: hidden;
+      }
+    </style>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Devis et Configuration d'Ouvrages Métalliques et Aluminium",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "2A PRO CONCEPT",
+        "telephone": "+21698804061",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Route de Raoued Plage KM 12",
+          "addressLocality": "Raoued",
+          "addressRegion": "Ariana",
+          "addressCountry": "TN"
+        }
+      },
+      "areaServed": "Tunisie",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "TND",
+        "description": "Étude technique et devis préliminaire gratuits sous 24h"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <!-- Premium Architectural Page Loader -->
+    <div id="page-loader" class="page-loader" aria-hidden="true">
+      <div class="loader-content">
+        <div class="loader-logo-ring">
+          <div class="loader-ring-pulse"></div>
+          <div class="loader-ring-outer"></div>
+          <img src="./public/logo/logo.jpg" alt="2A PRO CONCEPT" class="loader-logo-img" />
+        </div>
+        <div class="loader-brand-text">
+          <div class="loader-title">2A PRO <span class="highlight-cyan">CONCEPT</span></div>
+          <div class="loader-subtitle">Métal &amp; Aluminium Sur Mesure</div>
+        </div>
+        <div class="loader-progress-track">
+          <div class="loader-progress-bar"></div>
+        </div>
+        <div class="loader-status" id="loader-status-text">Chargement du configurateur de devis...</div>
+      </div>
+    </div>
+
+    <!-- Ambient Lighting Glow Background -->
+    <div class="ambient-glow-top" aria-hidden="true"></div>
+
+    <!-- 1. HEADER & NAVIGATION -->
+    <header class="site-header" role="banner">
+      <div class="container-wide header-inner">
+        <a href="./index.html" class="brand-logo-link" aria-label="2A PRO CONCEPT - Retour à l'accueil">
+          <img src="./public/logo/logo.jpg" alt="Logo 2A PRO CONCEPT" class="brand-logo-img" width="44" height="44" />
+          <div class="brand-logo-text">
+            <span class="brand-title">2A PRO <span>CONCEPT</span></span>
+            <span class="brand-tagline">Métal & Aluminium</span>
+          </div>
+        </a>
+
+        <nav class="nav-desktop" role="navigation" aria-label="Navigation principale">
+          <a href="./index.html" class="nav-link">Accueil</a>
+          <a href="./solutions.html" class="nav-link">Nos Solutions</a>
+          <a href="./realisations.html" class="nav-link">Réalisations</a>
+          <a href="./devis.html" class="nav-link active">Devis en Ligne</a>
+          <a href="./solutions.html#savoir-faire" class="nav-link">Matériaux</a>
+          <a href="./contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a 
+            href="https://wa.me/21698804061?text=Bonjour%202A%20PRO%20CONCEPT%2C%20je%20souhaite%20un%20devis%20pour%20mon%20projet" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="btn btn-whatsapp"
+            aria-label="Contacter sur WhatsApp"
+          >
+            <span>WhatsApp Direct</span>
+          </a>
+
+          <button class="mobile-nav-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Backdrop -->
+    <div class="mobile-nav-backdrop" aria-hidden="true"></div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Menu Mobile" data-lenis-prevent>
+      <div class="mobile-drawer-header">
+        <div class="mobile-drawer-brand">
+          <img src="./public/logo/logo.jpg" alt="Logo 2A PRO CONCEPT" class="mobile-drawer-logo" width="36" height="36" />
+          <div class="mobile-drawer-title">2A PRO <span>CONCEPT</span></div>
+        </div>
+        <button class="mobile-drawer-close-btn" aria-label="Fermer le menu de navigation" type="button">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <a href="./index.html" class="mobile-nav-link">Accueil</a>
+      <a href="./solutions.html" class="mobile-nav-link">Nos Solutions Sur Mesure</a>
+      <a href="./realisations.html" class="mobile-nav-link">Galerie Réalisations (130 chantiers &amp; vidéos)</a>
+      <a href="./devis.html" class="mobile-nav-link active">Devis en Ligne</a>
+      <a href="./solutions.html#savoir-faire" class="mobile-nav-link">Matériaux &amp; Savoir-Faire</a>
+      <a href="./contact.html" class="mobile-nav-link">Nous Contacter</a>
+
+      <div class="mobile-drawer-footer">
+        <a href="tel:+21698804061" class="btn btn-primary" style="width: 100%;">
+          <span>📞 Appeler : 98 804 061</span>
+        </a>
+        <a 
+          href="https://wa.me/21698804061?text=Bonjour%202A%20PRO%20CONCEPT%2C%20je%20souhaite%20un%20devis%20pour%20mon%20projet" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn btn-whatsapp" 
+          style="width: 100%;"
+        >
+          <span>📲 WhatsApp Direct</span>
+        </a>
+      </div>
+    </div>
+
+    <main id="main-content" role="main">
+      <!-- 2. DEDICATED PAGE HERO -->
+      <section class="page-hero">
+        <div class="page-hero-overlay"></div>
+        <div class="container page-hero-content">
+          <nav class="breadcrumb-nav" aria-label="Fil d'Ariane">
+            <a href="./index.html" class="breadcrumb-link">Accueil</a>
+            <span class="breadcrumb-separator">/</span>
+            <span class="breadcrumb-current">Devis en Ligne</span>
+          </nav>
+
+          <span class="eyebrow">• DEVIS PERSONNALISÉ IMMÉDIAT •</span>
+          <h1 class="page-hero-title">
+            Configurez Votre Solution <span class="highlight-cyan">Sur Mesure</span>
+          </h1>
+          <p class="page-hero-desc">
+            Sélectionnez vos critères techniques en quelques clics. Nous générons instantanément un récapitulatif complet prêt à être transmis à notre bureau d'études pour une estimation rapide et sans engagement.
+          </p>
+
+          <div class="page-metrics-bar">
+            <div class="page-metric-item">
+              <span class="page-metric-value">100% Gratuit</span>
+              <span class="page-metric-label">Étude & Devis Sans Frais</span>
+            </div>
+            <div class="page-metric-item">
+              <span class="page-metric-value">&lt; 24 Heures</span>
+              <span class="page-metric-label">Réponse Rapide Garantie</span>
+            </div>
+            <div class="page-metric-item">
+              <span class="page-metric-value">Plan 3D</span>
+              <span class="page-metric-label">Validation Faisabilité</span>
+            </div>
+            <div class="page-metric-item">
+              <span class="page-metric-value">Toute la Tunisie</span>
+              <span class="page-metric-label">Pose & Déplacement sur Site</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. INTERACTIVE PROJECT CONFIGURATOR / DEVIS ESTIMATOR -->
+      <section class="section" id="configurateur" style="padding-top: 3.5rem;">
+        <div class="container">
+          <div class="configurator-wrapper gsap-reveal">
+            <div class="section-header text-center">
+              <span class="eyebrow">Calculateur & Simulateur</span>
+              <h2 class="section-title">Formulaire de Chiffrage Technique</h2>
+              <p class="section-subtitle">
+                Remplissez les caractéristiques de votre projet ci-dessous. Vos choix sont mis à jour en direct dans le récapitulatif avant transmission.
+              </p>
+            </div>
+
+            <form id="project-config-form" class="config-form" onsubmit="return false;">
+              <!-- Step 1: Type de Structure -->
+              <div class="config-form-step">
+                <div class="config-step-title">
+                  <span class="config-step-number">1</span>
+                  <span>Sélectionnez votre type d'ouvrage</span>
+                </div>
+                <div class="config-option-cards">
+                  <label class="config-radio-card">
+                    <input type="radio" name="config-structure" value="Abri de voiture suspendu" checked />
+                    <div class="config-card-label">
+                      <span class="config-card-icon">🚗</span>
+                      <span class="config-card-name">Abri Voiture Suspendu</span>
+                    </div>
+                  </label>
+
+                  <label class="config-radio-card">
+                    <input type="radio" name="config-structure" value="Abri de voiture standard à poteaux" />
+                    <div class="config-card-label">
+                      <span class="config-card-icon">🚙</span>
+                      <span class="config-card-name">Abri Voiture Standard</span>
+                    </div>
+                  </label>
+
+                  <label class="config-radio-card">
+                    <input type="radio" name="config-structure" value="Abri de terrasse fixe ou galbé" />
+                    <div class="config-card-label">
+                      <span class="config-card-icon">🏠</span>
+                      <span class="config-card-name">Abri de Terrasse</span>
+                    </div>
+                  </label>
+
+                  <label class="config-radio-card">
+                    <input type="radio" name="config-structure" value="Toiture ouvrante rétractable manuelle ou motorisée" />
+                    <div class="config-card-label">
+                      <span class="config-card-icon">☀️</span>
+                      <span class="config-card-name">Abri Ouvrant Patio</span>
+                    </div>
+                  </label>
+
+                  <label class="config-radio-card">
+                    <input type="radio" name="config-structure" value="Pergola de terrasse sur mesure" />
+                    <div class="config-card-label">
+                      <span class="config-card-icon">🏡</span>
+                      <span class="config-card-name">Pergola Acier / Alu</span>
+                    </div>
+                  </label>
+
+                  <label class="config-radio-card">
+                    <input type="radio" name="config-structure" value="Extension véranda et brise-vue" />
+                    <div class="config-card-label">
+                      <span class="config-card-icon">🪟</span>
+                      <span class="config-card-name">Extension &amp; Brise-Vue</span>
+                    </div>
+                  </label>
+
+                  <label class="config-radio-card">
+                    <input type="radio" name="config-structure" value="Menuiserie aluminium sur mesure" />
+                    <div class="config-card-label">
+                      <span class="config-card-icon">🚪</span>
+                      <span class="config-card-name">Menuiserie Aluminium</span>
+                    </div>
+                  </label>
+
+                  <label class="config-radio-card">
+                    <input type="radio" name="config-structure" value="Garde-corps & rampe inox" />
+                    <div class="config-card-label">
+                      <span class="config-card-icon">🛡️</span>
+                      <span class="config-card-name">Garde-Corps Inox</span>
+                    </div>
+                  </label>
+
+                  <label class="config-radio-card">
+                    <input type="radio" name="config-structure" value="Habillage façade et enseigne Alucobond" />
+                    <div class="config-card-label">
+                      <span class="config-card-icon">🏢</span>
+                      <span class="config-card-name">Façade &amp; Enseigne</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Step 2: Dimensions & Options -->
+              <div class="config-form-step">
+                <div class="config-step-title">
+                  <span class="config-step-number">2</span>
+                  <span>Dimensions estimées & Finitions</span>
+                </div>
+                <div class="config-input-group">
+                  <div class="input-field-wrapper">
+                    <label for="config-length" class="input-label">Longueur approximative (mètres)</label>
+                    <input type="number" id="config-length" class="input-control" placeholder="Ex: 5" min="1" max="50" value="5" />
+                  </div>
+                  <div class="input-field-wrapper">
+                    <label for="config-width" class="input-label">Largeur approximative (mètres)</label>
+                    <input type="number" id="config-width" class="input-control" placeholder="Ex: 3" min="1" max="30" value="3" />
+                  </div>
+                  <div class="input-field-wrapper">
+                    <label for="config-covering" class="input-label">Type de couverture / remplissage</label>
+                    <select id="config-covering" class="input-control">
+                      <option value="polycarbonate">Polycarbonate Compact Anti-UV (Résistance chocs & transparence)</option>
+                      <option value="sandwich">Panneaux Sandwich Isolants (Isolation thermique max)</option>
+                      <option value="toile">Toile PVC tendue haute densité</option>
+                      <option value="pvc">PVC rigide thermoformé</option>
+                      <option value="verre">Vitrage de sécurité / verre feuilleté</option>
+                      <option value="laser">Tôle galvanisée découpée au laser (Moucharabieh)</option>
+                      <option value="alucobond">Panneaux composites Alucobond</option>
+                    </select>
+                  </div>
+                  <div class="input-field-wrapper">
+                    <label for="config-system" class="input-label">Système d'ouverture & Motorisation</label>
+                    <select id="config-system" class="input-control">
+                      <option value="fixe">Structure Fixe Robuste</option>
+                      <option value="motorise">Automatique & Motorisé avec Télécommande</option>
+                      <option value="manuel">Coulissant Manuel à Poussée</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 3: Contact Details -->
+              <div class="config-form-step">
+                <div class="config-step-title">
+                  <span class="config-step-number">3</span>
+                  <span>Vos Coordonnées pour l'Étude Technique</span>
+                </div>
+                <div class="config-input-group">
+                  <div class="input-field-wrapper">
+                    <label for="config-city" class="input-label">Ville / Région d'installation</label>
+                    <input type="text" id="config-city" class="input-control" placeholder="Ex: Raoued, La Marsa, Gammarth, Tunis, Nabeul, Sousse..." value="Grand Tunis" />
+                  </div>
+                  <div class="input-field-wrapper">
+                    <label for="config-name" class="input-label">Votre Nom ou Entreprise</label>
+                    <input type="text" id="config-name" class="input-control" placeholder="Votre nom complet" />
+                  </div>
+                  <div class="input-field-wrapper">
+                    <label for="config-phone" class="input-label">Numéro de Téléphone (recommandé)</label>
+                    <input type="tel" id="config-phone" class="input-control" placeholder="Ex: 98 804 061" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Summary & Direct Action -->
+              <div class="config-summary-box">
+                <div>
+                  <span style="font-family: var(--font-mono); font-size: 0.78rem; text-transform: uppercase; color: var(--brand-cyan-400); letter-spacing: 0.05em;">
+                    Aperçu en temps réel de votre configuration :
+                  </span>
+                  <div id="config-summary-preview" style="color: #cbd5e1; font-size: 0.95rem; margin-top: 0.35rem; line-height: 1.5;">
+                    Chargement de l'aperçu...
+                  </div>
+                </div>
+
+                <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                  <button type="button" id="config-send-whatsapp" class="btn btn-whatsapp btn-lg">
+                    <span>📲 Transmettre sur WhatsApp</span>
+                  </button>
+                  <a href="tel:+21698804061" class="btn btn-phone btn-lg">
+                    <span>📞 Appeler le 98 804 061</span>
+                  </a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-top">
+        <div>
+          <a href="./index.html" class="brand-logo-link" style="margin-bottom: 1.25rem;">
+            <img src="./public/logo/logo.jpg" alt="Logo 2A PRO CONCEPT" class="brand-logo-img" width="40" height="40" />
+            <span class="brand-title">2A PRO <span>CONCEPT</span></span>
+          </a>
+          <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem; color: var(--text-secondary);">
+            Conception, fabrication et installation de solutions métalliques et aluminium sur mesure. Spécialiste des abris de voitures, abris ouvrants, pergolas, menuiseries aluminium et façades Alucobond en Tunisie.
+          </p>
+          <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--brand-cyan-400);">
+            "Votre extérieur en toute sérénité"
+          </span>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Nos Solutions</h4>
+          <div class="footer-links">
+            <a href="./solutions.html#abri-de-terrace" class="footer-link">Abris de Terrasses</a>
+            <a href="./solutions.html#abri-de-voiture" class="footer-link">Abris de Voitures (Standard &amp; Suspendus)</a>
+            <a href="./solutions.html#abri-ouvrant" class="footer-link">Abris Ouvrants &amp; Toits Coulissants</a>
+            <a href="./solutions.html#pergola" class="footer-link">Pergolas Métalliques &amp; Aluminium</a>
+            <a href="./solutions.html#extension" class="footer-link">Extensions de Terrasses &amp; Brise-Vue</a>
+            <a href="./solutions.html#menuiserie-aluminium" class="footer-link">Menuiserie Aluminium Sur Mesure</a>
+            <a href="./solutions.html#garde-corps-rampes-inox" class="footer-link">Garde-Corps &amp; Rampes Inox</a>
+            <a href="./solutions.html#enceigne-set-habillage-de-facades" class="footer-link">Enseignes &amp; Façades Alucobond</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <div class="footer-links">
+            <a href="./index.html" class="footer-link">Accueil</a>
+            <a href="./solutions.html" class="footer-link">Nos Solutions (Catalogue)</a>
+            <a href="./realisations.html" class="footer-link">Galerie de Réalisations (130 chantiers &amp; vidéos)</a>
+            <a href="./devis.html" class="footer-link">Devis en Ligne</a>
+            <a href="./solutions.html#savoir-faire" class="footer-link">Matériaux &amp; Qualité</a>
+            <a href="./solutions.html#processus" class="footer-link">Méthodologie en 4 Étapes</a>
+            <a href="./contact.html" class="footer-link">Contact &amp; Localisation</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact & Atelier</h4>
+          <div class="footer-links">
+            <span style="color: var(--text-secondary); font-size: 0.92rem;">
+              📍 Route de Raoued Plage KM 12, Raoued, Ariana, Tunisie
+            </span>
+            <a href="tel:+21698804061" class="footer-link" style="color: var(--text-white); font-weight: 600;">
+              📞 +216 98 804 061
+            </a>
+            <a href="https://wa.me/21698804061" target="_blank" rel="noopener noreferrer" class="footer-link" style="color: var(--accent-whatsapp);">
+              💬 WhatsApp : +216 98 804 061
+            </a>
+            <a href="https://www.facebook.com/2A.pro.concept.raoued/" target="_blank" rel="noopener noreferrer" class="footer-link">
+              🌐 Facebook : 2A PRO CONCEPT
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <div>
+          © 2026 2A PRO CONCEPT. Tous droits réservés. Conception, fabrication et installation métallique et aluminium en Tunisie.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#" style="color: var(--text-muted); font-size: 0.85rem;">Haut de page ↑</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- CDN: GSAP & ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <!-- CDN: Lenis Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+
+    <!-- Modules -->
+    <script src="./src/modules/pageLoader.js"></script>
+    <script src="./src/modules/smoothScroll.js"></script>
+    <script src="./src/modules/navigation.js"></script>
+    <script src="./src/modules/configurator.js"></script>
+    <script src="./src/modules/scrollAnimations.js"></script>
+
+    <!-- App Entrypoint -->
+    <script src="./src/main.js"></script>
+  </body>
+</html>

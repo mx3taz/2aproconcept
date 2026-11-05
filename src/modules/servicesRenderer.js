@@ -1,29 +1,29 @@
+// ============================================================================
+// servicesRenderer.js — Renders the 8 Authoritative Solutions / Services
+// ============================================================================
 
 function handleServiceImgError(img) {
   const currentSrc = img.getAttribute('src') || '';
   const retryCount = parseInt(img.dataset.retryCount || '0', 10);
-  if (retryCount >= 2) return;
+  if (retryCount >= 3) return;
   img.dataset.retryCount = (retryCount + 1).toString();
 
-  if (currentSrc.includes('./images/')) {
-    // If ./images/ failed on local file://, try ./public/images/
-    img.src = currentSrc.replace('./images/', './public/images/');
-  } else if (currentSrc.includes('./public/images/')) {
-    // If ./public/images/ failed on Vercel, try ./images/
-    img.src = currentSrc.replace('./public/images/', './images/');
+  if (currentSrc.includes('%20')) {
+    img.src = decodeURI(currentSrc);
+  } else if (!currentSrc.includes('./public/')) {
+    img.src = './public/' + currentSrc.replace('./', '');
   }
 }
 
-// gsap & ScrollTrigger loaded globally via CDN <script> tags in HTML
-
 const serviceToGalleryCategory = {
-  'abris-voitures': 'abris-voitures',
-  'abris-ouvrants': 'abris-ouvrants',
-  'abris-terrasses-pergolas': 'pergolas',
-  'extensions-terrasses': 'extensions',
-  'menuiserie-aluminium': 'menuiserie',
-  'garde-corps-inox': 'garde-corps',
-  'enseignes-facades': 'facades'
+  'abri-de-voiture': 'abri-de-voiture',
+  'abri-de-terrace': 'abri-de-terrace',
+  'abri-ouvrant': 'abri-ouvrant',
+  'extension': 'extension',
+  'pergola': 'pergola',
+  'garde-corps-rampes-inox': 'garde-corps-rampes-inox',
+  'menuiserie-aluminium': 'menuiserie-aluminium',
+  'enceigne-set-habillage-de-facades': 'enceigne-set-habillage-de-facades'
 };
 
 function initServicesRenderer() {
@@ -33,43 +33,51 @@ function initServicesRenderer() {
   if (!container) return;
 
   function renderServices(selectedCluster = 'all') {
-    const filtered = selectedCluster === 'all' 
-      ? window.servicesData 
+    const filtered = selectedCluster === 'all'
+      ? window.servicesData
       : window.servicesData.filter(s => s.cluster === selectedCluster);
 
     container.innerHTML = filtered.map(service => {
-      const galleryCategory = serviceToGalleryCategory[service.id] || 'all';
+      const galleryCategory = serviceToGalleryCategory[service.id] || service.id;
       return `
       <article class="service-card gsap-reveal" data-cluster="${service.cluster}" id="${service.id}">
         <div class="service-card-media">
-          <img 
-            src="${service.heroImage}" 
-            alt="${service.title} - Solution 2A Pro Concept" 
+          <img
+            src="${service.heroImage}"
+            alt="${service.title} - Solution 2A PRO CONCEPT"
             class="service-card-img" loading="lazy" onerror="handleServiceImgError(this)"
           />
           <span class="service-category-tag">${service.clusterTitle}</span>
         </div>
         <div class="service-card-body">
-      
-   
+          <h3 class="service-card-title">${service.title}</h3>
+          <p class="service-card-subtitle">${service.shortSubtitle}</p>
+          <p class="service-card-desc">${service.description}</p>
+
+          ${service.types && service.types.length > 0 ? `
+            <div class="service-types-preview">
+              <span class="service-specs-header">Types & Déclinaisons :</span>
+              <ul class="service-specs-list">
+                ${service.types.map(t => `<li><strong>${t.name}</strong> — ${t.description}</li>`).join('')}
+              </ul>
+            </div>
+          ` : ''}
 
           <div class="service-card-footer">
-            <a 
-              href="https://wa.me/21698804061?text=${encodeURIComponent(`Bonjour 2A PRO CONCEPT, je souhaite un devis personnalisé pour : ${service.title}`)}" 
-              target="_blank" 
+            <a
+              href="https://wa.me/21698804061?text=${encodeURIComponent(`Bonjour 2A PRO CONCEPT, je souhaite un devis personnalisé pour : ${service.title}`)}"
+              target="_blank"
               rel="noopener noreferrer"
               class="btn btn-primary"
-              style="padding: 0.65rem 1.25rem; font-size: 0.88rem;"
             >
               Devis pour ce projet
             </a>
-            <a 
-              href="./realisations.html?category=${galleryCategory}" 
+            <a
+              href="./realisations.html?category=${galleryCategory}"
               class="btn btn-secondary"
-              style="padding: 0.65rem 1rem; font-size: 0.88rem;"
               title="Voir les chantiers réels de cette gamme"
             >
-              Voir réalisations    ↗
+              Voir réalisations ↗
             </a>
           </div>
         </div>
@@ -103,7 +111,6 @@ function initServicesRenderer() {
     });
     renderServices(initialCluster);
   } else {
-    // Initial render
     renderServices('all');
   }
 

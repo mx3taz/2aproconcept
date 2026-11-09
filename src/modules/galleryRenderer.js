@@ -6,13 +6,15 @@
 function handleGalleryImgError(img) {
   const currentSrc = img.getAttribute('src') || '';
   const retryCount = parseInt(img.dataset.retryCount || '0', 10);
-  if (retryCount >= 3) return;
+  if (retryCount >= 4) return;
   img.dataset.retryCount = (retryCount + 1).toString();
 
-  if (currentSrc.includes('%20')) {
-    img.src = decodeURI(currentSrc);
-  } else if (!currentSrc.includes('./public/')) {
-    img.src = './public/' + currentSrc.replace('./', '');
+  if (retryCount === 0 && !currentSrc.includes('public/')) {
+    img.src = currentSrc.replace(/^\.\//, './public/').replace(/^\//, './public/');
+  } else if (retryCount === 1) {
+    img.src = encodeURI(decodeURI(img.src));
+  } else if (retryCount === 2 && currentSrc.includes('public/')) {
+    img.src = currentSrc.replace(/public\//, '');
   }
 }
 
@@ -97,7 +99,82 @@ function initGalleryRenderer() {
     const nextBtn = document.querySelector('#slider-next');
     const filterButtons = document.querySelectorAll('.featured-filter-btn');
 
-    // 0. Hero Ambient Blurred Stream (continuous dual-row moving stream of real project photos)
+    // 0. Hero Background Full-Size Crossfade Slider (3s cycle through real project photos)
+    const bgSlider = document.querySelector('#hero-bg-slider');
+    const slideA = document.querySelector('#hero-slide-a');
+    const slideB = document.querySelector('#hero-slide-b');
+    const sliderPill = document.querySelector('#hero-slider-pill');
+    const pillTitle = document.querySelector('#hero-slider-pill-title');
+    const pillCounter = document.querySelector('#hero-slider-pill-counter');
+
+    // Filter projects that have real valid photos (from Structure 2A PRO CONCEPT)
+    const heroProjects = allProjects.filter(p => p.image && !p.image.endsWith('.mp4'));
+
+    if (heroProjects.length > 0 && slideA && slideB) {
+      let heroIdx = 0;
+      let activeLayer = 'a';
+
+      // Update pill text & counter
+      const updatePill = (idx) => {
+        const proj = heroProjects[idx];
+        if (!proj) return;
+        if (pillTitle) pillTitle.textContent = `${proj.categoryLabel} — ${proj.title}`;
+        if (pillCounter) {
+          pillCounter.textContent = `${(idx + 1).toString().padStart(2, '0')} / ${heroProjects.length.toString().padStart(2, '0')}`;
+        }
+      };
+
+      updatePill(0);
+
+      // Smooth switch every 3 seconds (3000ms)
+      const switchHeroSlide = () => {
+        if (document.hidden) return;
+        heroIdx = (heroIdx + 1) % heroProjects.length;
+        const proj = heroProjects[heroIdx];
+        if (!proj) return;
+
+        const nextSlide = activeLayer === 'a' ? slideB : slideA;
+        const prevSlide = activeLayer === 'a' ? slideA : slideB;
+
+        // Preload next image before transitioning
+        const nextSrc = proj.image;
+        const preloader = new Image();
+        const applyNext = (srcToUse) => {
+          nextSlide.src = srcToUse;
+          nextSlide.classList.add('active');
+          prevSlide.classList.remove('active');
+          activeLayer = activeLayer === 'a' ? 'b' : 'a';
+          updatePill(heroIdx);
+        };
+
+        preloader.onload = () => applyNext(nextSrc);
+        preloader.onerror = () => {
+          // If relative path fails, try with ./public/ prefix
+          const altSrc = nextSrc.startsWith('./') ? './public/' + nextSrc.slice(2) : './public/' + nextSrc;
+          applyNext(altSrc);
+        };
+        preloader.src = nextSrc;
+      };
+
+      setInterval(switchHeroSlide, 3000);
+
+      // Clicking the pill opens full-screen Lightbox
+      if (sliderPill) {
+        const openHeroLightbox = () => {
+          const currentProject = heroProjects[heroIdx];
+          if (currentProject) openLightbox(currentProject, heroProjects);
+        };
+        sliderPill.addEventListener('click', openHeroLightbox);
+        sliderPill.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            openHeroLightbox();
+          }
+        });
+      }
+    }
+
+    // Fallback: Hero Ambient Stream rows if present
     const streamRow1 = document.querySelector('#hero-stream-row-1');
     const streamRow2 = document.querySelector('#hero-stream-row-2');
     if (streamRow1 && streamRow2 && allProjects.length > 0) {
@@ -105,7 +182,6 @@ function initGalleryRenderer() {
       const row2Projects = allProjects.slice(20, 40).concat(allProjects.slice(0, 5));
 
       const renderStreamCards = (projects) => {
-        // Duplicate array so CSS keyframe translation loops seamlessly
         const doubled = [...projects, ...projects];
         return doubled.map(p => `
           <div class="hero-stream-card">
@@ -116,51 +192,6 @@ function initGalleryRenderer() {
 
       streamRow1.innerHTML = renderStreamCards(row1Projects);
       streamRow2.innerHTML = renderStreamCards(row2Projects);
-    }
-
-    // Hero Live Spotlight Card (crisp unblurred project showcase with auto-rotation)
-    const liveCard = document.querySelector('#hero-live-card');
-    const liveImg = document.querySelector('#hero-live-img');
-    const liveTag = document.querySelector('#hero-live-tag');
-    const liveTitle = document.querySelector('#hero-live-title');
-    const liveCounter = document.querySelector('#hero-live-counter');
-
-    if (liveCard && liveImg && featuredProjects.length > 0) {
-      let liveIdx = 0;
-      const updateLiveCard = (idx) => {
-        const proj = featuredProjects[idx];
-        if (!proj) return;
-        liveImg.style.opacity = '0';
-        setTimeout(() => {
-          liveImg.src = proj.image;
-          if (liveTag) liveTag.textContent = proj.categoryLabel;
-          if (liveTitle) liveTitle.textContent = proj.title;
-          if (liveCounter) liveCounter.textContent = `${(idx + 1).toString().padStart(2, '0')} / ${featuredProjects.length.toString().padStart(2, '0')}`;
-          liveImg.style.opacity = '1';
-        }, 250);
-      };
-
-      updateLiveCard(0);
-
-      // Click on live card opens full Lightbox
-      const openLiveLightbox = () => {
-        const currentProject = featuredProjects[liveIdx];
-        if (currentProject) openLightbox(currentProject, featuredProjects);
-      };
-      liveCard.addEventListener('click', openLiveLightbox);
-      liveCard.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          openLiveLightbox();
-        }
-      });
-
-      // Auto-cycle live card every 4.5 seconds
-      setInterval(() => {
-        if (document.hidden) return;
-        liveIdx = (liveIdx + 1) % featuredProjects.length;
-        updateLiveCard(liveIdx);
-      }, 4500);
     }
 
     // Populate the Immersive Horizontal Showcase Slider Track with maximum rich project photos
@@ -213,30 +244,35 @@ function initGalleryRenderer() {
       });
 
       // Controls for the slider
+      const getScrollStep = () => {
+        const firstCard = sliderTrack.querySelector('.slider-card');
+        return firstCard ? firstCard.offsetWidth + 24 : 420;
+      };
+
       if (prevBtn && nextBtn) {
         prevBtn.addEventListener('click', () => {
           stopSliderAutoPlay();
-          sliderTrack.scrollBy({ left: -340, behavior: 'smooth' });
+          sliderTrack.scrollBy({ left: -getScrollStep(), behavior: 'smooth' });
         });
         nextBtn.addEventListener('click', () => {
           stopSliderAutoPlay();
-          sliderTrack.scrollBy({ left: 340, behavior: 'smooth' });
+          sliderTrack.scrollBy({ left: getScrollStep(), behavior: 'smooth' });
         });
       }
 
-      // Smooth subtle auto-scroll
+      // Smooth auto-scroll every 3 seconds (3000ms)
       let sliderAutoPlay = null;
       const startSliderAutoPlay = () => {
         if (sliderAutoPlay || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
         sliderAutoPlay = setInterval(() => {
           if (document.hidden) return;
           const maxScroll = sliderTrack.scrollWidth - sliderTrack.clientWidth;
-          if (sliderTrack.scrollLeft >= maxScroll - 20) {
+          if (sliderTrack.scrollLeft >= maxScroll - 30) {
             sliderTrack.scrollTo({ left: 0, behavior: 'smooth' });
           } else {
-            sliderTrack.scrollBy({ left: 340, behavior: 'smooth' });
+            sliderTrack.scrollBy({ left: getScrollStep(), behavior: 'smooth' });
           }
-        }, 4200);
+        }, 3000);
       };
 
       const stopSliderAutoPlay = () => {

@@ -28,8 +28,11 @@ function initScrollAnimations() {
       .from('.hero-title', { opacity: 0, y: 30, duration: 1 }, '-=0.5')
       .from('.hero-description', { opacity: 0, y: 20, duration: 0.8 }, '-=0.6')
       .from('.hero-cta-group', { opacity: 0, y: 20, duration: 0.8 }, '-=0.6')
-      .from('.hero-stats-bar', { opacity: 0, y: 20, duration: 0.8 }, '-=0.5')
-      .from('.hero-spotlight-col', { opacity: 0, x: 30, duration: 0.9 }, '-=0.8');
+      .from('.hero-stats-bar', { opacity: 0, y: 20, duration: 0.8 }, '-=0.5');
+
+    if (document.querySelector('.hero-slider-pill')) {
+      heroTl.from('.hero-slider-pill', { opacity: 0, y: 15, duration: 0.6 }, '-=0.4');
+    }
   }
 
   // Section Headers (static in HTML)
